@@ -1,6 +1,6 @@
 __author__ = 'chrispess'
 
-class UID:  #essa classe pode ser abstrata?
+class UID:  #essa classe pode ser abstrata em python?
 
 
     # cria um UID por valor
@@ -9,8 +9,6 @@ class UID:  #essa classe pode ser abstrata?
     def __init__(self, value):
         #criar uma exceção aqui para tratar value == nulo
         self.value = value
-
-
 
 
     # retorna o valor da id
