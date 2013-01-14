@@ -7,13 +7,15 @@ class Interval:
     # boolean inf_inclusive true se intervalo fechado en inf, false se intervalo aberto em inf
     # boolean sup_inclusive true se intervalo fechado en sup, false se intervalo aberto em sup
 
+
+
     def __init__(self,inf,sup,inf_inclusive,sup_inclusive):
        # if sup < inf:
        #     lança uma exceção
 
         self.inf = inf
         self.sup = sup
-        self.inf_inclusive =   # criar condicional  inf==null ? false : true
+        self.inf_inclusive =   self.inf ==null ? false : true
         self.sup_inclusive =   # criar condicional  inf==null ? false : true
 
 
@@ -40,7 +42,7 @@ class Interval:
 
     #define o limite superior do intervalo
     def set_sup(self, sup):
-        self.sup =sup
+        self.sup = sup
 
 
     #define se o intervalo é fechado à esquerda
@@ -53,6 +55,7 @@ class Interval:
         self.sup_inclusive = sup_inclusive
 
 
+    #retorna
     def to_string(self):
         interval_str =[]
         interval_str.append(self.inf)
