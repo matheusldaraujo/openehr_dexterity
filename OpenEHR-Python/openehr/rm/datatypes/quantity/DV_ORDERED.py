@@ -1,12 +1,10 @@
 __author__ = 'chrispess'
 
 
-
+from
 
 class DV_ORDERED():
 
-    def __init__(self):
-        self.__init__()
 
 
 
