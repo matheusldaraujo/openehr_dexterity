@@ -11,6 +11,5 @@ class DATA_VALUE:
 
 
 
-    def __DATA_VALUE__(self):
-        self.__DATA_VALUE__()
+
 
