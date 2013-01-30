@@ -25,10 +25,13 @@ def __init__(self, magnitude_status):
  self.magnitude_status = magnitude_status
 
 
+
 #retorna magnitude_status
 def getMagnitudeStatus(self):
     return self.magnitude_status
 
+
+#verifica se o atributo magnitude_status
 def valid_magnitud_status(self, result=False):
     if (self.magnitude_status == "=" or self.magnitude_status == "<" or self.magnitude_status == ">" or self.magnitude_status == "<=" or self.magnitude_status == ">=" or self.magnitude_status == "~"):
 
