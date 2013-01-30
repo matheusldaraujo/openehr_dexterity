@@ -20,7 +20,11 @@ def __init__(self, magnitude_status):
 
  self.magnitude_status = magnitude_status
 
-
 def __init__(self):
 
- pass
+    pass
+
+#retorna magnitude_status
+def getMagnitudeStatus(self):
+    return self.magnitude_status
+
