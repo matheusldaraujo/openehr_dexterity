@@ -8,9 +8,17 @@ class DV_AMOUNT(DV_QUANTIFIED):
 
 #atributos mandatórios
 
-accuracy = 0,0
+    accuracy = 0,0
 
-accuracyPercent = False
+    accuracyPercent = False
+
+
+def __init__(self, accuracy, accuracyPercent):
+    self.accuracy = accuracy
+    self.accuracyPercent = accuracyPercent
+
+
+
 
 
 
