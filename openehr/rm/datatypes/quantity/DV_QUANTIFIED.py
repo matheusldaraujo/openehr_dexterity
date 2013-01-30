@@ -16,13 +16,14 @@ class DV_QUANTIFIED(DV_ORDERED):
 
 #construtores
 
+def __init__(self):
+
+ pass
+
 def __init__(self, magnitude_status):
 
  self.magnitude_status = magnitude_status
 
-def __init__(self):
-
-    pass
 
 #retorna magnitude_status
 def getMagnitudeStatus(self):
