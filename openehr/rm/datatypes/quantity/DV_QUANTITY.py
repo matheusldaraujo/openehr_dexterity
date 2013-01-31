@@ -24,5 +24,31 @@ def __init__(self, magnitude, units, precision):
     self.precision = precision
 
 
+    #métodos
+
+    #retorna magnitude
+def getMagnitude(self):
+    return self.magnitude
+
+
+    #retorna units
+def getUnits(self):
+    return self.units
+
+
+    #retorna precisão
+def getPrecision(self):
+    return self.precision
+
+    #seta precisão
+def setPrecision(self, precision):
+    self.precision = precision
+
+    #seta magnitude
+def setMagnitude(self, magnitude):
+    self.magnitude = magnitude
+
+
+
 
 
