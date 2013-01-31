@@ -14,3 +14,15 @@ class DV_QUANTITY(DV_AMOUNT):
 
     units = ""       # String expressando unidades como kg/m2, mm[Hg], km/h,...
 
+
+    #construtor
+
+def __init__(self, magnitude, units, precision):
+
+    self.magnitude = magnitude
+    self.units = units
+    self.precision = precision
+
+
+
+
