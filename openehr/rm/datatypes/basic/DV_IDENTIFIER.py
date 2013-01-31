@@ -41,3 +41,16 @@ class DV_IDENTIFIER(DATA_VALUE):
         return self.type
 
 
+    # metodos set
+
+    def setIssuer(self, issuer):
+         self.issuer = issuer
+
+    def setAssigner(self, assigner):
+        self.assigner = assigner
+
+    def setId(self, id):
+        self.id = id
+
+    def setType(self, type):
+        self.type = type
