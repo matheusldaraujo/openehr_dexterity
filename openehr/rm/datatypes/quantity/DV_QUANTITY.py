@@ -8,9 +8,9 @@ class DV_QUANTITY(DV_AMOUNT):
 
     #atributos
 
-    magnitude = 0.0  #double
+    magnitude = 0.0  #doublegrandeza numérica
 
-    precision = 0    # int
+    precision = 0    # int  precisão em termos de valores decimais. 0 implica quantidade integral e -1 implioca nenhum limite
 
-    units = ""       # String
+    units = ""       # String expressando unidades como kg/m2, mm[Hg], km/h,...
 
