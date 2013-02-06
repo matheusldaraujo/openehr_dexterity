@@ -10,7 +10,8 @@ class OBJECT_REF():
  #assert isinstance(id, OBJECT_ID)
 
 
- id(OBJECT_ID)  #id unico de um objeto. != null
+ id=None
+ assert(id,OBJECT_ID)  #id unico de um objeto. != null
 
  namespace = "" #namespace a que o identificador pertence no contexto do sistema. != null
                 #ex: "terminology", "demographic"
