@@ -2,6 +2,7 @@ __author__ = 'chrispess'
 
 class UID:  #essa classe pode ser abstrata em python?
 
+    value = ""
 
     # cria um UID por valor
     #lança exceção para valor nulo
@@ -12,20 +13,23 @@ class UID:  #essa classe pode ser abstrata em python?
 
 
     # retorna o valor da id
-    def __getvalue__(self):
+    def getValue(self):
         return self.value
 
     #retorna string representativo do valor
-    def __str__(self):
-        return
+    def toString(self):
+        uid = []
+        uid.append(self.value)
+        return uid
 
     # verifica se dois UID's possuem o mesmo valor
-    def __eq__(self, other):
-        return
+    def equals(self, other):
+        if(self == other):
+            return True
+        else:return False
 
-    # retorna o hash code
-    def __hash__(self):
-        return
+
+
 
 
 
