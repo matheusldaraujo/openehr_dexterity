@@ -31,7 +31,7 @@ def getMagnitudeStatus(self):
     return self.magnitude_status
 
 
-#verifica se o atributo magnitude_status
+#verifica o atributo magnitude_status
 def valid_magnitud_status(self, result=False):
     if (self.magnitude_status == "=" or self.magnitude_status == "<" or self.magnitude_status == ">" or self.magnitude_status == "<=" or self.magnitude_status == ">=" or self.magnitude_status == "~"):
 
