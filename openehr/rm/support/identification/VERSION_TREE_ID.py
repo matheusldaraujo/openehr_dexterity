@@ -6,16 +6,16 @@ class VERSION_TREE_ID:
 # value: trunkVersion ['.' branchNumber '.' branchVersion]
 
     value = "" #string com a formado identificador
-    assert (value,str)
+
 
     trunkVersion = ""  #inicia com 1
-    assert (trunkVersion,str)
+
 
     branchNumber = ""  #inicia com 1
-    assert (branchNumber, str)
+
 
     branchVersion = ""   #inicia com 1
-    assert (branchVersion,str)
+
 
 
     #construtor
