@@ -58,6 +58,9 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
     def getVersionTreeID(self):
         return self.versionTreeID
 
+    #retorna value
+    def getValue(self):
+        return self.value
 
     #seta o valor da string value
     def setValue(self, value):
