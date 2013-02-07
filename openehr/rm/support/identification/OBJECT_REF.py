@@ -39,7 +39,7 @@ class OBJECT_REF():
 
 
  #verifica igualdade comparando o objeto com outro pasado como parâmetro
- def equal__(self, other):
+ def equal(self, other):
      if(self == other):
          return True
      else:return False
