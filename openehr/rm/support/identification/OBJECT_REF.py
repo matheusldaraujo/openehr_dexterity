@@ -10,13 +10,12 @@ class OBJECT_REF():
  #assert isinstance(id, OBJECT_ID)
 
 
- id=None
- assert(id,OBJECT_ID)  #id unico de um objeto. != null
+ id = OBJECT_ID()  #id unico de um objeto. != null
 
- namespace = "" #namespace a que o identificador pertence no contexto do sistema. != null
+ namespace = str() #namespace a que o identificador pertence no contexto do sistema. != null
                 #ex: "terminology", "demographic"
 
- type = ""      #nome da classe do objeto aque o identificador se refere. !=null
+ type = str()      #nome da classe do objeto aque o identificador se refere. !=null
 
  # construtor
  def __init__(self, id, namespace, type):

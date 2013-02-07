@@ -5,16 +5,16 @@ class VERSION_TREE_ID:
 # formato lexico
 # value: trunkVersion ['.' branchNumber '.' branchVersion]
 
-    value = "" #string com a formado identificador
+    value = str() #string com a formado identificador
 
 
-    trunkVersion = ""  #inicia com 1
+    trunkVersion = str()  #inicia com 1
 
 
-    branchNumber = ""  #inicia com 1
+    branchNumber = str()  #inicia com 1
 
 
-    branchVersion = ""   #inicia com 1
+    branchVersion = str()   #inicia com 1
 
 
 

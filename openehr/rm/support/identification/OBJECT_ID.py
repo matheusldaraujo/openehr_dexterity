@@ -5,7 +5,7 @@ __author__ = 'chrispess'
 
 class OBJECT_ID():
 
-    value = "" #valor da id do objeto. sempre != vazio
+    value = str() #valor da id do objeto. sempre != vazio
 
 
     #consrutor. recebe value como argumento

@@ -5,8 +5,7 @@ from openehr.rm.support.identification import UID
 
 class UID_BASED_ID(OBJECT_ID):
 
-    root=None
-    assert(root,UID)
+    root=UID()
 
     extension = ""
 

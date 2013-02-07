@@ -13,16 +13,13 @@ from openehr.rm.support.identification import VERSION_TREE_ID
 
 class OBJECT_VERSION_ID(UID_BASED_ID):
 
-    objectID =None
-    assert(objectID,UID)
+    objectID =UID()
 
-    creatingSystemID = None
-    assert (creatingSystemID, UID)
+    creatingSystemID = UID()
 
-    versionTreeID = None
-    assert (versionTreeID, VERSION_TREE_ID)
+    versionTreeID = VERSION_TREE_ID()
 
-    value = ""
+    value = str()
 
 
     #construtor
