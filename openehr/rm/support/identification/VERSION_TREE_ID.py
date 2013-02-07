@@ -2,7 +2,10 @@ __author__ = 'chrispess'
 
 class VERSION_TREE_ID:
 
-    value = ""         #string com a formado identificador
+# formato lexico
+# value: trunkVersion ['.' branchNumber '.' branchVersion]
+
+    value = "" #string com a formado identificador
     assert (value,str)
 
     trunkVersion = ""  #inicia com 1
@@ -54,6 +57,10 @@ class VERSION_TREE_ID:
         return self.value
 
 
-
+    #verifica igualdade comparando o objeto com outro passado como parâmetro
+    def equal(self, other):
+        if(self.value == other.value):
+            return True
+        else:return False
 
 
