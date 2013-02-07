@@ -6,11 +6,9 @@ from openehr.rm.support.identification.OBJECT_ID  import OBJECT_ID
 #casse que permite criar uma referência para outro objeto, que pode existir localmente ou em outro local
 class OBJECT_REF():
 
- #id = None
- #assert isinstance(id, OBJECT_ID)
-
 
  id = OBJECT_ID()  #id unico de um objeto. != null
+
 
  namespace = str() #namespace a que o identificador pertence no contexto do sistema. != null
                 #ex: "terminology", "demographic"
@@ -56,9 +54,11 @@ class OBJECT_REF():
          object_ref.append(self.type)
          return object_ref
 
+
  #seta namespace
  def setNamespace(self, namepace):
      self.namespace = namepace
+
 
  #seta type
  def setType(self, type):
