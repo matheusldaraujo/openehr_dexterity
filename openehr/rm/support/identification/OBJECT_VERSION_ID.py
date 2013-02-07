@@ -49,13 +49,15 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
         self.value.append(self,versionTreeID)
 
 
-
+    #retorna objectID
     def getObjectID(self):
         return self.objectID
 
+    #retorna creatingSystemID
     def  getCreatingSystemID(self):
         return self.creatingSystemID
 
+    #retorna VersionTreeID
     def getVersionTreeID(self):
         return self.versionTreeID
 
