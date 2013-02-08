@@ -7,7 +7,7 @@ class ARCHETYPE_ID(OBJECT_ID):
 
 #referência, globalmente, uma entidade do modelo.
 # ex
-qualifiedRmEntity = str()
+ qualifiedRmEntity = str()
 
 
 #organizaão de onde se origina o modelo de referência base do arquétipo.
