@@ -1,6 +1,23 @@
 __author__ = 'chrispess'
 
 
+''' léxico
+archetype_id: qualified_rm_entity ‘.’ domain_concept ‘.’ version_id
+qualified_rm_entity: rm_originator ‘-’ rm_name ‘-’ rm_entity
+rm_originator: V_ALPHANUMERIC_NAME
+rm_name: V_ALPHANUMERIC_NAME
+rm_entity: V_ALPHANUMERIC_NAME
+domain_concept: concept_name { ‘-’ specialisation }*
+concept_name: V_ALPHANUMERIC_NAME
+specialisation: V_ALPHANUMERIC_NAME
+version_id: ‘v’ V_NONZERO_DIGIT [ V_NUMBER ]
+# padrão léxico
+V_ALPHANUMERIC_NAME: [a-zA-Z][a-zA-Z0-9_]+
+V_NONZERO_DIGIT: [1-9]
+V_NUMBER: [0-9]+   '''
+
+
+
 from openehr.rm.support.identification import OBJECT_ID
 
 class ARCHETYPE_ID(OBJECT_ID):
@@ -34,6 +51,8 @@ class ARCHETYPE_ID(OBJECT_ID):
 
 
     def __init__(self, rm_originator, rm_name, rm_entity, domain_concept, specialization, version_id):
+        self.rmOriginator = rm_originator
+
 
 
 

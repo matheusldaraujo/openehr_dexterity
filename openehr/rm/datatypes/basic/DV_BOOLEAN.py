@@ -5,10 +5,8 @@ from openehr.rm.datatypes.basic import DATA_VALUE
 class DV_BOOLEAN(DATA_VALUE):
 
     #atributos
-
-
-    #valor booleano do item
-    value = False
+    #valor booleano carregado pelo item
+    value = bool()
 
 
     #construtor
@@ -21,8 +19,13 @@ class DV_BOOLEAN(DATA_VALUE):
         return self.value
 
     #seta um valor booleano
-    def __set__(self, value):
+    def setValue(self, value):
         self.value =value
 
+    #compara o valor com outro booleano
+    def equals(self, value):
+        if(self.value == value):
+         return True
+        else:return False
 
 

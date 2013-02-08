@@ -6,7 +6,8 @@ __author__ = 'chrispess'
 class DATA_VALUE:
 
 
-   pass
+   def __init__(self):
+       pass
 
 
 

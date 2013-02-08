@@ -2,17 +2,17 @@ __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic import DATA_VALUE
 
-# classe para criaão deumidentificador
+# classe para criação de um identificador
 
 #atributos
 
-issuer = ""
+issuer = str()
 
-assigner = ""
+assigner = str()
 
-id = ""
+id = str()
 
-type = ""
+type = str()
 
 
 
@@ -54,3 +54,11 @@ class DV_IDENTIFIER(DATA_VALUE):
 
     def setType(self, type):
         self.type = type
+
+
+    #verifica se dois identifiers possuem os mosmos valores
+    #issuer,assigner,id, type
+    def equals(self, other):
+        if(self.issuer == other.getIssuer() & self.assigner == other.getAssigner() & self.id == other.getId() & self.type == other.getType()):
+            return True
+        else:return False
