@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/matheus/plone_instances/christiano/1/src"
+		},
+		{
+			"path": "/home/matheus/plone_instances/christiano/1/openehr"
+		},
+		{
+			"path": "/home/matheus/plone_instances/christiano/buildout-cache/eggs"
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4
+	}
+}
