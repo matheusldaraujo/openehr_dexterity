@@ -17,8 +17,9 @@ class GENERIC_ID(OBJECT_ID):
 
 
     #retorna scheme
-    def getScheme(self):
+    def Scheme(self):
         return self.scheme
+
 
     #verifica se GENERIC_ID é igual
     def equals(self, other):

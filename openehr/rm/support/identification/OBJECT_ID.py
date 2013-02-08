@@ -29,9 +29,5 @@ class OBJECT_ID():
             return True
         else:return False
 
-    #retorna string do objeto
-    def toString(self):
-        object_id = []
-        object_id.append(self.value)
-        return object_id
+
 

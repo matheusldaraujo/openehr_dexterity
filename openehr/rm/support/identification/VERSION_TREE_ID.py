@@ -27,29 +27,29 @@ class VERSION_TREE_ID:
 
 
     #retorna true se o identificador representa um branch
-    def isBranch(self):
+    def is_branch(self):
         if(self.branchVersion != None):
             return True
         else:return False
 
 
     # retorna true se é a primeira cópia numa árvore de versões
-    def isFirst(self):
+    def is_first(self):
         if(self.trunkVersion == "1"):
             return True
         else:return False
 
     # retorna branchVersion
-    def branchVersion(self):
+    def branch_version(self):
         return self.branchVersion
 
 
     #retorna branchNumber
-    def branchNumber(self):
+    def branch_number(self):
         return self.branchNumber
 
     #retorna trunkVersion
-    def trunkVersion(self):
+    def trunk_version(self):
         return self.trunkVersion
 
     #retorna value

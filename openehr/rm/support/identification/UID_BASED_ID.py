@@ -38,10 +38,10 @@ class UID_BASED_ID(OBJECT_ID):
             return True
 
     #retorna a parte root à esquerda do separador '::'
-    def getRoot(self):
+    def Root(self):
         return self.root
 
     #retorna a parte extension à direita do separador '::'
-    def getExtension(self):
+    def Extension(self):
         return self.extension
 

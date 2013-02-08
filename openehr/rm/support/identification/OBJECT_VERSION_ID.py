@@ -19,7 +19,7 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
 
     versionTreeID = VERSION_TREE_ID()
 
-    value = str()
+    value = []
 
 
     #construtor
@@ -29,7 +29,7 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
         self.creatingSystemID = creatingSystemID
         self.versionTreeID = versionTreeID
 
-        self.value=[]
+
         self.value.append(self,objectID.toString()) #verificar se chamada de método
         self.value.append(self,"::")                #está correta
         self.value.append(self,creatingSystemID.toString())
@@ -37,8 +37,8 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
         self.value.append(self,versionTreeID.toString())
 
 
-    def __init__(self, objectID, creatingSystemID, versionTreeID):
-        self.value=[]
+    def __init__(self, objectID = str(), creatingSystemID = str(), versionTreeID = str()):
+
         self.value.append(self,objectID) #verificar se chamada de método
         self.value.append(self,"::")                #está correta
         self.value.append(self,creatingSystemID)
@@ -47,16 +47,17 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
 
 
     #retorna objectID
-    def getObjectID(self):
+    def ObjectID(self):
         return self.objectID
 
     #retorna creatingSystemID
-    def  getCreatingSystemID(self):
+    def  CreatingSystemID(self):
         return self.creatingSystemID
 
     #retorna VersionTreeID
-    def getVersionTreeID(self):
+    def VersionTreeID(self):
         return self.versionTreeID
+
 
     #retorna value
     def getValue(self):

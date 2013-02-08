@@ -25,8 +25,9 @@ class LOCATABLE_REF(OBJECT_REF):
         self.path = path
 
 
-    #constrói e retorna as_uri
-    def asURI(self):
+    #constrói e retorna as_uri na forma
+    # "ehr://" +id.value + "/" + path
+    def as_uri(self):
         self.as_uri.append("ehr://")
         self.as_uri.append(self.id.getValue())
         self.as_uri.append("/")
