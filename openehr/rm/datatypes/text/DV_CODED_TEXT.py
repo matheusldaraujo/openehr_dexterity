@@ -22,26 +22,26 @@ class DV_CODED_TEXT(DV_TEXT):
 
 
      super(DV_CODED_TEXT, self).__init__()
-     self.value = value  #este self chama o atributo 'value' da superclasse DV_TEXT
-     #demais atributos da super classe DV_TEXT
-     self.mappings = mappings
-     self.formatting = formatting
-     self.hyperlink = hyperlink
-     self.language = language
-     self.encoding = encoding
-     self.language = language
+        self.value = value  #este self chama o atributo 'value' da superclasse DV_TEXT
+        #demais atributos da super classe DV_TEXT
+        self.mappings = mappings
+        self.formatting = formatting
+        self.hyperlink = hyperlink
+        self.language = language
+        self.encoding = encoding
+        self.language = language
 
 
 
 
      #seta value e defining_code
- def setDefining_code(self,value, defining_code):
-     self.defining_code - defining_code
-     super(DV_CODED_TEXT,self).__init__()
-     self.value= value
+     def setDefining_code(self,value, defining_code):
+      self.defining_code - defining_code
+      super(DV_CODED_TEXT,self).__init__()
+      self.value= value
 
- #seta defining_code
-  def setDefining_code(self, defining_code):
+     #seta defining_code
+     def setDefining_code(self, defining_code):
       self.defining_code - defining_code
 
 
