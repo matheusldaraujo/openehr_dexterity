@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"OB",
+				"OBJECT_VERSION_ID"
+			],
+			[
+				"UI",
+				"UID"
+			],
+			[
+				"O",
+				"OBJECT_ID"
+			],
+			[
+				"D",
+				"DV_ORDERED"
+			],
+			[
+				"dat",
+				"datetime"
+			],
+			[
 				"font",
 				"font-weight"
 			],
@@ -288,76 +308,10 @@
 	"buffers":
 	[
 		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt",
+			"file": "openehr/rm/datatypes/basic/DV_IDENTIFIER.py",
 			"settings":
 			{
-				"buffer_size": 3527,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
-			"settings":
-			{
-				"buffer_size": 16852,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt",
-			"settings":
-			{
-				"buffer_size": 5314,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
-			"settings":
-			{
-				"buffer_size": 1791,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 31633 files for \"visualNo\"\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/browser/templates/footer_banner.pt:\n    1  <div i18n:domain=\"plone\"\n    2       class=\"row\">\n    3:     <div class=\"visualNoPrint cell width-full position-0\">\n    4  \n    5  \n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/browser/templates/personal_bar.pt:\n    4  <h5 class=\"hiddenStructure\" i18n:translate=\"heading_personal_tools\">Personal tools</h5>\n    5  \n    6: <div id=\"portal-feedbackhelp-div\" class=\"visualNoPrint\">\n    7  \n    8    <tal:if condition=\"python: not context.verifyRole(['Anonymous'])\">\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/print.css:\n  109  #foldercontents-order-column,\n  110  input.context,\n  111: .visualNoPrint {\n  112  	display: none;\n  113  }\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/public.css:\n 1752  }\n 1753  \n 1754: #content .visualNoMarker {\n 1755      list-style:none;\n 1756      margin-left: 0;\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/agenda_navigation_portlet.pt:\n   25                  <ul class=\"navTree navTreeLevel0\">\n   26                      <li tal:repeat=\"brain brains\"\n   27:                         class=\"navTreeItem visualNoMarker navTreeFolderish section-Agenda\">\n   28                          <!-- fill current doctor link in the porlet (using navTreeCurrentItem) -->\n   29                          <!-- id in <a> helps amberjack -->\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt:\n   32                  document_date python:context.creation_date.strftime('%d/%m/%Y')\"    \n   33                  >\n   34: <div class=\"visualNoPrint\">                \n   35  <metal:body_macro metal:define-macro=\"body\">\n   36  \n   ..\n   42  -->\n   43      <span id=\"print_button\" style=\"float:right\">\n   44:         <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   45      </span>\n   46      <br/>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/patient_view.pt:\n   43  -->\n   44      <span id=\"print_button\" style=\"float:right\">\n   45:         <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   46      </span>\n   47  \n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_prescription.cpt:\n   26                       document_date prescriptions/data/date | nothing\">\n   27          <tal:doctors define=\"doc_obj python:context.getDoctorById(doctor_id)\">\n   28:         <span class=\"size-title visualNoPrint\">\n   29              <span i18n:translate=\"heading_doctor\">Doctor:</span> <tal:doc content=\"doctor_name\"/></span>\n   30              <span id=\"print_button\" style=\"float:right\">\n   31:                 <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   32              </span>\n   33              <hr>\n   34:             <fieldset id=\"fieldset_doc_view\" class=\"visualNoPrint\">\n   35              <table class=\"size-secondary width-max\">\n   36                  <br/>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/referencebrowser.pt:\n  156          <div style=\"float: left\"> <!-- don't remove this. it is needed for DOM traversal -->\n  157  \n  158:           <ul class=\"visualNoMarker\"\n  159                tal:attributes=\"id string:ref_browser_items_${fieldName};\"\n  160                tal:condition=\"refs\">\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt:\n   37  \n   38  <span id=\"print_button\" style=\"float:right\">\n   39:   <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   40  </span>\n   41  <tal:if condition=\"not:doctor\">\n   ..\n   46  <br />\n   47  <br />\n   48: <table id=\"agenda_parent\" class=\"listing cmed width-100 visualNoPrint\">\n   49  \n   50    <tr>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt:\n    1  \n    2  <metal:def define-macro=\"doctor_select\">\n    3: 	<div id=\"doctor_select_div\" class=\"visualNoPrint\">\n    4              <select name=\"doctor_id\" id=\"doctor_select\">\n    5                  <option selected=\"\" value=\"\"> Todos os médicos </option>\n    .\n   53                          <th style=\"width:18%;text-align: center;\">Paciente</th>\n   54                          <th style=\"width:10%;text-align: center;\">Status</th>\n   55:                         <th style=\"width:28%;text-align: center;\" class=\"visualNoPrint\">Alterar</th>\n   56                          <th style=\"width:10%;text-align: center;\">Tipo</th>\n   57                          <th style=\"width:10%;text-align: center;\">Razão</th>\n   ..\n   77                                      i18n:translate=\"\"\n   78                                      onclick=\"timeClick()\">Feb 1, 2005 5:17 pm</a>\n   79:                                 <img class=\"visualNoPrint\" tal:attributes=\"src string:${portal_url}/popup_icon.gif;\" />\n   80                                  <input id=\"visit_url\" style=\"display:none\" tal:attributes=\"value visit/absolute_url\"/>\n   81                              </td>\n   ..\n   97  \n   98                              <!-- Conteudo da celula CHANGE  -->\n   99:                             <td style=\"text-align: center;\" class=\"visualNoPrint\">\n  100                                  <img id=\"loadergif\" tal:attributes=\"src string:${portal_url}/ajaxloader.gif;\" style=\"display: none;\" />\n  101                                  <div tal:define=\"repeat_number repeat/visit/number\" tal:attributes=\"id string:change_cell_div_${repeat_number}\">\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFEditions-2.1.6-py2.7.egg/Products/CMFEditions/skins/cmfeditions_views/version_image_view.pt:\n   29                  <tal:block condition=\"size\" replace=\"structure python: here.version_image_tag(here_url, version_id)\" />\n   30                  <br />\n   31:                 <span class=\"visualNoPrint\">\n   32                      <img src=\"\" alt=\"\" tal:replace=\"structure here/search_icon.gif\" />\n   33                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   35              </a>\n   36  \n   37:             <span class=\"discreet visualNoPrint\">\n   38              &mdash;\n   39                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFEditions-2.2.4-py2.7.egg/Products/CMFEditions/skins/cmfeditions_views/version_image_view.pt:\n   29                  <tal:block condition=\"size\" replace=\"structure python: here.version_image_tag(here_url, version_id)\" />\n   30                  <br />\n   31:                 <span class=\"visualNoPrint\">\n   32                      <img src=\"\" alt=\"\" tal:replace=\"structure here/search_icon.gif\" />\n   33                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   35              </a>\n   36  \n   37:             <span class=\"discreet visualNoPrint\">\n   38              &mdash;\n   39                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_content/image_view.pt:\n   18                  <tal:block condition=\"size\" replace=\"structure python:context.tag(scale='preview')\" />\n   19                  <br />\n   20:                 <span class=\"visualNoPrint\">\n   21                      <img src=\"\" alt=\"\" tal:replace=\"structure context/search_icon.png\" />\n   22                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   24              </a>\n   25  \n   26:             <span class=\"discreet visualNoPrint\">\n   27              &mdash;\n   28                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/document_relateditems.pt:\n   19                                        normalizeString nocall:context/@@plone/normalizeString;\">\n   20                      <legend i18n:translate=\"label_related_items\">Related content</legend>\n   21:                     <ul class=\"visualNoMarker\">\n   22                      <tal:related tal:repeat=\"item related\">\n   23                          <li tal:define=\"\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/portlet_navtree_macro.pt:\n   10  <metal:main define-macro=\"nav_main\">\n   11  <tal:navitem repeat=\"node children\">\n   12: <li class=\"navTreeItem visualNoMarker\"\n   13      tal:define=\"children   node/children;\n   14                  item       node/item;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_templates/sitemap.pt:\n   27      <div id=\"content-core\">\n   28          <ul id=\"portal-sitemap\"\n   29:             class=\"navTreeLevel0 visualNoMarker\"\n   30              tal:define=\"view nocall:context/@@sitemap_view;\">\n   31              <tal:sitemap replace=\"structure view/createSiteMap\" />\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_content/image_view.pt:\n   18                  <tal:block condition=\"size\" replace=\"structure python:context.tag(scale='preview')\" />\n   19                  <br />\n   20:                 <span class=\"visualNoPrint\">\n   21                      <img src=\"\" alt=\"\" tal:replace=\"structure context/search_icon.png\" />\n   22                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   24              </a>\n   25  \n   26:             <span class=\"discreet visualNoPrint\">\n   27              &mdash;\n   28                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/document_relateditems.pt:\n   19                                        normalizeString nocall:context/@@plone/normalizeString;\">\n   20                      <legend i18n:translate=\"label_related_items\">Related content</legend>\n   21:                     <ul class=\"visualNoMarker\">\n   22                      <tal:related tal:repeat=\"item related\">\n   23                          <li tal:define=\"\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/portlet_navtree_macro.pt:\n   10  <metal:main define-macro=\"nav_main\">\n   11  <tal:navitem repeat=\"node children\">\n   12: <li class=\"navTreeItem visualNoMarker\"\n   13      tal:define=\"children   node/children;\n   14                  item       node/item;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_templates/sitemap.pt:\n   27      <div id=\"content-core\">\n   28          <ul id=\"portal-sitemap\"\n   29:             class=\"navTreeLevel0 visualNoMarker\"\n   30              tal:define=\"view nocall:context/@@sitemap_view;\">\n   31              <tal:sitemap replace=\"structure view/createSiteMap\" />\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.11-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.js:\n  180              }\n  181              container.after(\n  182:                '<ul class=\"visualNoMarker\" id=\"' + widget_id + '\"></ul>');\n  183              list = document.getElementById(widget_id);\n  184          }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.11-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:\n  156          <div style=\"float: left\"> <!-- don't remove this. it is needed for DOM traversal -->\n  157  \n  158:           <ul class=\"visualNoMarker\"\n  159                tal:attributes=\"id string:ref_browser_items_${fieldName};\"\n  160                tal:condition=\"refs\">\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.4-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.js:\n  172              }\n  173              container.after(\n  174:                '<ul class=\"visualNoMarker\" id=\"' + widget_id + '\"></ul>');\n  175              list = document.getElementById(widget_id);\n  176          }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.4-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:\n  156          <div style=\"float: left\"> <!-- don't remove this. it is needed for DOM traversal -->\n  157  \n  158:           <ul class=\"visualNoMarker\"\n  159                tal:attributes=\"id string:ref_browser_items_${fieldName};\"\n  160                tal:condition=\"refs\">\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plone.app.portlets-2.1.7-py2.7.egg/plone/app/portlets/portlets/navigation_recurse.pt:\n   19                  li_folder_class python:show_children and ' navTreeFolderish' or '';\n   20                  normalizeString nocall: context/plone_utils/normalizeString;\"\n   21:     tal:attributes=\"class string:navTreeItem visualNoMarker${li_class}${li_extr_class}${li_folder_class} section-${node/normalized_id}\"\n   22      tal:condition=\"python:bottomLevel &lt;= 0 or level &lt;= bottomLevel\">\n   23  \n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plone.app.portlets-2.2.5-py2.7.egg/plone/app/portlets/portlets/navigation_recurse.pt:\n   19                  li_folder_class python:show_children and ' navTreeFolderish' or '';\n   20                  normalizeString nocall: context/plone_utils/normalizeString;\"\n   21:     tal:attributes=\"class string:navTreeItem visualNoMarker${li_class}${li_extr_class}${li_folder_class} section-${node/normalized_id}\"\n   22      tal:condition=\"python:bottomLevel &lt;= 0 or level &lt;= bottomLevel\">\n   23  \n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.1.1-py2.7.egg/plonetheme/classic/skins/classic_styles/invisibles.css.dtml:\n   30  \n   31  /* List classes without markers */\n   32: ul.visualNoMarker,\n   33: ol.visualNoMarker {\n   34      list-style-type: none;\n   35      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.1.1-py2.7.egg/plonetheme/classic/skins/classic_styles/print.css.dtml:\n  104  .overlay,\n  105  .close,\n  106: .visualNoPrint {\n  107      display: none;\n  108  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.1.1-py2.7.egg/plonetheme/classic/skins/classic_styles/public.css.dtml:\n  810  \n  811  /* List classes without markers */\n  812: ul.visualNoMarker,\n  813: ol.visualNoMarker {\n  814      list-style-type: none;\n  815      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.2.2-py2.7.egg/plonetheme/classic/skins/classic_styles/invisibles.css.dtml:\n   30  \n   31  /* List classes without markers */\n   32: ul.visualNoMarker,\n   33: ol.visualNoMarker {\n   34      list-style-type: none;\n   35      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.2.2-py2.7.egg/plonetheme/classic/skins/classic_styles/print.css.dtml:\n  104  .overlay,\n  105  .close,\n  106: .visualNoPrint {\n  107      display: none;\n  108  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.2.2-py2.7.egg/plonetheme/classic/skins/classic_styles/public.css.dtml:\n  900  \n  901  /* List classes without markers */\n  902: ul.visualNoMarker,\n  903: ol.visualNoMarker {\n  904      list-style-type: none;\n  905      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.1.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/print.css:\n  111  #foldercontents-order-column,\n  112  input.context,\n  113: .visualNoPrint {\n  114  	display: none;\n  115  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.1.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/public.css:\n 1771  }\n 1772  \n 1773: #content .visualNoMarker {\n 1774      list-style:none;\n 1775      margin-left: 0;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.2.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/print.css:\n  111  #foldercontents-order-column,\n  112  input.context,\n  113: .visualNoPrint {\n  114  	display: none;\n  115  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.2.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/public.css:\n 1922  }\n 1923  \n 1924: #content .visualNoMarker {\n 1925      list-style:none;\n 1926      margin-left: 0;\n\n/home/matheus/plone_instances/intranett/src/intranett.theme/intranett/theme/skins/intranett_theme_styles/invisibles.css:\n   27  \n   28  /* List classes without markers */\n   29: ul.visualNoMarker,\n   30: ol.visualNoMarker {\n   31      list-style-type: none;\n   32      list-style-image: none;\n\n/home/matheus/plone_instances/intranett/src/intranett.theme/intranett/theme/skins/intranett_theme_styles/print.css:\n   22  #kss-spinner,\n   23  .skipnav,\n   24: .visualNoPrint,\n   25  #edit-bar,\n   26  .overlay,\n\n/home/matheus/plone_instances/intranett/src/intranett.theme/intranett/theme/skins/intranett_theme_styles/public.css.dtml:\n   95  \n   96  /* List classes without markers */\n   97: ul.visualNoMarker,\n   98: ol.visualNoMarker {\n   99      list-style-type: none;\n  100      list-style-image: none;\n\n57 matches across 40 files\n\n\nSearching 31633 files for \"visualNo\"\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/browser/templates/footer_banner.pt:\n    1  <div i18n:domain=\"plone\"\n    2       class=\"row\">\n    3:     <div class=\"visualNoPrint cell width-full position-0\">\n    4  \n    5  \n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/browser/templates/personal_bar.pt:\n    4  <h5 class=\"hiddenStructure\" i18n:translate=\"heading_personal_tools\">Personal tools</h5>\n    5  \n    6: <div id=\"portal-feedbackhelp-div\" class=\"visualNoPrint\">\n    7  \n    8    <tal:if condition=\"python: not context.verifyRole(['Anonymous'])\">\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/print.css:\n  109  #foldercontents-order-column,\n  110  input.context,\n  111: .visualNoPrint {\n  112  	display: none;\n  113  }\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/public.css:\n 1752  }\n 1753  \n 1754: #content .visualNoMarker {\n 1755      list-style:none;\n 1756      margin-left: 0;\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/agenda_navigation_portlet.pt:\n   25                  <ul class=\"navTree navTreeLevel0\">\n   26                      <li tal:repeat=\"brain brains\"\n   27:                         class=\"navTreeItem visualNoMarker navTreeFolderish section-Agenda\">\n   28                          <!-- fill current doctor link in the porlet (using navTreeCurrentItem) -->\n   29                          <!-- id in <a> helps amberjack -->\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt:\n   32                  document_date python:context.creation_date.strftime('%d/%m/%Y')\"    \n   33                  >\n   34: <div class=\"visualNoPrint\">                \n   35  <metal:body_macro metal:define-macro=\"body\">\n   36  \n   ..\n   42  -->\n   43      <span id=\"print_button\" style=\"float:right\">\n   44:         <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   45      </span>\n   46      <br/>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/patient_view.pt:\n   43  -->\n   44      <span id=\"print_button\" style=\"float:right\">\n   45:         <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   46      </span>\n   47  \n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_prescription.cpt:\n   26                       document_date prescriptions/data/date | nothing\">\n   27          <tal:doctors define=\"doc_obj python:context.getDoctorById(doctor_id)\">\n   28:         <span class=\"size-title visualNoPrint\">\n   29              <span i18n:translate=\"heading_doctor\">Doctor:</span> <tal:doc content=\"doctor_name\"/></span>\n   30              <span id=\"print_button\" style=\"float:right\">\n   31:                 <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   32              </span>\n   33              <hr>\n   34:             <fieldset id=\"fieldset_doc_view\" class=\"visualNoPrint\">\n   35              <table class=\"size-secondary width-max\">\n   36                  <br/>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/referencebrowser.pt:\n  156          <div style=\"float: left\"> <!-- don't remove this. it is needed for DOM traversal -->\n  157  \n  158:           <ul class=\"visualNoMarker\"\n  159                tal:attributes=\"id string:ref_browser_items_${fieldName};\"\n  160                tal:condition=\"refs\">\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt:\n   37  \n   38  <span id=\"print_button\" style=\"float:right\">\n   39:   <a title=\"\" href=\"javascript:print();\" class=\"visualNoPrint\">Imprimir</a>\n   40  </span>\n   41  <tal:if condition=\"not:doctor\">\n   ..\n   46  <br />\n   47  <br />\n   48: <table id=\"agenda_parent\" class=\"listing cmed width-100 visualNoPrint\">\n   49  \n   50    <tr>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt:\n    1  \n    2  <metal:def define-macro=\"doctor_select\">\n    3: 	<div id=\"doctor_select_div\" class=\"visualNoPrint\">\n    4              <select name=\"doctor_id\" id=\"doctor_select\">\n    5                  <option selected=\"\" value=\"\"> Todos os médicos </option>\n    .\n   53                          <th style=\"width:18%;text-align: center;\">Paciente</th>\n   54                          <th style=\"width:10%;text-align: center;\">Status</th>\n   55:                         <th style=\"width:28%;text-align: center;\" class=\"visualNoPrint\">Alterar</th>\n   56                          <th style=\"width:10%;text-align: center;\">Tipo</th>\n   57                          <th style=\"width:10%;text-align: center;\">Razão</th>\n   ..\n   77                                      i18n:translate=\"\"\n   78                                      onclick=\"timeClick()\">Feb 1, 2005 5:17 pm</a>\n   79:                                 <img class=\"visualNoPrint\" tal:attributes=\"src string:${portal_url}/popup_icon.gif;\" />\n   80                                  <input id=\"visit_url\" style=\"display:none\" tal:attributes=\"value visit/absolute_url\"/>\n   81                              </td>\n   ..\n   97  \n   98                              <!-- Conteudo da celula CHANGE  -->\n   99:                             <td style=\"text-align: center;\" class=\"visualNoPrint\">\n  100                                  <img id=\"loadergif\" tal:attributes=\"src string:${portal_url}/ajaxloader.gif;\" style=\"display: none;\" />\n  101                                  <div tal:define=\"repeat_number repeat/visit/number\" tal:attributes=\"id string:change_cell_div_${repeat_number}\">\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFEditions-2.1.6-py2.7.egg/Products/CMFEditions/skins/cmfeditions_views/version_image_view.pt:\n   29                  <tal:block condition=\"size\" replace=\"structure python: here.version_image_tag(here_url, version_id)\" />\n   30                  <br />\n   31:                 <span class=\"visualNoPrint\">\n   32                      <img src=\"\" alt=\"\" tal:replace=\"structure here/search_icon.gif\" />\n   33                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   35              </a>\n   36  \n   37:             <span class=\"discreet visualNoPrint\">\n   38              &mdash;\n   39                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFEditions-2.2.4-py2.7.egg/Products/CMFEditions/skins/cmfeditions_views/version_image_view.pt:\n   29                  <tal:block condition=\"size\" replace=\"structure python: here.version_image_tag(here_url, version_id)\" />\n   30                  <br />\n   31:                 <span class=\"visualNoPrint\">\n   32                      <img src=\"\" alt=\"\" tal:replace=\"structure here/search_icon.gif\" />\n   33                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   35              </a>\n   36  \n   37:             <span class=\"discreet visualNoPrint\">\n   38              &mdash;\n   39                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_content/image_view.pt:\n   18                  <tal:block condition=\"size\" replace=\"structure python:context.tag(scale='preview')\" />\n   19                  <br />\n   20:                 <span class=\"visualNoPrint\">\n   21                      <img src=\"\" alt=\"\" tal:replace=\"structure context/search_icon.png\" />\n   22                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   24              </a>\n   25  \n   26:             <span class=\"discreet visualNoPrint\">\n   27              &mdash;\n   28                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/document_relateditems.pt:\n   19                                        normalizeString nocall:context/@@plone/normalizeString;\">\n   20                      <legend i18n:translate=\"label_related_items\">Related content</legend>\n   21:                     <ul class=\"visualNoMarker\">\n   22                      <tal:related tal:repeat=\"item related\">\n   23                          <li tal:define=\"\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/portlet_navtree_macro.pt:\n   10  <metal:main define-macro=\"nav_main\">\n   11  <tal:navitem repeat=\"node children\">\n   12: <li class=\"navTreeItem visualNoMarker\"\n   13      tal:define=\"children   node/children;\n   14                  item       node/item;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/skins/plone_templates/sitemap.pt:\n   27      <div id=\"content-core\">\n   28          <ul id=\"portal-sitemap\"\n   29:             class=\"navTreeLevel0 visualNoMarker\"\n   30              tal:define=\"view nocall:context/@@sitemap_view;\">\n   31              <tal:sitemap replace=\"structure view/createSiteMap\" />\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_content/image_view.pt:\n   18                  <tal:block condition=\"size\" replace=\"structure python:context.tag(scale='preview')\" />\n   19                  <br />\n   20:                 <span class=\"visualNoPrint\">\n   21                      <img src=\"\" alt=\"\" tal:replace=\"structure context/search_icon.png\" />\n   22                      <span i18n:translate=\"label_click_to_view_full_image\">Click to view full-size image&hellip;</span>\n   ..\n   24              </a>\n   25  \n   26:             <span class=\"discreet visualNoPrint\">\n   27              &mdash;\n   28                  <span i18n:translate=\"label_size\">Size</span>:\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/document_relateditems.pt:\n   19                                        normalizeString nocall:context/@@plone/normalizeString;\">\n   20                      <legend i18n:translate=\"label_related_items\">Related content</legend>\n   21:                     <ul class=\"visualNoMarker\">\n   22                      <tal:related tal:repeat=\"item related\">\n   23                          <li tal:define=\"\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_deprecated/portlet_navtree_macro.pt:\n   10  <metal:main define-macro=\"nav_main\">\n   11  <tal:navitem repeat=\"node children\">\n   12: <li class=\"navTreeItem visualNoMarker\"\n   13      tal:define=\"children   node/children;\n   14                  item       node/item;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.2.0.1-py2.7.egg/Products/CMFPlone/skins/plone_templates/sitemap.pt:\n   27      <div id=\"content-core\">\n   28          <ul id=\"portal-sitemap\"\n   29:             class=\"navTreeLevel0 visualNoMarker\"\n   30              tal:define=\"view nocall:context/@@sitemap_view;\">\n   31              <tal:sitemap replace=\"structure view/createSiteMap\" />\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.11-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.js:\n  180              }\n  181              container.after(\n  182:                '<ul class=\"visualNoMarker\" id=\"' + widget_id + '\"></ul>');\n  183              list = document.getElementById(widget_id);\n  184          }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.11-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:\n  156          <div style=\"float: left\"> <!-- don't remove this. it is needed for DOM traversal -->\n  157  \n  158:           <ul class=\"visualNoMarker\"\n  159                tal:attributes=\"id string:ref_browser_items_${fieldName};\"\n  160                tal:condition=\"refs\">\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.4-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.js:\n  172              }\n  173              container.after(\n  174:                '<ul class=\"visualNoMarker\" id=\"' + widget_id + '\"></ul>');\n  175              list = document.getElementById(widget_id);\n  176          }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/archetypes.referencebrowserwidget-2.4.4-py2.7.egg/archetypes/referencebrowserwidget/skins/referencebrowser/referencebrowser.pt:\n  156          <div style=\"float: left\"> <!-- don't remove this. it is needed for DOM traversal -->\n  157  \n  158:           <ul class=\"visualNoMarker\"\n  159                tal:attributes=\"id string:ref_browser_items_${fieldName};\"\n  160                tal:condition=\"refs\">\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plone.app.portlets-2.1.7-py2.7.egg/plone/app/portlets/portlets/navigation_recurse.pt:\n   19                  li_folder_class python:show_children and ' navTreeFolderish' or '';\n   20                  normalizeString nocall: context/plone_utils/normalizeString;\"\n   21:     tal:attributes=\"class string:navTreeItem visualNoMarker${li_class}${li_extr_class}${li_folder_class} section-${node/normalized_id}\"\n   22      tal:condition=\"python:bottomLevel &lt;= 0 or level &lt;= bottomLevel\">\n   23  \n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plone.app.portlets-2.2.5-py2.7.egg/plone/app/portlets/portlets/navigation_recurse.pt:\n   19                  li_folder_class python:show_children and ' navTreeFolderish' or '';\n   20                  normalizeString nocall: context/plone_utils/normalizeString;\"\n   21:     tal:attributes=\"class string:navTreeItem visualNoMarker${li_class}${li_extr_class}${li_folder_class} section-${node/normalized_id}\"\n   22      tal:condition=\"python:bottomLevel &lt;= 0 or level &lt;= bottomLevel\">\n   23  \n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.1.1-py2.7.egg/plonetheme/classic/skins/classic_styles/invisibles.css.dtml:\n   30  \n   31  /* List classes without markers */\n   32: ul.visualNoMarker,\n   33: ol.visualNoMarker {\n   34      list-style-type: none;\n   35      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.1.1-py2.7.egg/plonetheme/classic/skins/classic_styles/print.css.dtml:\n  104  .overlay,\n  105  .close,\n  106: .visualNoPrint {\n  107      display: none;\n  108  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.1.1-py2.7.egg/plonetheme/classic/skins/classic_styles/public.css.dtml:\n  810  \n  811  /* List classes without markers */\n  812: ul.visualNoMarker,\n  813: ol.visualNoMarker {\n  814      list-style-type: none;\n  815      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.2.2-py2.7.egg/plonetheme/classic/skins/classic_styles/invisibles.css.dtml:\n   30  \n   31  /* List classes without markers */\n   32: ul.visualNoMarker,\n   33: ol.visualNoMarker {\n   34      list-style-type: none;\n   35      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.2.2-py2.7.egg/plonetheme/classic/skins/classic_styles/print.css.dtml:\n  104  .overlay,\n  105  .close,\n  106: .visualNoPrint {\n  107      display: none;\n  108  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.classic-1.2.2-py2.7.egg/plonetheme/classic/skins/classic_styles/public.css.dtml:\n  900  \n  901  /* List classes without markers */\n  902: ul.visualNoMarker,\n  903: ol.visualNoMarker {\n  904      list-style-type: none;\n  905      list-style-image: none;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.1.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/print.css:\n  111  #foldercontents-order-column,\n  112  input.context,\n  113: .visualNoPrint {\n  114  	display: none;\n  115  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.1.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/public.css:\n 1771  }\n 1772  \n 1773: #content .visualNoMarker {\n 1774      list-style:none;\n 1775      margin-left: 0;\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.2.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/print.css:\n  111  #foldercontents-order-column,\n  112  input.context,\n  113: .visualNoPrint {\n  114  	display: none;\n  115  }\n\n/home/matheus/plone_instances/communi/buildout-cache/eggs/plonetheme.sunburst-1.2.5-py2.7.egg/plonetheme/sunburst/skins/sunburst_styles/public.css:\n 1922  }\n 1923  \n 1924: #content .visualNoMarker {\n 1925      list-style:none;\n 1926      margin-left: 0;\n\n/home/matheus/plone_instances/intranett/src/intranett.theme/intranett/theme/skins/intranett_theme_styles/invisibles.css:\n   27  \n   28  /* List classes without markers */\n   29: ul.visualNoMarker,\n   30: ol.visualNoMarker {\n   31      list-style-type: none;\n   32      list-style-image: none;\n\n/home/matheus/plone_instances/intranett/src/intranett.theme/intranett/theme/skins/intranett_theme_styles/print.css:\n   22  #kss-spinner,\n   23  .skipnav,\n   24: .visualNoPrint,\n   25  #edit-bar,\n   26  .overlay,\n\n/home/matheus/plone_instances/intranett/src/intranett.theme/intranett/theme/skins/intranett_theme_styles/public.css.dtml:\n   95  \n   96  /* List classes without markers */\n   97: ul.visualNoMarker,\n   98: ol.visualNoMarker {\n   99      list-style-type: none;\n  100      list-style-image: none;\n\n57 matches across 40 files\n\n\nSearching 31633 files for \"agenda_parent\"\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/new_sec_desk.css:\n    1  \n    2: table#agenda_parent dd {\n    3      background: #DEE7EC;\n    4      margin: 0;\n    .\n   12  }*/\n   13  \n   14: #content table#agenda_parent li.formTab a:visited,\n   15: #content table#agenda_parent li.formTab a {\n   16      color: white;\n   17  }\n   18  \n   19: #content table#agenda_parent li.formTab a:hover {\n   20      color: #205C90;\n   21      background: #DEE7EC;\n   ..\n   24  }\n   25  \n   26: table#agenda_parent a.selected {\n   27      color: #205C90 !important;\n   28      background: #DEE7EC !important;\n   29  }\n   30  \n   31: table#agenda_parent ul.formTabs {\n   32      background: #205C90;\n   33  }\n   34  \n   35: table#agenda_parent tbody tr td {\n   36      background: transparent;\n   37  }\n   38  \n   39: table#agenda_parent tr.yellow {\n   40      background-color: #FAFAD2;\n   41  }\n   42  \n   43: table#agenda_parent tr.green {\n   44      background-color: #CDE2A7;\n   45  }\n   46  \n   47: table#agenda_parent tr.light {\n   48      background-color: #E0FFFF;\n   49  }\n   50  \n   51: table#agenda_parent tr.red {\n   52      background-color: #FFE4E1;\n   53  }\n   54  \n   55: table#agenda_parent tr,\n   56: table#agenda_parent tr {\n   57      background: #EEE;\n   58  }\n   59  \n   60: /*table#agenda_parent {\n   61      font-size: 65%;\n   62  }*/\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/sec_print.css:\n    3  }\n    4  \n    5: table.agenda_parent {\n    6      border: 1px solid #ddd;\n    7  }\n    8  \n    9: table#agenda_parent th {\n   10      color: black;\n   11      text-align: left;\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt:\n  345    </div>\n  346  casa\n  347:   <table id=\"agenda_parent\" class=\"listing cmed width-100\">\n  348  \n  349    <tr>\n\n/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt:\n   46  <br />\n   47  <br />\n   48: <table id=\"agenda_parent\" class=\"listing cmed width-100 visualNoPrint\">\n   49  \n   50    <tr>\n\n18 matches across 4 files\n",
-			"settings":
-			{
-				"buffer_size": 38380,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/print.css",
-			"settings":
-			{
-				"buffer_size": 2563,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmed.css",
-			"settings":
-			{
-				"buffer_size": 8165,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt",
-			"settings":
-			{
-				"buffer_size": 9073,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 1145,
+				"buffer_size": 1233,
 				"line_ending": "Unix"
 			}
 		}
@@ -430,6 +384,54 @@
 	},
 	"file_history":
 	[
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/OBJECT_REF.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/UID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/ACCESS_GROUP_REF.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/UID_BASED_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/OBJECT_VERSION_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/PARTY_REF.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/OBJECT_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/VERSION_TREE_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/BASIC_TYPES.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/elementalTypes.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/ARCHETYPE_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/GENERIC_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/HIER_OBJECT_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/__init__.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/INTERNET_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/ISO_OID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/LOCATABLE_REF.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/TEMPLATE_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/TERMINOLOGY_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/UUID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_ORDERED.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_AMOUNT.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/CODE_PHRASE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_QUANTIFIED.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/basic/Interval.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/__init__.pyc",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/OBJECT_ID.pyc",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/TERMINOLOGY_ID.pyc",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/composition/content/CONTENT_ITEM.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_QUANTITY.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_PROPORTION.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_ORDINAL.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_INTERVAL.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_COUNT.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_ABSOLUTE_QUANTITY.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/basic/DV_IDENTIFIER.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/basic/DATA_VALUE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/basic/DV_BOOLEAN.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/basic/DV_STATE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr.sublime-project",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/print.css",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmed.css",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt",
+		"/home/matheus/plone_instances/christiano/1/.gitignore",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/sec_print.css",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_prescription.cpt",
 		"/home/matheus/workspace/mineracaoFinal/main.py",
@@ -444,10 +446,7 @@
 		"/home/matheus/plone_instances/christiano/1/zopeapp-versions.cfg",
 		"/home/matheus/plone_instances/communi/1/buildout.cfg",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_js/date_to_text.js",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_scripts/ipdb.py",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/doc_view.css",
 		"/home/matheus/Dropbox/Matheus-Pessoal/Documentos e Contratos/Passaporte",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_scripts/getPatientAge.py",
@@ -464,8 +463,6 @@
 		"/home/matheus/aspell6-pt_BR-20090702-0/README",
 		"/media/8EFA64F6FA64DC49/Hannibal.Rising[2007]DvDrip[Eng]-aXXo/IMPORTANT.Read carefully before enjoy this movie.txt",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_js/patient_view.js",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/0_d_tour_inicial.po",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/0_S_tour_inicial.po",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/1_d_registro_rapido.po",
@@ -514,50 +511,7 @@
 		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/resources.py",
 		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/index.pt",
 		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/about.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/company.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/people.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/templates/index.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/templates/about.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/templates/company.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/data.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/import",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/application.pyfrom",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/global_layout.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/views.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/application.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/views.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/templates/people.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/wsgiref.simple_server",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/make_server",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/application.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/index.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/about.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/company.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step04/people.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step02/application.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step02/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step03/application.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step03/hello.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step03/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step03/views.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step02/test.py",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/profiles/default/workflows/appointment_workflow/scripts/create_encounter.py",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/content/patient.py",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/profiles/default/workflows/appointment_workflow/scripts/hide_appointment.py",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_js/sec_desk.js",
-		"/tmp/kde-matheus/arkrEocyL/setup_tool-20130107164429/workflows/appointment_workflow/definition.xml",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/profiles/default/workflows/appointment_workflow/definition.xml",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step01/application.py",
-		"/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFDefault-2.2.2-py2.7.egg/Products/CMFDefault/skins/zpt_content/content_status_modify.py",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/content/secretarydesktop.py",
-		"/home/matheus/plone_instances/communi/buildout-cache/eggs/Products.CMFPlone-4.1.3-py2.7.egg/Products/CMFPlone/profiles/default/workflows/intranet_folder_workflow/definition.xml",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/profiles/default/workflows/patient_workflow/definition.xml",
-		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/profiles/default/workflows/chart_workflow/definition.xml",
-		"/var/www/site/visualizar_perfil.php",
-		"/var/www/vizualizar_perfil.php",
-		"/var/www/recebe_dados.php"
+		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/company.pt"
 	],
 	"find":
 	{
@@ -593,6 +547,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"OBJECT_VERSION_ID",
+			"type",
 			"cmed",
 			"agenda_parent",
 			"visualNoPrint",
@@ -718,9 +674,7 @@
 			"show",
 			"showAll",
 			"show",
-			"showRow",
-			"show",
-			"mostrar"
+			"showRow"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -740,790 +694,30 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt",
+					"file": "openehr/rm/datatypes/basic/DV_IDENTIFIER.py",
 					"settings":
 					{
-						"buffer_size": 3527,
+						"buffer_size": 1233,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3501,
-								3501
+								48,
+								48
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 675.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
-					"settings":
-					{
-						"buffer_size": 16852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15884,
-								15884
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3035.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt",
-					"settings":
-					{
-						"buffer_size": 5314,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
-					"settings":
-					{
-						"buffer_size": 1791,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								61,
-								61
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"settings":
-					{
-						"buffer_size": 38380,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										220,
-										228
-									],
-									[
-										532,
-										540
-									],
-									[
-										814,
-										822
-									],
-									[
-										1012,
-										1020
-									],
-									[
-										1373,
-										1381
-									],
-									[
-										1847,
-										1855
-									],
-									[
-										2073,
-										2081
-									],
-									[
-										2376,
-										2384
-									],
-									[
-										2752,
-										2760
-									],
-									[
-										3013,
-										3021
-									],
-									[
-										3151,
-										3159
-									],
-									[
-										3507,
-										3515
-									],
-									[
-										3868,
-										3876
-									],
-									[
-										4047,
-										4055
-									],
-									[
-										4298,
-										4306
-									],
-									[
-										4716,
-										4724
-									],
-									[
-										5118,
-										5126
-									],
-									[
-										5520,
-										5528
-									],
-									[
-										6188,
-										6196
-									],
-									[
-										6503,
-										6511
-									],
-									[
-										6973,
-										6981
-									],
-									[
-										7288,
-										7296
-									],
-									[
-										7723,
-										7731
-									],
-									[
-										8041,
-										8049
-									],
-									[
-										8552,
-										8560
-									],
-									[
-										8962,
-										8970
-									],
-									[
-										9331,
-										9339
-									],
-									[
-										9814,
-										9822
-									],
-									[
-										10132,
-										10140
-									],
-									[
-										10645,
-										10653
-									],
-									[
-										11057,
-										11065
-									],
-									[
-										11428,
-										11436
-									],
-									[
-										11866,
-										11874
-									],
-									[
-										12317,
-										12325
-									],
-									[
-										12734,
-										12742
-									],
-									[
-										13184,
-										13192
-									],
-									[
-										13696,
-										13704
-									],
-									[
-										14250,
-										14258
-									],
-									[
-										14646,
-										14654
-									],
-									[
-										14672,
-										14680
-									],
-									[
-										14948,
-										14956
-									],
-									[
-										15210,
-										15218
-									],
-									[
-										15236,
-										15244
-									],
-									[
-										15537,
-										15545
-									],
-									[
-										15563,
-										15571
-									],
-									[
-										15839,
-										15847
-									],
-									[
-										16101,
-										16109
-									],
-									[
-										16127,
-										16135
-									],
-									[
-										16428,
-										16436
-									],
-									[
-										16659,
-										16667
-									],
-									[
-										16946,
-										16954
-									],
-									[
-										17177,
-										17185
-									],
-									[
-										17431,
-										17439
-									],
-									[
-										17457,
-										17465
-									],
-									[
-										17706,
-										17714
-									],
-									[
-										17939,
-										17947
-									],
-									[
-										17965,
-										17973
-									],
-									[
-										18301,
-										18309
-									],
-									[
-										18613,
-										18621
-									],
-									[
-										18895,
-										18903
-									],
-									[
-										19093,
-										19101
-									],
-									[
-										19454,
-										19462
-									],
-									[
-										19928,
-										19936
-									],
-									[
-										20154,
-										20162
-									],
-									[
-										20457,
-										20465
-									],
-									[
-										20833,
-										20841
-									],
-									[
-										21094,
-										21102
-									],
-									[
-										21232,
-										21240
-									],
-									[
-										21588,
-										21596
-									],
-									[
-										21949,
-										21957
-									],
-									[
-										22128,
-										22136
-									],
-									[
-										22379,
-										22387
-									],
-									[
-										22797,
-										22805
-									],
-									[
-										23199,
-										23207
-									],
-									[
-										23601,
-										23609
-									],
-									[
-										24269,
-										24277
-									],
-									[
-										24584,
-										24592
-									],
-									[
-										25054,
-										25062
-									],
-									[
-										25369,
-										25377
-									],
-									[
-										25804,
-										25812
-									],
-									[
-										26122,
-										26130
-									],
-									[
-										26633,
-										26641
-									],
-									[
-										27043,
-										27051
-									],
-									[
-										27412,
-										27420
-									],
-									[
-										27895,
-										27903
-									],
-									[
-										28213,
-										28221
-									],
-									[
-										28726,
-										28734
-									],
-									[
-										29138,
-										29146
-									],
-									[
-										29509,
-										29517
-									],
-									[
-										29947,
-										29955
-									],
-									[
-										30398,
-										30406
-									],
-									[
-										30815,
-										30823
-									],
-									[
-										31265,
-										31273
-									],
-									[
-										31777,
-										31785
-									],
-									[
-										32331,
-										32339
-									],
-									[
-										32727,
-										32735
-									],
-									[
-										32753,
-										32761
-									],
-									[
-										33029,
-										33037
-									],
-									[
-										33291,
-										33299
-									],
-									[
-										33317,
-										33325
-									],
-									[
-										33618,
-										33626
-									],
-									[
-										33644,
-										33652
-									],
-									[
-										33920,
-										33928
-									],
-									[
-										34182,
-										34190
-									],
-									[
-										34208,
-										34216
-									],
-									[
-										34509,
-										34517
-									],
-									[
-										34740,
-										34748
-									],
-									[
-										35027,
-										35035
-									],
-									[
-										35258,
-										35266
-									],
-									[
-										35512,
-										35520
-									],
-									[
-										35538,
-										35546
-									],
-									[
-										35787,
-										35795
-									],
-									[
-										36020,
-										36028
-									],
-									[
-										36046,
-										36054
-									],
-									[
-										36334,
-										36347
-									],
-									[
-										36454,
-										36467
-									],
-									[
-										36512,
-										36525
-									],
-									[
-										36605,
-										36618
-									],
-									[
-										36735,
-										36748
-									],
-									[
-										36873,
-										36886
-									],
-									[
-										36963,
-										36976
-									],
-									[
-										37057,
-										37070
-									],
-									[
-										37151,
-										37164
-									],
-									[
-										37244,
-										37257
-									],
-									[
-										37337,
-										37350
-									],
-									[
-										37428,
-										37441
-									],
-									[
-										37459,
-										37472
-									],
-									[
-										37539,
-										37552
-									],
-									[
-										37729,
-										37742
-									],
-									[
-										37810,
-										37823
-									],
-									[
-										38048,
-										38061
-									],
-									[
-										38270,
-										38283
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								36160,
-								36160
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 3,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 11874.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/print.css",
-					"settings":
-					{
-						"buffer_size": 2563,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2048,
-								2048
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1368.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmed.css",
-					"settings":
-					{
-						"buffer_size": 8165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8146,
-								8146
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3821.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt",
-					"settings":
-					{
-						"buffer_size": 9073,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8271,
-								8271
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2661.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": ".gitignore",
-					"settings":
-					{
-						"buffer_size": 1145,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								201,
-								201
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1579,6 +773,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"dv_ide",
+				"openehr/rm/datatypes/basic/DV_IDENTIFIER.py"
+			],
+			[
+				"data_",
+				"openehr/rm/datatypes/basic/DATA_VALUE.py"
+			],
 			[
 				"cmedpri",
 				"theme/skins/wres_theme_styles/cmedPrint.css"
@@ -2082,14 +1284,6 @@
 			[
 				"se",
 				"theme/skins/wres_theme_js/show_exams.js"
-			],
-			[
-				"setup",
-				"policy/setuphandlers.py"
-			],
-			[
-				"admin",
-				"archetypes/content/admin.py"
 			]
 		],
 		"width": 0.0

@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.datatypes.basic import DATA_VALUE
-from openehr.rm.support.identification import TERMINOLOGY_ID
+from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
+from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 
 #classe que constroi uma codephrase utilizando umaterminologyID e ums codeString
 
@@ -11,7 +12,8 @@ from openehr.rm.support.identification import TERMINOLOGY_ID
 class CODE_PHRASE(DATA_VALUE):
 
     #identificador da terminologia de onde o code_string foi extraido
-    terminologyID = TERMINOLOGY_ID()
+    #TODO: Matheus: Coloquei parametros dummyes em TERMINOLOGY_ID para passar na execucao
+    terminologyID = TERMINOLOGY_ID("nome","versão")
 
 
     #chave utilizada pelo serviço de terminologia para identificar um conceito

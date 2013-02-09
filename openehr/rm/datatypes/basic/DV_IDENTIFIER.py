@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.datatypes.basic import DATA_VALUE
+from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 
 # classe para criação de um identificador
 

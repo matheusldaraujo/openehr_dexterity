@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
-from openehr.rm.support.identification import OBJECT_REF
-from openehr.rm.support.identification import OBJECT_VERSION_ID
+from openehr.rm.support.identification.OBJECT_REF import OBJECT_REF
+from openehr.rm.support.identification.OBJECT_VERSION_ID import OBJECT_VERSION_ID
 
 class LOCATABLE_REF(OBJECT_REF):
 

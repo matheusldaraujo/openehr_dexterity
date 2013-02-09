@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
@@ -18,7 +19,7 @@ V_NUMBER: [0-9]+   '''
 
 
 
-from openehr.rm.support.identification import OBJECT_ID
+from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
 
 class ARCHETYPE_ID(OBJECT_ID):
 

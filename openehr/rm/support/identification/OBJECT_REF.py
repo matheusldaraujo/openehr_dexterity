@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
@@ -6,8 +7,8 @@ from openehr.rm.support.identification.OBJECT_ID  import OBJECT_ID
 #casse que permite criar uma referência para outro objeto, que pode existir localmente ou em outro local
 class OBJECT_REF():
 
-
- id = OBJECT_ID()  #id unico de um objeto. != null
+#TODO Matheus: Passando valor Dummie
+ id = OBJECT_ID(5)  #id unico de um objeto. != null
 
 
  namespace = str() #namespace a que o identificador pertence no contexto do sistema. != null

@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.support.identification import OBJECT_ID
-from openehr.rm.support.identification import UID
+from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
+from openehr.rm.support.identification.UID import UID
 
 
 
@@ -13,7 +14,8 @@ class UID_BASED_ID(OBJECT_ID):
 
     value = [] # onde value = root [::extension]
 
-    root = UID()
+    #TODO Matheus: Passando valor dumie
+    root = UID(5)
 
     extension = str()
 

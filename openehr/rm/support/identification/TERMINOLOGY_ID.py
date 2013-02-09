@@ -1,12 +1,13 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
-from openehr.rm.support.identification import OBJECT_ID
+from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
 
 #
 #forma léxica name [ '('  version  ')'  ]
 
-class TERMINOOLOGY_ID(OBJECT_ID):
+class TERMINOLOGY_ID(OBJECT_ID):
 
      name = str()
 
