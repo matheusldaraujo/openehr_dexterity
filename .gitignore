@@ -11,6 +11,7 @@ base.cfg
 bootstrap.py
 develop.cfg
 lxml_static.cfg
+example.dexterity/
 zope-versions.cfg
 zopeapp-versions.cfg
 ztk-versions.cfg
