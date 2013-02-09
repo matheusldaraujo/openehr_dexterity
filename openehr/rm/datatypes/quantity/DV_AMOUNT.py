@@ -1,7 +1,8 @@
+ # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
-from openehr.rm.datatypes.quantity import DV_QUANTIFIED
+from openehr.rm.datatypes.quantity.DV_QUANTIFIED import DV_QUANTIFIED
 
 class DV_AMOUNT(DV_QUANTIFIED):
 

@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.support.identification import UID_BASED_ID
-from openehr.rm.support.identification import UID
-from openehr.rm.support.identification import VERSION_TREE_ID
+from openehr.rm.support.identification.UID_BASED_ID import UID_BASED_ID
+from openehr.rm.support.identification.UID import UID
+from openehr.rm.support.identification.VERSION_TREE_ID import VERSION_TREE_ID
 
 # classe para gerar um identificador unico para uma versão deum objeto versionado
 
@@ -13,11 +14,12 @@ from openehr.rm.support.identification import VERSION_TREE_ID
 
 class OBJECT_VERSION_ID(UID_BASED_ID):
 
-    objectID =UID()
-
-    creatingSystemID = UID()
-
-    versionTreeID = VERSION_TREE_ID()
+    #TODO Matheus: Passando valor dumie
+    objectID =UID(5)
+    #TODO Matheus: Passando valor dumie
+    creatingSystemID = UID(5)
+    #TODO Matheus: Passando valor dumie
+    versionTreeID = VERSION_TREE_ID(5,5,5,5)
 
     value = []
 

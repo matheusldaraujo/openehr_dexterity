@@ -1,6 +1,6 @@
 __author__ = 'chrispess'
 
-from openehr.rm.datatypes.basic import DATA_VALUE
+from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 
 class DV_BOOLEAN(DATA_VALUE):
 

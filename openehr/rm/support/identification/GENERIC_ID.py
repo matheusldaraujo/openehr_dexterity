@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.support.identification import OBJECT_ID
+from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
 
 class GENERIC_ID(OBJECT_ID):
 

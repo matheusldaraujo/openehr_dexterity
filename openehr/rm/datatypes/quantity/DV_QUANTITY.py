@@ -1,7 +1,8 @@
+ # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
-from openehr.rm.datatypes.quantity import DV_AMOUNT
+from openehr.rm.datatypes.quantity.DV_AMOUNT import DV_AMOUNT
 
 
 class DV_QUANTITY(DV_AMOUNT):

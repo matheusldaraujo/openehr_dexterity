@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 class Interval:
@@ -15,23 +16,22 @@ class Interval:
 
         self.inf = inf
         self.sup = sup
-        self.inf_inclusive =   self.inf ==null ? false : true
-        self.sup_inclusive =   # criar condicional  inf==null ? false : true
+        self.inf_inclusive = false if self.inf == null else true
+        #TODO Matheus: Implementar self.sup_inclusive
+        #self.sup_inclusive =   # criar condicional  inf==null ? false : truew
 
-
-    def __init__(self):
-
-
-    def __Interval__(self, inf, sup):
-        self.__init__(inf, sup, True, True)
+    #TODO Matheus: Código incoerente, verificar intenção
+    # def __init__(self):
+    # def __Interval__(self, inf, sup):
+    #     self.__init__(inf, sup, True, True)
 
 
     #retorna o limite inferior do intervalo
-     def get_inf(self):
+    def get_inf(self):
          return self.inf
 
     #retorna o limite superior do intervalo
-     def get_sup(self):
+    def get_sup(self):
          return self.sup
 
 

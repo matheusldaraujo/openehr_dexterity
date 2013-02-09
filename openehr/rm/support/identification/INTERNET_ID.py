@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.support.identification import UID
+from openehr.rm.support.identification.UID import UID
 
 #usado como identificador único de um domínio de internet
 
