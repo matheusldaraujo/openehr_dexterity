@@ -18,33 +18,38 @@ class DV_CODED_TEXT(DV_TEXT):
  #construtor
  def __init__(self,definingCode, value, mappings, formatting, hyperlink, language, encoding):
 
-     self.defining_code=definingCode  #este self valora o atributo defining_code definido acima
+    self.defining_code=definingCode  #este self valora o atributo defining_code definido acima
 
 
-     super(DV_CODED_TEXT, self).__init__()
-        self.value = value  #este self chama o atributo 'value' da superclasse DV_TEXT
-        #demais atributos da super classe DV_TEXT
-        self.mappings = mappings
-        self.formatting = formatting
-        self.hyperlink = hyperlink
-        self.language = language
-        self.encoding = encoding
-        self.language = language
+    super(DV_CODED_TEXT, self).__init__()
+    self.value = value  #este self chama o atributo 'value' da superclasse DV_TEXT
+    #demais atributos da super classe DV_TEXT
+    self.mappings = mappings
+    self.formatting = formatting
+    self.hyperlink = hyperlink
+    self.language = language
+    self.encoding = encoding
+    self.language = language
 
 
 
 
-     #seta value e defining_code
-     def setDefining_code(self,value, defining_code):
+    #seta value e defining_code
+    def setDefining_code(self,value, defining_code):
       self.defining_code - defining_code
       super(DV_CODED_TEXT,self).__init__()
       self.value= value
 
-     #seta defining_code
-     def setDefining_code(self, defining_code):
+
+
+    #seta defining_code
+    def setDefining_code(self, defining_code):
       self.defining_code - defining_code
 
 
 
+    #retorna string value,defining_code
+    def toString(self):
+        return super(DV_CODED_TEXT,self).__init__().getValue()+self.defining_code
 
 
