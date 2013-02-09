@@ -42,8 +42,75 @@ class DV_TEXT(DATA_VALUE):
       self.encoding = encoding
 
 
+  #construtor apenas com value (mandatório)
+  def __init__(self, value):
+      self.value = value
 
 
 
+  #retorna string associada ao 'value'
+  def getValue(self):
+      return self.value
 
+
+  #retorna mappings
+  def getMappings(self):
+      return self.mappings
+
+
+  #retorna formatting
+  def getFormatting(self):
+      return self.formatting
+
+
+  #retorna hiperlink
+  def getHyperlink(self):
+      return self.hyperlink
+
+
+  #retorna language
+  def getLanguage(self):
+      return self.language
+
+
+  #retorna encoding
+  def getEncoding(self):
+      return self.encoding
+
+
+   #verifica se são iguais
+   #value,mapping,formatting,hyperlink, language, encoding
+  def equals(self, other):
+      if(self.value == other.getValue() & self.mapping == other.getMapping() & self.formatting == other.getFormatting() & self.hyperlink == other.getHyperlink() & self.language == other.getLanguage()& self.encoding == other.getEncoding()):
+          return True
+      else:return False
+
+
+
+  #seta value
+  def setValue(self, value):
+      self.value = value
+
+  #seta mapping
+  def setMappings(self, mappings):
+      self.mappings = mappings
+
+
+  #seta formatting
+  def setFormatting(self, formatting):
+      self.formatting = formatting
+
+  #seta hyperlink
+  def setHyperlink(self, hyperlink):
+      self.hyperlink = hyperlink
+
+
+  #seta language
+  def setLanguage(self,language):
+      self.language = language
+
+
+  #seta encoding
+  def setEncoding(self, encoding):
+      self.encoding = encoding
 
