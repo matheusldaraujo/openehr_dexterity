@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"str",
+				"string"
+			],
+			[
+				"term",
+				"terminologias"
+			],
+			[
 				"OB",
 				"OBJECT_VERSION_ID"
 			],
@@ -314,6 +322,40 @@
 				"buffer_size": 1233,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "openehr/rm/datatypes/text/DV_TEXT.py",
+			"settings":
+			{
+				"buffer_size": 1535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 21163 files for \"CODE_PHRASE\"\n\n/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/CODE_PHRASE.py:\n   10  #        code_string = nnnnnnnnn\n   11  \n   12: class CODE_PHRASE(DATA_VALUE):\n   13  \n   14      #identificador da terminologia de onde o code_string foi extraido\n\n/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/DV_TEXT.py:\n    6  from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE\n    7  from openehr.rm.datatypes.uri.DV_URI import DV_URI\n    8: from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE\n    9  \n   10  #classe para representar qualquer\n   ..\n   30    #indicador opcional da linguagem em que 'value' é escreto\n   31    #TODO Matheus: Dummie value attribute\n   32:   language = CODE_PHRASE(1)\n   33  \n   34    #nome do eschema de caracteres em que 'value' é encodado\n   35    #TODO Matheus: Dummie value attribute\n   36:   encoding = CODE_PHRASE(1)\n   37  \n   38    #construtor\n\n5 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 989,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "openehr/rm/datatypes/text/CODE_PHRASE.py",
+			"settings":
+			{
+				"buffer_size": 1373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "openehr/rm/datatypes/uri/DV_URI.py",
+			"settings":
+			{
+				"buffer_size": 447,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -384,6 +426,7 @@
 	},
 	"file_history":
 	[
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/DV_CRls",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/OBJECT_REF.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/UID.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/ACCESS_GROUP_REF.py",
@@ -510,8 +553,7 @@
 		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/views.py",
 		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/resources.py",
 		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/index.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/about.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/company.pt"
+		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step09/templates/about.pt"
 	],
 	"find":
 	{
@@ -519,7 +561,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"",
@@ -547,6 +589,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"CODE_PHRASE",
 			"OBJECT_VERSION_ID",
 			"type",
 			"cmed",
@@ -673,8 +716,7 @@
 			"true",
 			"show",
 			"showAll",
-			"show",
-			"showRow"
+			"show"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -694,7 +736,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -718,6 +760,147 @@
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "openehr/rm/datatypes/text/DV_TEXT.py",
+					"settings":
+					{
+						"buffer_size": 1535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								851,
+								851
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 989,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										187,
+										198
+									],
+									[
+										543,
+										554
+									],
+									[
+										562,
+										573
+									],
+									[
+										763,
+										774
+									],
+									[
+										919,
+										930
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "openehr/rm/datatypes/text/CODE_PHRASE.py",
+					"settings":
+					{
+						"buffer_size": 1373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								585,
+								585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "openehr/rm/datatypes/uri/DV_URI.py",
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
