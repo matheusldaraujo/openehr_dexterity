@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic import DATA_VALUE
