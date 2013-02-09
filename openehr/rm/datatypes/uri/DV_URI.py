@@ -2,7 +2,7 @@
 
 __author__ = 'chrispess'
 
-from openehr.rm.datatypes.basic import DATA_VALUE
+from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 
     #####verificar se o python possui alguma biblioteca como o java.net.URI,
     # que retorna path, scheme, fragment_id do string value. Em

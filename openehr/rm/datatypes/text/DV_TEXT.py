@@ -3,9 +3,9 @@
 __author__ = 'chrispess'
 
 
-from openehr.rm.datatypes.basic import DATA_VALUE
-from openehr.rm.datatypes.uri import DV_URI
-from openehr.rm.datatypes.text import CODE_PHRASE
+from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
+from openehr.rm.datatypes.uri.DV_URI import DV_URI
+from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 
 #classe para representar qualquer
 # tipo de item de texto atômico, codificado ou não codificado
@@ -24,13 +24,16 @@ class DV_TEXT(DATA_VALUE):
   formatting = str()
 
   #link opcional
-  hyperlink = DV_URI()
+  #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
+  hyperlink = DV_URI(1)
 
   #indicador opcional da linguagem em que 'value' é escreto
-  language = CODE_PHRASE()
+  #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
+  language = CODE_PHRASE("terminologias","string")
 
   #nome do eschema de caracteres em que 'value' é encodado
-  encoding = CODE_PHRASE()
+  #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
+  encoding = CODE_PHRASE("terminologias","string")
 
   #construtor
   def __init__(self, value, mappings, formatting, hyperlink, language, encoding):
