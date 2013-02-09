@@ -1,5 +1,10 @@
+<<<<<<< HEAD
  # -*- coding: utf-8 -*-
 __author__ = 'chrispess'    
+=======
+# -*- coding: utf-8 -*-
+__author__ = 'chrispess'
+>>>>>>> 7b4f5091362ffe4c43a90e85ed6b7198b6ee0966
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 
