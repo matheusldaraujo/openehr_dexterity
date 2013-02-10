@@ -36,7 +36,7 @@ class DV_CODED_TEXT(DV_TEXT):
 
     #seta value e defining_code
     def setDefining_code(self,value, defining_code):
-      self.defining_code - defining_code
+      self.defining_code = defining_code
       super(DV_CODED_TEXT,self).__init__()
       self.value= value
 
@@ -44,7 +44,7 @@ class DV_CODED_TEXT(DV_TEXT):
 
     #seta defining_code
     def setDefining_code(self, defining_code):
-      self.defining_code - defining_code
+      self.defining_code = defining_code
 
 
 
