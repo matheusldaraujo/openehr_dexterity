@@ -9,7 +9,7 @@ from openehr.BASIC_TYPES import typechar
 class TERM_MAPPING():
 
   # o termo alvo do mapeamento
-  target = CODE_PHRASE()
+  target = CODE_PHRASE("teminology_id", "code_string")
 
   #correspondência relativa do termo alvo com respeito ao item de texto mapeado.
   # os resultados podem ter os seguintes significados:
@@ -22,7 +22,7 @@ class TERM_MAPPING():
   match = typechar()
 
   #proposito do mapeamento. ex: "interoperabilidade", "automação de data mining"...
-  purpose =  DV_CODED_TEXT()
+  purpose =  DV_CODED_TEXT("definingCode", "value", "mappings", "formatting", "hyperlink", "language", "encoding")
 
 
   #construtor
@@ -30,6 +30,23 @@ class TERM_MAPPING():
       self.target =target
       self.match = match
       self.purpose = purpose
+
+  #retorna target
+  def getTarget(self):
+      return self.target
+
+
+  #retorna Match
+  def getMatch(self):
+      return self.match
+
+
+  #retorna purpose
+  def getPurpose(self):
+      return self.purpose
+
+
+
 
 
 
