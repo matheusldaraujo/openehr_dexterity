@@ -25,6 +25,14 @@ class TERM_MAPPING():
   purpose =  DV_CODED_TEXT()
 
 
+  #construtor
   def __init__(self,target,match,purpose):
+      self.target =target
+      self.match = match
+      self.purpose = purpose
+
+
+
+
 
 
