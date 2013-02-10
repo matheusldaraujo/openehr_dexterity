@@ -45,11 +45,27 @@ class TERM_MAPPING():
   def getPurpose(self):
       return self.purpose
 
+  #verifica se match == "<"
+  def narrower(self,match):
+      if(self.match.narrower(match)==True):
+          return True
+      else:return False
 
+  #verifica se match == ">"
+  def broader(self,match):
+      if(self.match.broader(match)==True):
+          return True
+      else:return False
 
+  #verifica se match == "="
+  def equivalent(self,match):
+      if(self.match.equivalent(match)==True):
+          return True
+      else:return False
 
-
-
-
-
+  #verifica se match == "?"
+  def unknown(self,match):
+      if(self.match.unknown(match)==True):
+          return True
+      else:return False
 
