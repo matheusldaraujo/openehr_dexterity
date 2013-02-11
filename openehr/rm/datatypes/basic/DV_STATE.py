@@ -30,4 +30,13 @@ class DV_STATE(DATA_VALUE):
      return self.value
 
 
+ #seta is_terminal
+ def setIs_terminal(self,is_terminal):
+     self.is_terminal = is_terminal
+
+ #seta value
+ def setValue(self, value):
+     self.value = value
+
+
 
