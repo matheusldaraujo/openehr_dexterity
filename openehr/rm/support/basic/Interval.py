@@ -76,3 +76,15 @@ class Interval:
         return interval_str
 
 
+    #retorna true se o limite inferior do intervalo é inclusivo
+    def isInfIncluded(self):
+        return self.inf_inclusive
+
+
+    #retorna true se o limite superior do intervalo é inclusivo
+    def isSupIncluded(self):
+        return self.sup_inclusive
+
+
+    #retorna true se o valor do argumento se encontra no intervalo
+    def has(self, value):
