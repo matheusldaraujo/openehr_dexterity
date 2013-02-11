@@ -15,9 +15,9 @@ from openehr.BASIC_TYPES import typeStr
 #classe abstrata que define o conceito de valores ordenados
 class DV_ORDERED(DATA_VALUE):
 
-  otherReferenceRange =
-
   normal_range = DV_INTERVAL(0,0)
+
+  otherReferenceRanges = DV_INTERVAL[]
 
   normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr)
 
