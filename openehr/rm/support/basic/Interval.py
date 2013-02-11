@@ -19,7 +19,7 @@ class Interval:
     # boolean sup_inclusive true se intervalo fechado en sup, false se intervalo aberto em sup
     sup_inclusive =typeBool()
 
-
+    #construtor
     def __init__(self,inf,sup,inf_inclusive,sup_inclusive):
 
         self.inf = inf
@@ -27,6 +27,14 @@ class Interval:
         self.inf_inclusive = False if self.inf == None else True
         self.sup_inclusive = False if self.sup == None else True
 
+
+    #construtor. extremos inclusos por default
+    def __init__(self,inf,sup,inf_inclusive,sup_inclusive):
+
+        self.inf = inf
+        self.sup = sup
+        self.inf_inclusive = True
+        self.sup_inclusive = True
 
     #retorna o limite inferior do intervalo
     def get_inf(self):
@@ -57,7 +65,7 @@ class Interval:
         self.sup_inclusive = sup_inclusive
 
 
-    #retorna
+    #retorna string relativo ao intervalo
     def to_string(self):
         interval_str =[]
         interval_str.append(self.inf)
