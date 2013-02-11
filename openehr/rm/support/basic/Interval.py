@@ -1,29 +1,31 @@
 # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
+
+from openehr.BASIC_TYPES import typeFloat
+from openehr.BASIC_TYPES import typeBool
+
 class Interval:
 
-    # inf limite inferior dointervalo
-    # sup limite superior do intervalo
-    # boolean inf_inclusive true se intervalo fechado en inf, false se intervalo aberto em inf
-    # boolean sup_inclusive true se intervalo fechado en sup, false se intervalo aberto em sup
+    # inf limite inferior do intervalo
+    inf = typeFloat()
 
+    # sup limite superior do intervalo
+    sup = typeFloat()
+
+    # boolean inf_inclusive true se intervalo fechado en inf, false se intervalo aberto em inf
+    inf_inclusive = typeBool()
+
+    # boolean sup_inclusive true se intervalo fechado en sup, false se intervalo aberto em sup
+    sup_inclusive =typeBool()
 
 
     def __init__(self,inf,sup,inf_inclusive,sup_inclusive):
-       # if sup < inf:
-       #     lança uma exceção
 
         self.inf = inf
         self.sup = sup
-        self.inf_inclusive = false if self.inf == null else true
-        #TODO Matheus: Implementar self.sup_inclusive
-        #self.sup_inclusive =   # criar condicional  inf==null ? false : truew
-
-    #TODO Matheus: Código incoerente, verificar intenção
-    # def __init__(self):
-    # def __Interval__(self, inf, sup):
-    #     self.__init__(inf, sup, True, True)
+        self.inf_inclusive = False if self.inf == None else True
+        self.sup_inclusive = False if self.sup == None else True
 
 
     #retorna o limite inferior do intervalo
