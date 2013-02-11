@@ -88,3 +88,24 @@ class Interval:
 
     #retorna true se o valor do argumento se encontra no intervalo
     def has(self, value):
+        if(self.inf_inclusive==True):
+            if(self.sup_inclusive==True):
+                if(value >= self.inf and value <= self.sup):
+                   return True
+
+            elif(self.sup_inclusive==False):
+                if(value >= self.inf and value < self.sup):
+                    return True
+
+
+        elif(self.sup_inclusive==True):
+            if(self.inf_inclusive==True):
+                if(value >= self.inf and value <= self.sup):
+                    return True
+
+            elif(self.inf_inclusive==False):
+                if(value > self.inf and value <= self.sup):
+                    return True
+
+
+        else:return False
