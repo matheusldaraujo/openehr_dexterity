@@ -16,7 +16,7 @@ from openehr.BASIC_TYPES import typeStr
 class DV_ORDERED(DATA_VALUE):
 
   #valor opcional para um range normal
-  normal_range = DV_INTERVAL(0,0)
+  normal_range = DV_INTERVAL(0,0) #coloquei  o par (0,0) como default
 
   #lista de ranges opcionais para este valor neste contexto, em particular
   otherReferenceRanges = DV_INTERVAL[]
@@ -26,6 +26,24 @@ class DV_ORDERED(DATA_VALUE):
   normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr)
 
 
+  #construtor
+  def __init__(self, normal_range, otherReferenceRanges, normal_status):
+      self.normal_range = normal_range
+      self.otherReferenceRanges = otherReferenceRanges
+      self.normal_status = normal_status
+
+
+
+  #retorna true se o valor esta no range normal
+  def isNormal(self, value):
+      if(self.normal_range.)
+
+
+
+   #retorna true se a quantidade não possui range de referência
+   def isSimple(self):
+       if(self.otherReferenceRange == None):
+           return True
 
 
 
