@@ -16,4 +16,18 @@ class DV_STATE(DATA_VALUE):
  is_terminal = typeBool() # is_terminal != vazio
 
 
+ #construtor
+ def __init__(self, value, is_terminal):
+     self.value = value
+     self.is_terminal = is_terminal
+
+ #retorna is_terminal
+ def isTerminal(self):
+     return self.is_terminal
+
+ #retorna o estado (value)
+ def getValue(self):
+     return self.value
+
+
 
