@@ -5,7 +5,7 @@ __author__ = 'chrispess'
 #classe criada para definir o conceito de valores ordenados
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
-from openehr.rm.datatypes.quantity import DV_INTERVAL
+from openehr.rm.datatypes.quantity.DV_INTERVAL import DV_INTERVAL
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
@@ -36,7 +36,8 @@ class DV_ORDERED(DATA_VALUE):
 
   #retorna true se o valor esta no range normal
   def isNormal(self, value):
-      if(self.normal_range.)
+      if(self.normal_range.has(value)==True):
+          return True
 
 
 
