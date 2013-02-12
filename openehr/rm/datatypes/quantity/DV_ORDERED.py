@@ -15,14 +15,14 @@ from openehr.BASIC_TYPES import typeStr
 class DV_ORDERED(DATA_VALUE):
 
   #valor opcional para um range normal
-  normal_range = DV_INTERVAL(0,0) #coloquei  o par (0,0) como default
+  normal_range = DV_INTERVAL(0,0) #o par (0,0) esta como default
 
   #lista de ranges opcionais para este valor neste contexto, em particular
   otherReferenceRanges = DV_INTERVAL[]
 
   #opcional. indicador normal de status do valorcom respeito ao range normal
   # ver OpenEHR terminology group "normal status"
-  normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr)
+  normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr())
 
 
   #construtor
@@ -31,7 +31,13 @@ class DV_ORDERED(DATA_VALUE):
       self.otherReferenceRanges = otherReferenceRanges
       self.normal_status = normal_status
 
+  #construtor vazio
+  def __init__(self):
+      pass
 
+  #construtor com range
+  def __init__(self,normal_range):
+      self.normal_range = normal_range
 
   #retorna true se o valor esta no range normal
   def isNormal(self, value):
