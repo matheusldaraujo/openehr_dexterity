@@ -7,7 +7,7 @@ from openehr.rm.datatypes.quantity.DV_ORDERED import DV_ORDERED
 
 class DV_ORDINAL(DV_ORDERED):
 
- #valor numa enumeraçãode valores. Qualquer inteiro pode ser usado
+ #valor numa enumeração de valores. Qualquer inteiro pode ser usado
  value = typeInt()
 
  #representação textual do value na enumeração. ex: "1", "2', "3'
@@ -35,3 +35,15 @@ class DV_ORDINAL(DV_ORDERED):
         (self.symbol.getDefinig_code().getTerminologyID().version_id() == DV_ORDINAL.symbol.getDefinig_code().getTerminologyID().version_id())):
       return True
      else:return False
+
+
+ #retorna  os limites da enumeração para possíveis comparações
+ def limits(self):
+
+     super(DV_ORDINAL, self).__init__()
+     return self.getNormalRange()
+
+
+ #retorna true se os types são os mesmos e os valores são comparáveis
+ def infix(self, other):
+     pass
