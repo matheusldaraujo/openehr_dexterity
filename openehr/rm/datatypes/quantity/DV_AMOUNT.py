@@ -4,7 +4,7 @@ __author__ = 'chrispess'
 
 from openehr.rm.datatypes.quantity.DV_QUANTIFIED import DV_QUANTIFIED
 from openehr.BASIC_TYPES import typeFloat
- from openehr.BASIC_TYPES import typeBool
+from openehr.BASIC_TYPES import typeBool
 
 
 class DV_AMOUNT(DV_QUANTIFIED):
@@ -31,7 +31,7 @@ def getAccuracy(self):
 
 
 #retorna accuracyPercent
-def getAccuracyPercent(self):
+def getAccuracyIsPercent(self):
     return self.accuracy_is_percent
 
 

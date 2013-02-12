@@ -10,7 +10,7 @@ from openehr.rm.datatypes.quantity.REFERENCE_RANGE import REFERENCE_RANGE
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.BASIC_TYPES import typeStr
- from openehr.BASIC_TYPES import typeFloat
+from openehr.BASIC_TYPES import typeFloat
 
 
 #classe abstrata que define o conceito de valores ordenados
