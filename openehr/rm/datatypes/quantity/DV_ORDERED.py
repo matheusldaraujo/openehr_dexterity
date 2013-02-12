@@ -6,6 +6,7 @@ __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 from openehr.rm.datatypes.quantity.DV_INTERVAL import DV_INTERVAL
+from openehr.rm.datatypes.quantity.REFERENCE_RANGE import REFERENCE_RANGE
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.BASIC_TYPES import typeStr
@@ -18,7 +19,7 @@ class DV_ORDERED(DATA_VALUE):
   normal_range = DV_INTERVAL(0,0) #o par (0,0) esta como default
 
   #lista de ranges opcionais para este valor neste contexto, em particular
-  otherReferenceRanges = DV_INTERVAL[]
+  otherReferenceRanges = REFERENCE_RANGE[]
 
   #opcional. indicador normal de status do valorcom respeito ao range normal
   # ver OpenEHR terminology group "normal status"
