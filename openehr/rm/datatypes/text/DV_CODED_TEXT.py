@@ -31,25 +31,28 @@ class DV_CODED_TEXT(DV_TEXT):
     self.encoding = encoding
     self.language = language
 
+ #construtor com apenasvalue
+ def __init__(self, value):
+     super(DV_CODED_TEXT, self).__init__()
+     self.value = value
+
+
+ #seta value e defining_code
+ def setDefining_code(self,value, defining_code):
+  self.defining_code = defining_code
+  super(DV_CODED_TEXT,self).__init__()
+  self.value= value
 
 
 
-    #seta value e defining_code
-    def setDefining_code(self,value, defining_code):
-      self.defining_code = defining_code
-      super(DV_CODED_TEXT,self).__init__()
-      self.value= value
+  #seta defining_code
+  def setDefining_code(self, defining_code):
+   self.defining_code = defining_code
 
 
 
-    #seta defining_code
-    def setDefining_code(self, defining_code):
-      self.defining_code = defining_code
-
-
-
-    #retorna string value,defining_code
-    def toString(self):
-        return super(DV_CODED_TEXT,self).__init__().getValue()+self.defining_code
+  #retorna string value,defining_code
+  def toString(self):
+    return super(DV_CODED_TEXT,self).__init__().getValue()+self.defining_code
 
 
