@@ -54,3 +54,6 @@ class DV_ORDERED(DATA_VALUE):
 
 
 
+  #verifica se duas instâncias são estritamente comparáveis
+  def isStrictlyComparableTo(self, DV_ORDERED):
+      pass
