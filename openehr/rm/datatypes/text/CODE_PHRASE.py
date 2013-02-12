@@ -13,6 +13,7 @@ class CODE_PHRASE(DATA_VALUE):
 
     #identificador da terminologia de onde o code_string foi extraido
     #TODO: Matheus: Coloquei parametros dummyes em TERMINOLOGY_ID para passar na execucao
+
     terminologyID = TERMINOLOGY_ID("nome","versão")
 
 

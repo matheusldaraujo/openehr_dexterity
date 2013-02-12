@@ -37,13 +37,15 @@ class DV_CODED_TEXT(DV_TEXT):
      self.value = value
 
 
+ #retorna defining_code
+ def getDefinig_code(self):
+     return self.defining_code
+
  #seta value e defining_code
  def setDefining_code(self,value, defining_code):
   self.defining_code = defining_code
   super(DV_CODED_TEXT,self).__init__()
   self.value= value
-
-
 
   #seta defining_code
   def setDefining_code(self, defining_code):

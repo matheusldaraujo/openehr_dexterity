@@ -22,12 +22,12 @@ class TERMINOLOGY_ID(OBJECT_ID):
 
 
      #retorna versionID
-     def VersionID(self):
+     def version_id(self):
          return self.version_id
 
 
      #retorna name
-     def Name(self):
+     def name(self):
          return self.name
 
 
