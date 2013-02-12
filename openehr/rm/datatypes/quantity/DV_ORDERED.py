@@ -6,7 +6,6 @@ __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 from openehr.rm.datatypes.quantity.DV_INTERVAL import DV_INTERVAL
-from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.BASIC_TYPES import typeStr
@@ -41,10 +40,10 @@ class DV_ORDERED(DATA_VALUE):
 
 
 
-   #retorna true se a quantidade não possui range de referência
-   def isSimple(self):
-       if(self.otherReferenceRange == None):
-           return True
+  #retorna true se a quantidade não possui range de referência
+  def isSimple(self):
+      if(self.otherReferenceRange == None):
+          return True
 
 
 
