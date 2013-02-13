@@ -7,11 +7,13 @@ from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
 #
 #forma léxica name [ '('  version  ')'  ]
 
+from openehr.BASIC_TYPES import typeStr
+
 class TERMINOLOGY_ID(OBJECT_ID):
 
-     name = str()
+     name = typeStr
 
-     version_id = str()
+     version_id = typeStr
 
      value = []
 

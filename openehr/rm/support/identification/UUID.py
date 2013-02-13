@@ -2,10 +2,11 @@
 __author__ = 'chrispess'
 
 from openehr.rm.support.identification import UID
+from openehr.BASIC_TYPES import typeStr
 
 class UUID(UID):
 
-  value = str()
+  value = typeStr
 
 
   # construtor

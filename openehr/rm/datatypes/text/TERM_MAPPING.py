@@ -19,7 +19,7 @@ class TERM_MAPPING():
   # '<': o mapeamento é menos amplo. ex: textooriginal = 'diabetes'
   # e o target = 'diabetes mellitus'
   #'?': desconhecido
-  match = typechar()
+  match = typechar
 
   #proposito do mapeamento. ex: "interoperabilidade", "automação de data mining"...
   purpose =  DV_CODED_TEXT("definingCode", "value", "mappings", "formatting", "hyperlink", "language", "encoding")

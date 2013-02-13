@@ -3,6 +3,7 @@ __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
+from openehr.BASIC_TYPES import typeStr
 
 #classe que constroi uma codephrase utilizando umaterminologyID e ums codeString
 
@@ -18,7 +19,7 @@ class CODE_PHRASE(DATA_VALUE):
 
 
     #chave utilizada pelo serviço de terminologia para identificar um conceito
-    codeString = str()
+    codeString = typeStr
 
 
     #construtor

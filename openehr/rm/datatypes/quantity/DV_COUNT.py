@@ -9,7 +9,7 @@ from openehr.BASIC_TYPES import typeInt
 class DV_COUNT(DV_AMOUNT):
 
     #representa a magnitude numérica da quantidade
-    magnitude = typeInt()
+    magnitude = typeInt
 
     #construtor
     def __init__(self, magnitude):

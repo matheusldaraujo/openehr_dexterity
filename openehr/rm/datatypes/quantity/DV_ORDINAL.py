@@ -8,7 +8,7 @@ from openehr.rm.datatypes.quantity.DV_ORDERED import DV_ORDERED
 class DV_ORDINAL(DV_ORDERED):
 
  #valor numa enumeração de valores. Qualquer inteiro pode ser usado
- value = typeInt()
+ value = typeInt
 
  #representação textual do value na enumeração. ex: "1", "2', "3'
  symbol = DV_CODED_TEXT(typeStr)

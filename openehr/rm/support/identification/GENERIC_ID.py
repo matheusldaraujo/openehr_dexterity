@@ -2,13 +2,14 @@
 __author__ = 'chrispess'
 
 from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
+from openehr.BASIC_TYPES import typeStr
 
 class GENERIC_ID(OBJECT_ID):
 
 
-    value = str()
+    value = typeStr
 
-    scheme = str()
+    scheme = typeStr
 
 
     #construtor

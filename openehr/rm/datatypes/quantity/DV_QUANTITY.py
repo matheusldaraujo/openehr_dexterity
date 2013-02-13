@@ -12,14 +12,14 @@ class DV_QUANTITY(DV_AMOUNT):
     #atributos
 
     #grandeza
-    magnitude = typeFloat()
+    magnitude = typeFloat
 
     #precisão em termos de valores decimais.
     # 0 implica quantidade integral e -1 implioca nenhum limite
-    precision = typeInt()
+    precision = typeInt
 
     # String expressando unidades como kg/m2, mm[Hg], km/h,...
-    units = typeStr()
+    units = typeStr
 
 
     #construtor

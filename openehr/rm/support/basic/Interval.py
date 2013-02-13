@@ -8,16 +8,16 @@ from openehr.BASIC_TYPES import typeBool
 class Interval:
 
     # inf limite inferior do intervalo
-    inf = typeFloat()
+    inf = typeFloat
 
     # sup limite superior do intervalo
-    sup = typeFloat()
+    sup = typeFloat
 
     # boolean inf_inclusive true se intervalo fechado en inf, false se intervalo aberto em inf
-    inf_inclusive = typeBool()
+    inf_inclusive = typeBool
 
     # boolean sup_inclusive true se intervalo fechado en sup, false se intervalo aberto em sup
-    sup_inclusive =typeBool()
+    sup_inclusive =typeBool
 
     #construtor
     def __init__(self,inf,sup,inf_inclusive,sup_inclusive):

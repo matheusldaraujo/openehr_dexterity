@@ -11,7 +11,7 @@ from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 class DV_URI(DATA_VALUE):
 
 
- value = str()
+ value = str
 
 
  def __init__(self, value):

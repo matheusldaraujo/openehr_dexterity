@@ -13,7 +13,7 @@ class MATCH(object):
  BROADER = ">"
  UNKNOWN = "?"
 
- value = typeStr()
+ value = typeStr
 
  #construtor
  def __init__(self, value):

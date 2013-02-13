@@ -12,6 +12,8 @@ from openehr.rm.support.identification.VERSION_TREE_ID import VERSION_TREE_ID
 # value = objectID + '::'+ creatingSystemID + '::' + versionTreeID
 # Exemplo: F7C5C7B7-75DB-4b39-9A1E-C0BA9BFDBDEC::87284370-2D4B-4e3d-A3F3-F303D2F4F34B::2
 
+from openehr.BASIC_TYPES import typeStr
+
 class OBJECT_VERSION_ID(UID_BASED_ID):
 
     #TODO Matheus: Passando valor dumie
@@ -21,7 +23,7 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
     #TODO Matheus: Passando valor dumie
     versionTreeID = VERSION_TREE_ID(5,5,5,5)
 
-    value = []
+    value = typeStr[]
 
 
     #construtor
