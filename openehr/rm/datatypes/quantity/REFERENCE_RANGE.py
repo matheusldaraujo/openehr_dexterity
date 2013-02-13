@@ -28,7 +28,7 @@ class REFERENCE_RANGE(DATA_VALUE):
 
 
     #retorna true se value está no range
-    def isInRange(self, value = DV_ORDERED(DV_INTERVAL)): ###essa definição está correta???
+    def isInRange(self, value = DV_ORDERED): ###essa definição está correta???
         return self.range.has(value)
 
 
