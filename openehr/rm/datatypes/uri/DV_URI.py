@@ -3,16 +3,20 @@
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
+from openehr.BASIC_TYPES import typeStr
 
-    #####verificar se o python possui alguma biblioteca como o java.net.URI,
-    # que retorna path, scheme, fragment_id do string value. Em
-    # caso afirmativo, sobrescrever os métodos...
+    #referência objeto conforme Universal Resource Identifier (URI) standardt
 
 class DV_URI(DATA_VALUE):
 
+ #string representando o valor da URI
+ value = typeStr
 
- value = str()
-
+ #"espaço" em que a informação existe.
+ # Simultaneamente especifica o espaço de
+ # informação eo mecanismo para  acessar objetos nesse espaço.
+ # ex: "ftp", "telnet", "mailto"
+ scheme = typeStr
 
  def __init__(self, value):
      self.value = value

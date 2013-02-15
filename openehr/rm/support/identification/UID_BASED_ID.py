@@ -3,6 +3,7 @@ __author__ = 'chrispess'
 
 from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
 from openehr.rm.support.identification.UID import UID
+from openehr.BASIC_TYPES import typeStr
 
 
 
@@ -17,7 +18,7 @@ class UID_BASED_ID(OBJECT_ID):
     #TODO Matheus: Passando valor dumie
     root = UID(5)
 
-    extension = str()
+    extension = typeStr
 
     #construtor
     def __init__(self,root,extension):

@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-
+from openehr.BASIC_TYPES import typeStr
 #classe ancestral dos identificadores de identification package
 
 class OBJECT_ID():
-
-    value = str() #valor da id do objeto. sempre != vazio
+    #valor da id do objeto. sempre != vazio
+    value = typeStr
 
 
     #consrutor. recebe value como argumento

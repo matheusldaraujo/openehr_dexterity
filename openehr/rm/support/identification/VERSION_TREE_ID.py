@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
-
+from openehr.BASIC_TYPES import typeStr
 class VERSION_TREE_ID:
 
 # formato lexico
 # value: trunkVersion ['.' branchNumber '.' branchVersion]
 
-    value = str() #string com a formado identificador
+    value = str #string com a formado identificador
 
 
-    trunkVersion = str()  #inicia com 1
+    trunkVersion = typeStr  #inicia com 1
 
 
-    branchNumber = str()  #inicia com 1
+    branchNumber = typeStr  #inicia com 1
 
 
-    branchVersion = str()   #inicia com 1
+    branchVersion = typeStr  #inicia com 1
 
 
 

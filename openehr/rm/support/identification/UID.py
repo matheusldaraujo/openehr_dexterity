@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
+from openehr.BASIC_TYPES import typeStr
+
 class UID:
 
-    value = str()
+    value = typeStr
 
     # cria um UID por valor. não pode ser nulo
 

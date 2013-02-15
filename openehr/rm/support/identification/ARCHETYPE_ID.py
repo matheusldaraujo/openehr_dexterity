@@ -20,40 +20,46 @@ V_NUMBER: [0-9]+   '''
 
 
 from openehr.rm.support.identification.OBJECT_ID import OBJECT_ID
+from openehr.BASIC_TYPES import typeStr
+
 
 class ARCHETYPE_ID(OBJECT_ID):
 
     #referência, globalmente, uma entidade do modelo.
     # ex openehr-composition-OBSERVATION
-    qualifiedRmEntity = str()
+    qualifiedRmEntity = typeStr
 
     #organizaão de onde se origina o modelo de referência base do arquétipo.
     #ex: "openehr", "cen", "hl7"
-    rmOriginator = str()
+    rmOriginator = typeStr
 
     #nome do modelo de referência.
     # ex: "en13606", "ehr_rm"
-    rmName = str()
+    rmName = typeStr
 
     #nome do nível ontológico do modelo de referência do qual o arquétipo se origina.
     # ex: "section", "entry", "folder", "composition"
-    rmEntity = str()
+    rmEntity = typeStr
 
     #nomedoconceito representado pelo arquétipo, incluindo especializações.
     # ex: "biochemistry_result-cholesterol"
-    domainConcept = str()
+    domainConcept = typeStr
 
     #nome da especialização do conceito, se o arquétipo for a especialização
     # de outro arquétipo. ex: "cholesterol"
-    specialization = str()
+    specialization = typeStr
 
     #versão do arquétipo
-    versionID = str()
+    versionID = typeStr
 
-
+    #construtor
     def __init__(self, rm_originator, rm_name, rm_entity, domain_concept, specialization, version_id):
         self.rmOriginator = rm_originator
-
+        self.rmName = rm_name
+        self.rmEntity = rm_entity
+        self.domainConcept = domain_concept
+        self.specialization = specialization
+        self.versionID = version_id
 
 
 

@@ -3,18 +3,19 @@ __author__ = 'chrispess'
 
 
 from openehr.rm.support.identification.OBJECT_ID  import OBJECT_ID
-
+from openehr.BASIC_TYPES import typeStr
 #casse que permite criar uma referência para outro objeto, que pode existir localmente ou em outro local
 class OBJECT_REF():
 
 #TODO Matheus: Passando valor Dummie
  id = OBJECT_ID(5)  #id unico de um objeto. != null
 
+ #namespace a que o identificador pertence no contexto do sistema. != null
+ #ex: "terminology", "demographic"
+ namespace = typeStr
 
- namespace = str() #namespace a que o identificador pertence no contexto do sistema. != null
-                #ex: "terminology", "demographic"
-
- type = str()      #nome da classe do objeto aque o identificador se refere. !=null
+ #nome da classe do objeto aque o identificador se refere. !=null
+ type = typeStr
 
  # construtor
  def __init__(self, id, namespace, type):
