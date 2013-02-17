@@ -400,14 +400,6 @@
 			}
 		},
 		{
-			"file": "/home/matheus/pyramid_instances/.gitignore",
-			"settings":
-			{
-				"buffer_size": 18,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"contents": "# Dummy data\nCOMPANY = \"ACME, Inc.\"\n\nPEOPLE = [\n        {'name': 'sstanton', 'title': 'Susan Stanton'},\n        {'name': 'bbarker', 'title': 'Bob Barker'},\n]\n\nPROJECTS = [\n        {'name': 'sillyslogans', 'title': 'Silly Slogans'},\n        {'name': 'meaninglessmissions', 'title': 'Meaningless Missions'},\n]\n\nSITE_MENU = [\n        {'href': '', 'title': 'Home'},\n        {'href': 'about.html', 'title': 'About Projector'},\n        {'href': 'acme', 'title': COMPANY},\n        {'href': 'people', 'title': 'People'},\n]",
 			"file": "/home/matheus/pyramid_instances/tutorial/step09/dummie_data.py",
 			"file_size": 514,
@@ -489,6 +481,32 @@
 				"buffer_size": 1543,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "Searching 21268 files for \"typechar\"\n\n/home/matheus/plone_instances/christiano/1/openehr/BASIC_TYPES.py:\n    4  typeFloat = float()\n    5  typeBool = bool()\n    6: typechar = chr()\n\n/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/TERM_MAPPING.py:\n    3  from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE\n    4  from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT\n    5: from openehr.BASIC_TYPES import typechar\n    6  \n    7  \n    .\n   20    # e o target = 'diabetes mellitus'\n   21    #'?': desconhecido\n   22:   match = typechar\n   23  \n   24    #proposito do mapeamento. ex: \"interoperabilidade\", \"automação de data mining\"...\n\n/home/matheus/plone_instances/christiano/buildout-cache/eggs/Zope2-2.13.15-py2.7.egg/Products/PageTemplates/tests/testZopePageTemplate.py:\n  290          self.assertEqual(isinstance(zpt.read(), unicode), True)\n  291  \n  292:     def testEditWithContentTypeCharset(self):\n  293          manage_addPageTemplate(self.app, 'test', xml_utf8, encoding='utf-8')\n  294          zpt = self.app['test']\n\n4 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 1097,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
+			"settings":
+			{
+				"buffer_size": 19522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
+			"settings":
+			{
+				"buffer_size": 2166,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -559,6 +577,7 @@
 	},
 	"file_history":
 	[
+		"/home/matheus/pyramid_instances/.gitignore",
 		"/home/matheus/pyramid_instances/tutorial/step09/company.p",
 		"/home/matheus/pyramid_instances/python_enviroment/venv/lib/python2.7/site-packages/pyramid-1.4-py2.7.egg/pyramid/decorator.py",
 		"/home/matheus/pyramid_instances/tutorial/step02/application.py",
@@ -685,8 +704,7 @@
 		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/templates/default_view.pt",
 		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/application.py",
 		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step01/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step01/resources.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step01/views.py"
+		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step01/resources.py"
 	],
 	"find":
 	{
@@ -694,7 +712,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"",
@@ -722,6 +740,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"typechar",
 			"CODE_PHRASE",
 			"OBJECT_VERSION_ID",
 			"type",
@@ -848,8 +867,7 @@
 			"hide",
 			"true",
 			"show",
-			"showAll",
-			"show"
+			"showAll"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -869,7 +887,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 22,
 			"sheets":
 			[
 				{
@@ -1142,32 +1160,6 @@
 				},
 				{
 					"buffer": 10,
-					"file": "/home/matheus/pyramid_instances/.gitignore",
-					"settings":
-					{
-						"buffer_size": 18,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/dummie_data.py",
 					"settings":
 					{
@@ -1193,7 +1185,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 11,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/global_layout.pt",
 					"settings":
 					{
@@ -1221,7 +1213,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 12,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/index.pt",
 					"settings":
 					{
@@ -1247,7 +1239,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 13,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/about.pt",
 					"settings":
 					{
@@ -1273,7 +1265,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/company.pt",
 					"settings":
 					{
@@ -1299,7 +1291,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/people.pt",
 					"settings":
 					{
@@ -1325,7 +1317,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 16,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/test_views.py",
 					"settings":
 					{
@@ -1353,7 +1345,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 17,
 					"file": "/home/matheus/pyramid_instances/tutorial/step09/test_layout.py",
 					"settings":
 					{
@@ -1381,7 +1373,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 18,
 					"file": "/home/matheus/pyramid_instances/tutorial/step04/people.pt",
 					"settings":
 					{
@@ -1407,7 +1399,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 19,
 					"file": "/home/matheus/pyramid_instances/tutorial/step04/tests.py",
 					"settings":
 					{
@@ -1430,6 +1422,117 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"settings":
+					{
+						"buffer_size": 1097,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										164,
+										172
+									],
+									[
+										449,
+										457
+									],
+									[
+										569,
+										577
+									],
+									[
+										930,
+										938
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
+					"settings":
+					{
+						"buffer_size": 19522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10350,
+								10350
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4520.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
+					"settings":
+					{
+						"buffer_size": 2166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 40.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

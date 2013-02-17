@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.quantity.DV_ABSOLUTE_QUANTITY import DV_ABSOLUTE_QUANTITY

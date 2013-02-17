@@ -36,7 +36,7 @@ def getAccuracyIsPercent(self):
 
 
 #true se a percentagem é válida
-def valid_percentage(self, value =typeFloat()):
+def valid_percentage(self, value =typeFloat):
     if(value >=0.0 and value <= 0.0):
         return True
     else:return False

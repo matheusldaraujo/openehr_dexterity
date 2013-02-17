@@ -13,7 +13,7 @@ class DV_QUANTIFIED(DV_ORDERED):
 
 #atributos mandatórios
 
- magnitude_status = typeStr()
+ magnitude_status = typeStr
 
 
 #construtor

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
@@ -13,7 +14,7 @@ class DV_STATE(DATA_VALUE):
  value = DV_CODED_TEXT() #value != vazio
 
  #indica quando é um estado terminal, como "aborted","completed", etc
- is_terminal = typeBool() # is_terminal != vazio
+ is_terminal = typeBool # is_terminal != vazio
 
 
  #construtor

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from  openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
@@ -9,12 +10,12 @@ from  openehr.rm.datatypes.text.DV_TEXT import DV_TEXT
 class DV_PARAGRAPH(DATA_VALUE):
 
 
-  items = DV_TEXT[]
+  items = DV_TEXT()
 
 
   #construtor
 
-  def __init__(self,items = DV_TEXT[]):
+  def __init__(self,items = DV_TEXT()):
       self.items = items
       #exceção lançada para lista nula ou size()==0
 
@@ -25,7 +26,7 @@ class DV_PARAGRAPH(DATA_VALUE):
 
 
   #seta lista de items
-  def setItems(self,items = DV_TEXT[]):
+  def setItems(self,items = DV_TEXT()):
       self.items = items
 
 

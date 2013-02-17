@@ -23,7 +23,8 @@ class CODE_PHRASE(DATA_VALUE):
 
 
     #construtor
-    def __init__(self, teminology_id, code_string):
+    #TODO: Matheus, Dummie default values, olhar se é cabível
+    def __init__(self, teminology_id=TERMINOLOGY_ID("nome","versão"), code_string=""):
         self.terminologyID = teminology_id
         self.codeString = code_string
 

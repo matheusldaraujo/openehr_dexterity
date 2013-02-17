@@ -20,7 +20,9 @@ class Interval:
     sup_inclusive =typeBool
 
     #construtor
-    def __init__(self,inf,sup,inf_inclusive,sup_inclusive):
+    #TODO: Matheus, a dois metodos com o mesmo nome e mesmo parametros. Olhar isso
+    #TODO: Matheus, coloquei dummy values por default olhar se é cabível.
+    def __init__(self,inf = 0.0,sup = 0.0,inf_inclusive = False,sup_inclusive = False):
 
         self.inf = inf
         self.sup = sup
@@ -29,7 +31,7 @@ class Interval:
 
 
     #construtor. extremos inclusos por default
-    def __init__(self,inf,sup,inf_inclusive,sup_inclusive):
+    def __init__(self,inf = 0.0,sup = 0.0,inf_inclusive = False,sup_inclusive = False):
 
         self.inf = inf
         self.sup = sup

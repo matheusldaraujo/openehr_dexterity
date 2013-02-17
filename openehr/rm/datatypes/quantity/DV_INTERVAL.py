@@ -1,3 +1,4 @@
+ # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.support.basic.Interval import Interval
@@ -14,7 +15,8 @@ class DV_INTERVAL(DATA_VALUE):
 
 
  #construtor
- def __init__(self, lower, upper):
+ #TODO: Matheus Dummy values to compile, olhar se é cabivel
+ def __init__(self, lower=0.0, upper=0.0):
      self.interval.set_inf(lower)
      self.interval.set_sup(upper)
 

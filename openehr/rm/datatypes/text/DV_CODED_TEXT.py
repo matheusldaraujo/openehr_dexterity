@@ -16,7 +16,9 @@ class DV_CODED_TEXT(DV_TEXT):
 
 
  #construtor
- def __init__(self,definingCode, value, mappings, formatting, hyperlink, language, encoding):
+ #TODO: Matheus, overload de Funcoes
+ #TODO: Matheus, Dummie default values, olhar se é cabível
+ def __init__(self,definingCode="", value="", mappings="", formatting="", hyperlink="", language="", encoding=""):
 
     self.defining_code=definingCode  #este self valora o atributo defining_code definido acima
 
@@ -32,9 +34,10 @@ class DV_CODED_TEXT(DV_TEXT):
     self.language = language
 
  #construtor com apenasvalue
- def __init__(self, value):
-     super(DV_CODED_TEXT, self).__init__()
-     self.value = value
+ #TODO: Matheus, Dummie default values, olhar se é cabível
+ # def __init__(self, value = ""):
+ #     super(DV_CODED_TEXT, self).__init__()
+ #     self.value = value
 
 
  #retorna defining_code

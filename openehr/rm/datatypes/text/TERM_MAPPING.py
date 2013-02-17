@@ -1,8 +1,9 @@
+ # -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
-from openehr.BASIC_TYPES import typechar
+from openehr.BASIC_TYPES import typeChar
 
 
 
@@ -19,7 +20,7 @@ class TERM_MAPPING():
   # '<': o mapeamento é menos amplo. ex: textooriginal = 'diabetes'
   # e o target = 'diabetes mellitus'
   #'?': desconhecido
-  match = typechar
+  match = typeChar
 
   #proposito do mapeamento. ex: "interoperabilidade", "automação de data mining"...
   purpose =  DV_CODED_TEXT("definingCode", "value", "mappings", "formatting", "hyperlink", "language", "encoding")

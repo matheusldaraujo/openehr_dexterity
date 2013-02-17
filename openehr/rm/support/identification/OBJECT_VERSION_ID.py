@@ -23,7 +23,7 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
     #TODO Matheus: Passando valor dumie
     versionTreeID = VERSION_TREE_ID(5,5,5,5)
 
-    value = typeStr[]
+    value = typeStr
 
 
     #construtor
