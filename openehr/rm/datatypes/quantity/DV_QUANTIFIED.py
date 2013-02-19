@@ -22,10 +22,15 @@ def __init__(self, magnitude_status):
  self.magnitude_status = magnitude_status
 
 
- #construtor vazio
- def __init__(self):
+ def __init__(self, *args):
 
-     pass
+     if(len(args)==1):
+
+         self.magnitude_status = args[0]
+
+     #construtor vazio
+     else:pass
+
 
 
 #retorna magnitude_status
