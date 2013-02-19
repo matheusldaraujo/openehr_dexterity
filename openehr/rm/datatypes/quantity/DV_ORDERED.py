@@ -31,11 +31,11 @@ class DV_ORDERED(DATA_VALUE):
 
    #construtor normal_range, otherReferenceRanges, normal_status
    def __init__(self, *args):
-      if(args.len()==3):
+      if(len(args)==3):
        self.normal_range = args[0]
        self.otherReferenceRanges = args[1]
        self.normal_status = args[2]
-      elif(args.len()==1):
+      elif(len(args)==1):
        self.normal_range = args[0]
       else:pass
 
