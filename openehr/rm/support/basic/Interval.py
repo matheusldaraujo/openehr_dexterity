@@ -22,21 +22,20 @@ class Interval:
     #construtor
     #TODO: Matheus, a dois metodos com o mesmo nome e mesmo parametros. Olhar isso
     #TODO: Matheus, coloquei dummy values por default olhar se é cabível.
-    def __init__(self,inf = 0.0,sup = 0.0,inf_inclusive = False,sup_inclusive = False):
 
-        self.inf = inf
-        self.sup = sup
-        self.inf_inclusive = False if self.inf == None else True
-        self.sup_inclusive = False if self.sup == None else True
+    def __init__(self, *args):
+       if(len(args)==4):
+         self.inf = args[0]
+         self.sup = args[1]
+         self.inf_inclusive = args[2]
+         self.sup_inclusive = args[3]
+       elif(len(args)==2):
+           self.inf = args[0]
+           self.sup = args[1]
+           self.inf_inclusive = False if self.inf == None else True
+           self.sup_inclusive = False if self.sup == None else True
 
 
-    #construtor. extremos inclusos por default
-    def __init__(self,inf = 0.0,sup = 0.0,inf_inclusive = False,sup_inclusive = False):
-
-        self.inf = inf
-        self.sup = sup
-        self.inf_inclusive = True
-        self.sup_inclusive = True
 
     #retorna o limite inferior do intervalo
     def get_inf(self):
