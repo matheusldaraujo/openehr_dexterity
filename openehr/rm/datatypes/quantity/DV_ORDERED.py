@@ -28,6 +28,18 @@ class DV_ORDERED(DATA_VALUE):
   # normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr())
 
 
+
+   #construtor normal_range, otherReferenceRanges, normal_status
+   def __init__(self, *args):
+      if(args.len()==3):
+       self.normal_range = args[0]
+       self.otherReferenceRanges = args[1]
+       self.normal_status = args[2]
+      elif(args.len()==1):
+       self.normal_range = args[0]
+      else:pass
+
+
   # #TODO: Matheus python nao suporta overload de funcoes
   # #construtor
   # def __init__(self, normal_range, otherReferenceRanges, normal_status):

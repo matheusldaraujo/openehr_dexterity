@@ -4,9 +4,8 @@ __author__ = 'chrispess'
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 from openehr.rm.datatypes.text.DV_TEXT import DV_TEXT
 from openehr.rm.support.basic.Interval import Interval
-from openehr.rm.datatypes.quantity.DV_ORDERED import DV_ORDERED
 from openehr.rm.datatypes.quantity.DV_INTERVAL import DV_INTERVAL
-
+from openehr.BASIC_TYPES import typeFloat
 
 class REFERENCE_RANGE(DATA_VALUE):
 
@@ -31,7 +30,7 @@ class REFERENCE_RANGE(DATA_VALUE):
 
 
     #retorna true se value está no range
-    def isInRange(self, value = DV_ORDERED): ###essa definição está correta???
+    def isInRange(self, value = typeFloat):
         return self.range.has(value)
 
 
