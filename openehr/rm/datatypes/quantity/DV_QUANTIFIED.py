@@ -23,7 +23,7 @@ def __init__(self, magnitude_status):
 
 
  def __init__(self, *args):
-
+     #construtor com magnitude_status
      if(len(args)==1):
 
          self.magnitude_status = args[0]
