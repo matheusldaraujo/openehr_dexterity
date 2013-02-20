@@ -17,11 +17,6 @@ class DV_QUANTIFIED(DV_ORDERED):
 
 
 #construtor
-def __init__(self, magnitude_status):
-
- self.magnitude_status = magnitude_status
-
-
  def __init__(self, *args):
      #construtor com magnitude_status
      if(len(args)==1):
