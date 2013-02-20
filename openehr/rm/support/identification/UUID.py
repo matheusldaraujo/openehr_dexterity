@@ -7,6 +7,7 @@ from openehr.BASIC_TYPES import typeStr
 
 class UUID(UID):
   value = typeStr
+
   # construtor
   def __init__(self, value):
       self.value = value
