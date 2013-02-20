@@ -17,7 +17,7 @@ class UID_BASED_ID(OBJECT_ID):
     value = []
 
     #TODO Matheus: Passando valor dumie
-    root = UID("")
+    root = UID(typeStr)
 
     extension = typeStr
 
