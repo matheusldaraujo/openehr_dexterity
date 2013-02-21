@@ -10,6 +10,7 @@ class DV_DATE_TIME(Dv_TEMPORAL):
     value = datetime
 
     def __init__(self, ano, mes, dia, hora, minuto , segundo):
-        #
+        #define o objeto datetime, value
         self.value = datetime(ano, mes, dia, hora, minuto,segundo)
+
 
