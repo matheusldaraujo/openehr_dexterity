@@ -26,5 +26,5 @@ class DvTime(Dv_TEMPORAL):
     def magnitude(self):
         k = self.getValue()
         x = self.time.strftime(k.split(',')[0], '%H:%M:%S')
-        y = datetime.timedelta(hora=x.tm_hour, minutos=x.tm_min,segundos=x.tm_sec).total_seconds()
-        return y
+        z = datetime.timedelta(hora=x.tm_hour, minutos=x.tm_min,segundos=x.tm_sec).total_seconds()
+        return z
