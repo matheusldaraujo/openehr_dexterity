@@ -2,6 +2,7 @@
 __author__ = 'chrispess'
 
 from datetime import datetime
+from datetime import date
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_TEMPORAL import Dv_TEMPORAL
 from openehr.BASIC_TYPES import typeInt
 
@@ -13,8 +14,18 @@ class DV_DATE(Dv_TEMPORAL):
     value = datetime
 
     #construtor
-    def __init__(self,day = typeInt, month = typeInt, year = typeInt):
-        self.value = datetime(day, month, year)
+    def __init__(self,year = typeInt, month = typeInt, day = typeInt ):
+        self.value = datetime(year, month, day)
+
+    #retorna objeto date
+    def getDate(self):
+        return self.value
+
+    #retorna a string associada à data
+    def getDateStr(self):
+        return self.value.strftime('%Y-%m-%d')
+
+
 
     #valor numérico da data em dias desde a origem do calendário 1/1/0000
     def magnitude(self):
