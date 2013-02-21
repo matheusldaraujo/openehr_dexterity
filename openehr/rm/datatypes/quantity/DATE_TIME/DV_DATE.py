@@ -13,6 +13,8 @@ class DV_DATE(Dv_TEMPORAL):
     #ISO 8601 data string
     value = datetime
 
+    pontoDeOrigem = date.fromordinal(date(0000,01,01))
+
     #construtor
     def __init__(self,year = typeInt, month = typeInt, day = typeInt ):
         self.value = datetime(year, month, day)
@@ -26,7 +28,6 @@ class DV_DATE(Dv_TEMPORAL):
         return self.value.strftime('%d-%m-%Y')
 
 
-
     #valor numérico da data em dias desde a origem do calendário 1/1/0000
     def magnitude(self):
-        pass
+        return date.toordinal(self.getDate())
