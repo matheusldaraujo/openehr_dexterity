@@ -21,9 +21,9 @@ class DV_DATE(Dv_TEMPORAL):
     def getDate(self):
         return self.value
 
-    #retorna a string associada à data
+    #retorna a string associada à data no formato dd-mm-nn
     def getDateStr(self):
-        return self.value.strftime('%Y-%m-%d')
+        return self.value.strftime('%d-%m-%Y')
 
 
 
