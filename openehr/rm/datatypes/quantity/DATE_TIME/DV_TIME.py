@@ -28,3 +28,4 @@ class DvTime(Dv_TEMPORAL):
         x = self.time.strftime(k.split(',')[0], '%H:%M:%S')
         z = datetime.timedelta(hora=x.tm_hour, minutos=x.tm_min,segundos=x.tm_sec).total_seconds()
         return z
+

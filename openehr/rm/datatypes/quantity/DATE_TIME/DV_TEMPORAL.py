@@ -12,7 +12,7 @@ class Dv_TEMPORAL(DV_ABSOLUTE_QUANTITY):
         pass
 
 
-    #diferença entreduas quantidades temporais
+    #diferença entre duas quantidades temporais
     def diff(self, other):
 
      super(Dv_TEMPORAL, self).__init__()
