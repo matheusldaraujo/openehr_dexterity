@@ -29,3 +29,6 @@ class DvTime(Dv_TEMPORAL):
         z = datetime.timedelta(hora=x.tm_hour, minutos=x.tm_min,segundos=x.tm_sec).total_seconds()
         return z
 
+    #retorna string associada à time
+    def getString(self):
+        return str(self.time.hour),':',str(self.time.min),':',str(self.time.second)
