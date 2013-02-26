@@ -31,3 +31,9 @@ class DV_DATE_TIME(Dv_TEMPORAL):
 
         return sum([a*b for a,b in zip(duram, map(int,strDuration.split(':') ))])
 
+
+
+     #retorna a string referente à duração
+    def getString(self):
+        return str(self.value.day),':',str(self.value.hour),\
+               ':',str(self.value.min),':',str(self.value.second)
