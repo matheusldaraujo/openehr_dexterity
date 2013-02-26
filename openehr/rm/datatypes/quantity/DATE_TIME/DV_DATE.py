@@ -31,3 +31,8 @@ class DV_DATE(Dv_TEMPORAL):
     #valor numérico da data em dias desde a origem do calendário 1/1/0000
     def magnitude(self):
         return date.toordinal(self.getDate())
+
+    #retorna string associada à data
+    def getString(self):
+        return str(self.value.day),'-',str(self.value.month),'-',str(self.value.year)
+
