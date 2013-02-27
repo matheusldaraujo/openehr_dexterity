@@ -23,3 +23,16 @@ class DV_ENCAPSULATED(DATA_VALUE):
  #retorna charset
  def getcharset(self):
      return self.charset
+
+ #retorna language
+ def getLanguage(self):
+     return self.language
+
+
+ #retorna string charset
+ def getcharset(self):
+     return self.charset.tostring()
+
+ #retorna language
+ def getLanguage(self):
+     return self.language.tostring()
