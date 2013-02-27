@@ -36,3 +36,7 @@ class DV_ENCAPSULATED(DATA_VALUE):
  #retorna language
  def getLanguage(self):
      return self.language.tostring()
+
+ #result = alternate_text(uri) /?????verificar sentido do método
+ def as_string(self):
+     pass
