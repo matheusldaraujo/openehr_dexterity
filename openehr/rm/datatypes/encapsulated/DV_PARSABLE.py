@@ -5,4 +5,19 @@ from openehr.BASIC_TYPES import typeInt
 from openehr.BASIC_TYPES import typeStr
 from openehr.rm.datatypes.encapsulated.DV_ENCAPSULATED import DV_ENCAPSULATED
 
+#data encapsulada na forma de um string parsable. plain text
+# usada para representar valores que são representações textuais formais
+class DV_PARSABLE(DV_ENCAPSULATED):
+
+    #tamanho em bytes
+    size = typeInt
+
+    #string parsable
+    value = typeStr
+
+    #nome do formalismo. ex: GLIF 1.0, proforma
+    formalism = typeStr
+
+
+
 
