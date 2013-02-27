@@ -7,7 +7,7 @@ from openehr.BASIC_TYPES import typeInt
 
 class DV_ENCAPSULATED(DATA_VALUE):
 
- #
+ #esquema de caracteres em que é encodado (default: unicode com UTF-8)
  charset = CODE_PHRASE
  # (opcional) indicador opcional da linguagem em que os dados são  escritos.
  language = CODE_PHRASE
