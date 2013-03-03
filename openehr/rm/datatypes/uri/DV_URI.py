@@ -3,6 +3,7 @@
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
+from urlparse import urlparse
 from openehr.BASIC_TYPES import typeStr
 
     #referência objeto conforme Universal Resource Identifier (URI) standardt
@@ -18,9 +19,34 @@ class DV_URI(DATA_VALUE):
  # ex: "ftp", "telnet", "mailto"
  scheme = typeStr
 
+ path = typeStr
+
+ fragment = typeStr
+
+ query = typeStr
+
+ #construtor
  def __init__(self, value):
-     self.value = value
+     self.value = urlparse(value)
+
+ #retorna scheme
+ def scheme(self):
+     return self.value.scheme
+
+ #retorna path
+ def path(self):
+     return self.value.path
 
 
+ #retorna fragment
+ def fragment(self):
+     return self.value.fragment
+
+
+ #retorn query
+ def query(self):
+     return self.value.query
+
+ #retorna value (full uri)
  def getValue(self):
      return self.value
