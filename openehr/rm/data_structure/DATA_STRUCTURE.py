@@ -11,3 +11,4 @@ class DATA_STRUCTURE():
 
  def as_hierarchy(self):
 
+      pass
