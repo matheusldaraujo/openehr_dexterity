@@ -33,7 +33,7 @@ class DV_URI(DATA_VALUE):
  def scheme(self):
      return self.value.scheme
 
- #retorna path
+ #retorna path associado à uri
  def path(self):
      return self.value.path
 
