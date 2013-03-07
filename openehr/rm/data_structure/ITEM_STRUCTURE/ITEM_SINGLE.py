@@ -14,3 +14,13 @@ class ITEM_SINGLE(ITEM_STRUCTURE):
  def __init__(self, item= ELEMENT(value = DATA_VALUE, null_flavour = DV_CODED_TEXT)):
      self.item = item
 
+
+ #retorna o item
+ def getItem(self):
+     return self.item
+
+
+ #gera um item  compatível com oISO 13606
+ def as_hierarchy(self):
+     pass
+
