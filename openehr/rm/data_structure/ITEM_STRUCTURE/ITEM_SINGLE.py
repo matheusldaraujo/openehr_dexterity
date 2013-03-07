@@ -9,3 +9,8 @@ class ITEM_SINGLE(ITEM_STRUCTURE):
 
  item = ELEMENT(value = DATA_VALUE, null_flavour = DV_CODED_TEXT)
 
+
+ #construtor
+ def __init__(self, item= ELEMENT(value = DATA_VALUE, null_flavour = DV_CODED_TEXT)):
+     self.item = item
+
