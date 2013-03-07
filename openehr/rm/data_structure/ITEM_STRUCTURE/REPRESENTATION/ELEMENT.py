@@ -26,4 +26,13 @@ class ELEMENT (ITEM):
  def setNull_flavour(self, null_flavour = DV_CODED_TEXT):
      self.null_flavour = null_flavour
 
+ #retorna value
+ def getValue(self):
+     return self.value
+
+ #retorna null_flavour
+ def getNullFlavour(self):
+     return self.null_flavour
+
+
 
