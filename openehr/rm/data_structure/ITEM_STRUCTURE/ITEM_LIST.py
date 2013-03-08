@@ -26,3 +26,7 @@ class ITEM_LIST(ITEM_STRUCTURE):
         return self.items[i]
 
 
+
+    #gera um item  compatível com oISO 13606
+    def as_hierarchy(self):
+        pass
