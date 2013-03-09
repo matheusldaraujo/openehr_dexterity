@@ -23,6 +23,7 @@ class ITEM_SINGLE(ITEM_STRUCTURE):
  def setItem(self,item = ELEMENT(value = DATA_VALUE, null_flavour = DV_CODED_TEXT)):
      self.item = item
 
+
   #gera um item  compatível com oISO 13606
  def as_hierarchy(self):
      pass
