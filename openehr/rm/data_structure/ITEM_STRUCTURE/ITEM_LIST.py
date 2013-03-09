@@ -3,6 +3,7 @@ __author__ = 'chrispess'
 from openehr.rm.data_structure.ITEM_STRUCTURE.ITEM_STRUCTURE import ITEM_STRUCTURE
 from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.ELEMENT import ELEMENT
 from openehr.BASIC_TYPES import typeInt
+from openehr.BASIC_TYPES import typeStr
 class ITEM_LIST(ITEM_STRUCTURE):
 
     #representação de uma lista de elementos
@@ -33,7 +34,13 @@ class ITEM_LIST(ITEM_STRUCTURE):
             listNames.append(ELEMENT.getName())
         return listNames
 
+    #retorna o ELEMENT
+    def named_item(self, a_name = typeStr):
+        for ELEMENT in self.items:
+            if ELEMENT.getName() == a_name:
+                return ELEMENT
 
-    #gera um item  compatível com oISO 13606
+
+        #gera um item  compatível com oISO 13606
     def as_hierarchy(self):
         pass
