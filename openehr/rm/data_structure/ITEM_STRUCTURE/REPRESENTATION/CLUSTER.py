@@ -30,6 +30,12 @@ class CLUSTER(ITEM):
     def append(self,x = ITEM):
         self.items.append(x)
 
+    #retorna um item da posição dada e o remove da lista
+    # se não for digitado nenhum indice o último  elemento é removido
+    def pop(self, i = typeInt):
+      
+        self.items.pop(i)
+
     #insere um elemento num lugar do cluster especificado por um indice
     def insert(self,i = typeInt, x = ITEM):
         self.items.insert(i, x)

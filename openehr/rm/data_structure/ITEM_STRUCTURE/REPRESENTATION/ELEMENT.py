@@ -35,4 +35,14 @@ class ELEMENT (ITEM):
      return self.null_flavour
 
 
+ #True se o valor é desconhecido.
+ # ex: indeterminado, não questionado
+ def is_null(self):
+     if self.value == None:
+     return True
+
+
+
+
+
 
