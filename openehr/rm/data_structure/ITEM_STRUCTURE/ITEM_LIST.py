@@ -38,7 +38,7 @@ class ITEM_LIST(ITEM_STRUCTURE):
             listNames.append(ELEMENT.getName())
         return listNames
 
-    #retorna o ELEMENT
+    #retorna o ELEMENT cujo nome é "a_name"
     def named_item(self, a_name = typeStr):
         for ELEMENT in self.items:
             if ELEMENT.getName() == a_name:
