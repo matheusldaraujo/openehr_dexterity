@@ -18,7 +18,7 @@ class ITEM_LIST(ITEM_STRUCTURE):
 
 
     #retorna o numero de elementos da  lista
-    def getItemCount(self):
+    def item_count(self):
         return self.items.len()
 
     #retorna um elemento da lista

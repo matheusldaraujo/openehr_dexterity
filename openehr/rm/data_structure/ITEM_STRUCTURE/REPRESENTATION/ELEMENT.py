@@ -3,6 +3,7 @@ __author__ = 'chrispess'
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.ITEM import ITEM
+from openehr.BASIC_TYPES import typeStr
 
 class ELEMENT (ITEM):
 
@@ -11,6 +12,10 @@ class ELEMENT (ITEM):
 
  #tipo do null value: "indeterminado", "não perguntado"
  null_flavour = DV_CODED_TEXT()
+
+ #nome associado ao elemento
+ name = typeStr
+
 
  #construtor
  def __init__(self,value, null_flavour ):
@@ -25,6 +30,16 @@ class ELEMENT (ITEM):
  #seta null_flavour
  def setNull_flavour(self, null_flavour = DV_CODED_TEXT):
      self.null_flavour = null_flavour
+
+
+ #seta name
+ def setName(self, name = typeStr):
+     self.name = name
+
+ #retorna name
+ def getName(self):
+     return self.name
+
 
  #retorna value
  def getValue(self):
