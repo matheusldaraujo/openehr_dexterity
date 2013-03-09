@@ -4,6 +4,10 @@ from openehr.rm.data_structure.ITEM_STRUCTURE.ITEM_STRUCTURE import ITEM_STRUCTU
 from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.ELEMENT import ELEMENT
 from openehr.BASIC_TYPES import typeInt
 from openehr.BASIC_TYPES import typeStr
+
+#estrutura de dados do tipo lista, onde cada itempossui um valor e pode
+# ser por um nome e um indice
+
 class ITEM_LIST(ITEM_STRUCTURE):
 
     #representação de uma lista de elementos
