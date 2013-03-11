@@ -14,3 +14,7 @@ class ITEM_TABLE(CLUSTER):
  def __init__(self, rows = CLUSTER[]):
      self.rows = rows
 
+
+ #retorna o número de linhas
+ def rowCount(self):
+
