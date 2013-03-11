@@ -6,3 +6,6 @@ from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.CLUSTER import CLUS
 
 class ITEM_TABLE(CLUSTER):
 
+ rows = CLUSTER[]
+
+ def __init__(self):
