@@ -7,6 +7,7 @@ from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.CLUSTER import CLUS
 
 class ITEM_TABLE(CLUSTER):
 
+ #representação de uma tabela como uma lista de clusters
  rows = CLUSTER[]
 
  #construtor
