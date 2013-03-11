@@ -27,3 +27,6 @@ class ITEM_TABLE(CLUSTER):
   #retorna umalista com o nome das colunas
   def columnNames(self):
 
+  #retorna a í-ésima linha
+  def ithRow(self):
+
