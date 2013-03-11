@@ -4,4 +4,6 @@ from openehr.rm.datatypes.quantity.DV_ABSOLUTE_QUANTITY import DV_ABSOLUTE_QUANT
 
 #variante temporalda classe DV_ABSOLUTE_QUANTITY
 class DV_DURATION(DV_ABSOLUTE_QUANTITY):
+	#TODO Matheus: put "pass" to compile
+	pass
 

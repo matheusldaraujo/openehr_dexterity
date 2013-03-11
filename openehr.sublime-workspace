@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"t",
+				"typeStr"
+			],
+			[
 				"termino",
 				"terminologia"
 			],
@@ -320,191 +324,50 @@
 	"buffers":
 	[
 		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/application.py",
+			"file": "openehr/rm/datatypes/quantity/DV_ORDERED.py",
 			"settings":
 			{
-				"buffer_size": 319,
+				"buffer_size": 2157,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/views.py",
+			"file": "openehr/rm/datatypes/quantity/REFERENCE_RANGE.py",
 			"settings":
 			{
-				"buffer_size": 773,
+				"buffer_size": 916,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/index.pt",
+			"file": "openehr/rm/datatypes/text/CODE_PHRASE.py",
 			"settings":
 			{
-				"buffer_size": 292,
+				"buffer_size": 1513,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/about.pt",
+			"file": "openehr/rm/support/identification/TERMINOLOGY_ID.py",
 			"settings":
 			{
-				"buffer_size": 483,
+				"buffer_size": 1038,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/company.pt",
+			"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py",
 			"settings":
 			{
-				"buffer_size": 417,
+				"buffer_size": 1210,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/application.py",
+			"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py",
 			"settings":
 			{
-				"buffer_size": 415,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/static/global_layout.css",
-			"settings":
-			{
-				"buffer_size": 907,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/static/global_layout.js",
-			"settings":
-			{
-				"buffer_size": 408,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/views.py",
-			"settings":
-			{
-				"buffer_size": 1128,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/layouts.py",
-			"settings":
-			{
-				"buffer_size": 718,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "# Dummy data\nCOMPANY = \"ACME, Inc.\"\n\nPEOPLE = [\n        {'name': 'sstanton', 'title': 'Susan Stanton'},\n        {'name': 'bbarker', 'title': 'Bob Barker'},\n]\n\nPROJECTS = [\n        {'name': 'sillyslogans', 'title': 'Silly Slogans'},\n        {'name': 'meaninglessmissions', 'title': 'Meaningless Missions'},\n]\n\nSITE_MENU = [\n        {'href': '', 'title': 'Home'},\n        {'href': 'about.html', 'title': 'About Projector'},\n        {'href': 'acme', 'title': COMPANY},\n        {'href': 'people', 'title': 'People'},\n]",
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/dummie_data.py",
-			"file_size": 514,
-			"file_write_time": 1360517306000000,
-			"settings":
-			{
-				"buffer_size": 514,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/global_layout.pt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/index.pt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/about.pt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/company.pt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/people.pt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/test_views.py",
-			"settings":
-			{
-				"buffer_size": 2274,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step09/test_layout.py",
-			"settings":
-			{
-				"buffer_size": 965,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/people.pt",
-			"settings":
-			{
-				"buffer_size": 393,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/pyramid_instances/tutorial/step04/tests.py",
-			"settings":
-			{
-				"buffer_size": 1543,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 21268 files for \"typechar\"\n\n/home/matheus/plone_instances/christiano/1/openehr/BASIC_TYPES.py:\n    4  typeFloat = float()\n    5  typeBool = bool()\n    6: typechar = chr()\n\n/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/TERM_MAPPING.py:\n    3  from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE\n    4  from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT\n    5: from openehr.BASIC_TYPES import typechar\n    6  \n    7  \n    .\n   20    # e o target = 'diabetes mellitus'\n   21    #'?': desconhecido\n   22:   match = typechar\n   23  \n   24    #proposito do mapeamento. ex: \"interoperabilidade\", \"automação de data mining\"...\n\n/home/matheus/plone_instances/christiano/buildout-cache/eggs/Zope2-2.13.15-py2.7.egg/Products/PageTemplates/tests/testZopePageTemplate.py:\n  290          self.assertEqual(isinstance(zpt.read(), unicode), True)\n  291  \n  292:     def testEditWithContentTypeCharset(self):\n  293          manage_addPageTemplate(self.app, 'test', xml_utf8, encoding='utf-8')\n  294          zpt = self.app['test']\n\n4 matches across 3 files\n",
-			"settings":
-			{
-				"buffer_size": 1097,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
-			"settings":
-			{
-				"buffer_size": 19522,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
-			"settings":
-			{
-				"buffer_size": 2166,
+				"buffer_size": 246,
 				"line_ending": "Unix"
 			}
 		}
@@ -577,6 +440,29 @@
 	},
 	"file_history":
 	[
+		"/home/matheus/plone_instances/christiano/buildout-cache/eggs/Products.Archetypes-1.8-py2.7.egg/Products/Archetypes/skins/archetypes/widgets/reference.pt",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
+		"/home/matheus/pyramid_instances/tutorial/step04/tests.py",
+		"/home/matheus/pyramid_instances/tutorial/step04/people.pt",
+		"/home/matheus/pyramid_instances/tutorial/step09/test_layout.py",
+		"/home/matheus/pyramid_instances/tutorial/step09/test_views.py",
+		"/home/matheus/pyramid_instances/tutorial/step09/people.pt",
+		"/home/matheus/pyramid_instances/tutorial/step09/company.pt",
+		"/home/matheus/pyramid_instances/tutorial/step09/about.pt",
+		"/home/matheus/pyramid_instances/tutorial/step09/index.pt",
+		"/home/matheus/pyramid_instances/tutorial/step09/global_layout.pt",
+		"/home/matheus/pyramid_instances/tutorial/step09/dummie_data.py",
+		"/home/matheus/pyramid_instances/tutorial/step09/layouts.py",
+		"/home/matheus/pyramid_instances/tutorial/step09/views.py",
+		"/home/matheus/pyramid_instances/tutorial/step09/static/global_layout.js",
+		"/home/matheus/pyramid_instances/tutorial/step09/static/global_layout.css",
+		"/home/matheus/pyramid_instances/tutorial/step09/application.py",
+		"/home/matheus/pyramid_instances/tutorial/step04/company.pt",
+		"/home/matheus/pyramid_instances/tutorial/step04/about.pt",
+		"/home/matheus/pyramid_instances/tutorial/step04/index.pt",
+		"/home/matheus/pyramid_instances/tutorial/step04/views.py",
+		"/home/matheus/pyramid_instances/tutorial/step04/application.py",
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
 		"/home/matheus/pyramid_instances/.gitignore",
 		"/home/matheus/pyramid_instances/tutorial/step09/company.p",
 		"/home/matheus/pyramid_instances/python_enviroment/venv/lib/python2.7/site-packages/pyramid-1.4-py2.7.egg/pyramid/decorator.py",
@@ -638,9 +524,7 @@
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/basic/DV_STATE.py",
 		"/home/matheus/plone_instances/christiano/1/openehr.sublime-project",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk.pt",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/cmed_document_view.pt",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/sunburst_theme/sunburst_styles/print.css",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmed.css",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/sec_desk_macros.pt",
@@ -683,28 +567,7 @@
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/2_d_cadastrar_consulta.po",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/2_S_cadastrar_consulta.po",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/3_d_configurando_calendario.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/3_S_configurando_calendario.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/4_s_editando_paciente.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/5_d_criar_modelo_consulta.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/6_d_criar_documento_a_partir_de_modelo.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/7_d_criar_imprimir_prescricoes.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/8_s_alterar_senha.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/9_s_feedback.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/5_criar_modelo_consulta.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/cmfuemr.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/collective.amberjack.core.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/collective.amberjack.portlet.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/Solgema.fullcalendar.po",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/people.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/company.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/about.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step05/index.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/creatingux/step06/views.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/templates/default_view.pt",
-		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step02/application.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step01/tests.py",
-		"/home/matheus/pyramid_instances/tutorial_workspace/resources/step01/resources.py"
+		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/3_S_configurando_calendario.po"
 	],
 	"find":
 	{
@@ -887,153 +750,163 @@
 	"groups":
 	[
 		{
-			"selected": 22,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/application.py",
+					"file": "openehr/rm/datatypes/quantity/DV_ORDERED.py",
 					"settings":
 					{
-						"buffer_size": 319,
+						"buffer_size": 2157,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								319,
-								319
+								1118,
+								1118
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 116.0,
+						"translation.y": 462.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/views.py",
+					"file": "openehr/rm/datatypes/quantity/REFERENCE_RANGE.py",
 					"settings":
 					{
-						"buffer_size": 773,
+						"buffer_size": 916,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								521,
+								521
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/index.pt",
+					"file": "openehr/rm/datatypes/text/CODE_PHRASE.py",
 					"settings":
 					{
-						"buffer_size": 292,
+						"buffer_size": 1513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								292,
-								292
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 138.0,
+						"translation.y": 330.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/about.pt",
+					"file": "openehr/rm/support/identification/TERMINOLOGY_ID.py",
 					"settings":
 					{
-						"buffer_size": 483,
+						"buffer_size": 1038,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								483,
-								483
+								447,
+								447
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/company.pt",
+					"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py",
 					"settings":
 					{
-						"buffer_size": 417,
+						"buffer_size": 1210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								717,
+								717
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 132.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/application.py",
+					"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py",
 					"settings":
 					{
-						"buffer_size": 415,
+						"buffer_size": 246,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								415,
-								415
+								244,
+								244
 							]
 						],
 						"settings":
@@ -1042,497 +915,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/static/global_layout.css",
-					"settings":
-					{
-						"buffer_size": 907,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								907,
-								907
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 393.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/static/global_layout.js",
-					"settings":
-					{
-						"buffer_size": 408,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								408,
-								408
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/views.py",
-					"settings":
-					{
-						"buffer_size": 1128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1128,
-								1128
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/layouts.py",
-					"settings":
-					{
-						"buffer_size": 718,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								718,
-								718
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/dummie_data.py",
-					"settings":
-					{
-						"buffer_size": 514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/global_layout.pt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/index.pt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/about.pt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/company.pt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/people.pt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/test_views.py",
-					"settings":
-					{
-						"buffer_size": 2274,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2274,
-								2274
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 423.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "/home/matheus/pyramid_instances/tutorial/step09/test_layout.py",
-					"settings":
-					{
-						"buffer_size": 965,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								965,
-								965
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/people.pt",
-					"settings":
-					{
-						"buffer_size": 393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "/home/matheus/pyramid_instances/tutorial/step04/tests.py",
-					"settings":
-					{
-						"buffer_size": 1543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1543,
-								1543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 48.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"settings":
-					{
-						"buffer_size": 1097,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										164,
-										172
-									],
-									[
-										449,
-										457
-									],
-									[
-										569,
-										577
-									],
-									[
-										930,
-										938
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
-					"settings":
-					{
-						"buffer_size": 19522,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10350,
-								10350
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4520.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_styles/cmedPrint.css",
-					"settings":
-					{
-						"buffer_size": 2166,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								61,
-								61
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 40.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1585,6 +967,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"dv_du",
+				"openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py"
+			],
+			[
+				"dv_date",
+				"openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py"
+			],
+			[
+				"termi",
+				"openehr/rm/support/identification/TERMINOLOGY_ID.py"
+			],
+			[
+				"code_p",
+				"openehr/rm/datatypes/text/CODE_PHRASE.py"
+			],
+			[
+				"reference_",
+				"openehr/rm/datatypes/quantity/REFERENCE_RANGE.py"
+			],
+			[
+				"dv_orde",
+				"openehr/rm/datatypes/quantity/DV_ORDERED.py"
+			],
 			[
 				"dv_ide",
 				"openehr/rm/datatypes/basic/DV_IDENTIFIER.py"
@@ -2072,30 +1478,6 @@
 			[
 				"testing",
 				"policy/testing.py"
-			],
-			[
-				"test_sle",
-				"policy/tests/test_selenium.py"
-			],
-			[
-				"ftesting",
-				"eggs/gocept.selenium-0.10.1-py2.7.egg/gocept/selenium/grok/ftesting.zcml"
-			],
-			[
-				"debug",
-				"theme/skins/wres_theme_scripts/debug_init.py"
-			],
-			[
-				"admin.py",
-				"archetypes/content/admin.py"
-			],
-			[
-				"set",
-				"policy/setuphandlers.py"
-			],
-			[
-				"se",
-				"theme/skins/wres_theme_js/show_exams.js"
 			]
 		],
 		"width": 0.0

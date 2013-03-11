@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
@@ -54,7 +55,7 @@ class ELEMENT (ITEM):
  # ex: indeterminado, não questionado
  def is_null(self):
      if self.value == None:
-     return True
+          return True
 
 
 

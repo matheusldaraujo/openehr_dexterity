@@ -27,7 +27,9 @@ class DV_URI(DATA_VALUE):
 
  #construtor
  def __init__(self, value):
-     self.value = urlparse(value)
+#TODO: Matheus value nao pode ser um inteiro, para passar por enquanto estou
+#fazendo um cast para string
+     self.value = urlparse(str(value))
 
  #retorna scheme
  def scheme(self):
