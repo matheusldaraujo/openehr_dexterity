@@ -15,6 +15,15 @@ class ITEM_TABLE(CLUSTER):
      self.rows = rows
 
 
- #retorna o número de linhas
- def rowCount(self):
+  #retorna o número de linhas
+  def rowCount(self):
+
+  #retorna o número de  colunas
+  def columnCount(self):
+
+  #retorna uma lista com o nome das linhas
+  def rowNames(self):
+
+  #retorna umalista com o nome das colunas
+  def columnNames(self):
 
