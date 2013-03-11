@@ -323,54 +323,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "openehr/rm/datatypes/quantity/DV_ORDERED.py",
-			"settings":
-			{
-				"buffer_size": 2157,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "openehr/rm/datatypes/quantity/REFERENCE_RANGE.py",
-			"settings":
-			{
-				"buffer_size": 916,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "openehr/rm/datatypes/text/CODE_PHRASE.py",
-			"settings":
-			{
-				"buffer_size": 1513,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "openehr/rm/support/identification/TERMINOLOGY_ID.py",
-			"settings":
-			{
-				"buffer_size": 1038,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py",
-			"settings":
-			{
-				"buffer_size": 1210,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py",
-			"settings":
-			{
-				"buffer_size": 246,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -440,6 +392,23 @@
 	},
 	"file_history":
 	[
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/TERMINOLOGY_ID.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/CODE_PHRASE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/REFERENCE_RANGE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_ORDERED.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/data_structure/DATA_STRUCTURE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_LIST.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/data_structure/ITEM_STRUCTURE/REPRESENTATION/ELEMENT.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/data_structure/ITEM_STRUCTURE/REPRESENTATION/CLUSTER.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_TABLE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/encapsulated/DV_ENCAPSULATED.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/encapsulated/DV_PARSABLE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE_TIME.py",
+		"/home/matheus/plone_instances/christiano/1/checkFiles.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/uri/DV_URI.py",
+		"/home/matheus/plone_instances/christiano/1/openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_SINGLE.py",
 		"/home/matheus/plone_instances/christiano/buildout-cache/eggs/Products.Archetypes-1.8-py2.7.egg/Products/Archetypes/skins/archetypes/widgets/reference.pt",
 		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_templates/print_pages_macros.pt",
 		"/home/matheus/pyramid_instances/tutorial/step04/tests.py",
@@ -478,8 +447,6 @@
 		"/home/matheus/pyramid_instances/tutorial/step02/templates/login.pt",
 		"/home/matheus/pyramid_instances/tutorial/step02/templates/default_view.pt",
 		"/home/matheus/pyramid_instances/tutorial/step02/usersdb.py",
-		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/uri/DV_URI.py",
-		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/CODE_PHRASE.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/DV_CODED_TEXT.py",
 		"/home/matheus/plone_instances/christiano/1/.gitignore",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/text/DV_TEXT.py",
@@ -503,9 +470,7 @@
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/ISO_OID.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/LOCATABLE_REF.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/TEMPLATE_ID.py",
-		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/TERMINOLOGY_ID.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/identification/UUID.py",
-		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_ORDERED.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_AMOUNT.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/datatypes/quantity/DV_QUANTIFIED.py",
 		"/home/matheus/plone_instances/christiano/1/openehr/rm/support/basic/Interval.py",
@@ -554,20 +519,7 @@
 		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/profiles/default/types/GenericDocument.xml",
 		"/home/matheus/plone_instances/communi/1/src/wres.archetypes/wres/archetypes/content/genericdocument.py",
 		"/home/matheus/pyramid_instances/pyramid_auth_demo/0.no_security/demo.py",
-		"/home/matheus/NetBeansProjects/tp3Redes/Makefile",
-		"/home/matheus/.kde/share/apps/kio_magnet/Dark.City.1998.Director's.Cut.1080p.Bluray.x264.anoXmous/Dark.City.1998.Directors.Cut.1080p.BluRay.x264-CiNEFiLE.srt",
-		"/home/matheus/aspell6-pt_BR-20090702-0/README",
-		"/media/8EFA64F6FA64DC49/Hannibal.Rising[2007]DvDrip[Eng]-aXXo/IMPORTANT.Read carefully before enjoy this movie.txt",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/skins/wres_theme_js/patient_view.js",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/0_d_tour_inicial.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/0_S_tour_inicial.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/1_d_registro_rapido.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/1_S_registro_rapido.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/1_S_registro_rapido.po_",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/2_d_cadastrar_consulta.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/2_S_cadastrar_consulta.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/3_d_configurando_calendario.po",
-		"/home/matheus/plone_instances/communi/1/src/wres.theme/wres/theme/locales/pt-br/LC_MESSAGES/3_S_configurando_calendario.po"
+		"/home/matheus/NetBeansProjects/tp3Redes/Makefile"
 	],
 	"find":
 	{
@@ -750,175 +702,8 @@
 	"groups":
 	[
 		{
-			"selected": 5,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "openehr/rm/datatypes/quantity/DV_ORDERED.py",
-					"settings":
-					{
-						"buffer_size": 2157,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1118,
-								1118
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 116.0,
-						"translation.y": 462.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "openehr/rm/datatypes/quantity/REFERENCE_RANGE.py",
-					"settings":
-					{
-						"buffer_size": 916,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								521,
-								521
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "openehr/rm/datatypes/text/CODE_PHRASE.py",
-					"settings":
-					{
-						"buffer_size": 1513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 138.0,
-						"translation.y": 330.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "openehr/rm/support/identification/TERMINOLOGY_ID.py",
-					"settings":
-					{
-						"buffer_size": 1038,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								447,
-								447
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py",
-					"settings":
-					{
-						"buffer_size": 1210,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								717,
-								717
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 132.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py",
-					"settings":
-					{
-						"buffer_size": 246,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								244,
-								244
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -968,12 +753,68 @@
 		"selected_items":
 		[
 			[
-				"dv_du",
-				"openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py"
+				"dv_date_time",
+				"openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE_TIME.py"
 			],
 			[
 				"dv_date",
 				"openehr/rm/datatypes/quantity/DATE_TIME/DV_DATE.py"
+			],
+			[
+				"dv_par",
+				"openehr/rm/datatypes/encapsulated/DV_PARSABLE.py"
+			],
+			[
+				"dv_en",
+				"openehr/rm/datatypes/encapsulated/DV_ENCAPSULATED.py"
+			],
+			[
+				"strucitemtable",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_TABLE.py"
+			],
+			[
+				"represecluster",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/REPRESENTATION/CLUSTER.py"
+			],
+			[
+				"dv_ur",
+				"openehr/rm/datatypes/uri/DV_URI.py"
+			],
+			[
+				"item_table",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_TABLE.py"
+			],
+			[
+				"itemsing",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_SINGLE.py"
+			],
+			[
+				"dv_uri",
+				"openehr/rm/datatypes/uri/DV_URI.py"
+			],
+			[
+				"represeelemen",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/REPRESENTATION/ELEMENT.py"
+			],
+			[
+				"item_",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_LIST.py"
+			],
+			[
+				"element.py",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/REPRESENTATION/ELEMENT.py"
+			],
+			[
+				"item_li",
+				"openehr/rm/data_structure/ITEM_STRUCTURE/ITEM_LIST.py"
+			],
+			[
+				"data_s",
+				"openehr/rm/data_structure/DATA_STRUCTURE.py"
+			],
+			[
+				"dv_du",
+				"openehr/rm/datatypes/quantity/DATE_TIME/DV_DURATION.py"
 			],
 			[
 				"termi",
@@ -1422,62 +1263,6 @@
 			[
 				"main_tem",
 				"theme/skins/sunburst_theme/sunburst_templates/main_template.pt"
-			],
-			[
-				"generic",
-				"archetypes/content/genericdocument.py"
-			],
-			[
-				"generic_ri",
-				"theme/skins/wres_theme_js/generic_richtext_edit.js"
-			],
-			[
-				"patient_char",
-				"theme/skins/wres_theme_templates/patient_cphone_edit_macro.pt"
-			],
-			[
-				"chart",
-				"theme/skins/wres_theme_templates/patient_chart_macros.pt"
-			],
-			[
-				"test_cre",
-				"policy/tests/test_create_appointment.py"
-			],
-			[
-				"test_sele",
-				"policy/tests/test_selenium.py"
-			],
-			[
-				"test_appoin",
-				"policy/tests/test_create_appointment.py"
-			],
-			[
-				"test_selenium",
-				"policy/tests/test_selenium.py"
-			],
-			[
-				"create_appoi",
-				"policy/tests/test_create_appointment.py"
-			],
-			[
-				"debu",
-				"theme/skins/wres_theme_scripts/debug_init.py"
-			],
-			[
-				"get",
-				"theme/skins/wres_theme_scripts/getClinic.py"
-			],
-			[
-				"getd",
-				"theme/skins/wres_theme_scripts/getDEF.py"
-			],
-			[
-				"develop.cfg",
-				"intranett/development.cfg"
-			],
-			[
-				"testing",
-				"policy/testing.py"
 			]
 		],
 		"width": 0.0
