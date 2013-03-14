@@ -12,7 +12,7 @@ class HISTORY(DATA_STRUCTURE):
  #tempo da origem desse evento do tipo history
  origin = DV_DATE_TIME(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
 
- #os eventos dessa serie
+ #os eventos dessa serie. lista de eventos
  events = []
 
  #periodo entre amostras neste segmento (SE for periódico)
