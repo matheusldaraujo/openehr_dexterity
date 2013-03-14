@@ -10,11 +10,11 @@ from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.CLUSTER import CLUS
 class ITEM_TABLE(DATA_STRUCTURE):
 
  #representação de uma tabela como uma lista de clusters
- rows = CLUSTER[]
+ table = []
 
  #construtor
- def __init__(self, rows = CLUSTER[]):
-     self.rows = rows
+ def __init__(self, table = []):
+     self.table = table
 
 
   #retorna o número de linhas
