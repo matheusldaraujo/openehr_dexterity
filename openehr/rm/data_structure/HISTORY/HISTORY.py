@@ -15,10 +15,15 @@ class HISTORY(DATA_STRUCTURE):
  #os eventos dessa serie
  events = []
 
+ #periodo entre amostras neste segmento (se for periódico)
  period = DV_DURATION
 
+ #duração da história inteira
  duration = DV_DURATION
 
+
+ #opcional. texto ou imagem que
+ # sumariza a história inteira
  summary = ITEM_STRUCTURE
 
  #construtor
