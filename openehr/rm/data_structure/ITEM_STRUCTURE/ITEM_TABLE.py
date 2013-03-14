@@ -17,6 +17,12 @@ class ITEM_TABLE(DATA_STRUCTURE):
      self.table = table
 
 
+  #insere uma linha (um CLUSTER) na tabela
+  def appendRows(self, row = CLUSTER):
+   self.table.append(row)
+
+
+
   #retorna o número de linhas
   def rowCount(self):
 

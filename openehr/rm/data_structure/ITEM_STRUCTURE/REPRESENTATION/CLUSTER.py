@@ -12,8 +12,8 @@ class CLUSTER(ITEM):
 
 
     #construtor
-    def __init__(self, items):
-        self.items = items
+    def __init__(self):
+       pass
 
     #retorna a lista de  items
     def getCluster(self):
