@@ -19,3 +19,5 @@ class INTERVAL_EVENT(EVENT):
     sample_count = typeInt
 
 
+    #ponto inicial do intervalo desse evento
+    def interval_start_time(self):
