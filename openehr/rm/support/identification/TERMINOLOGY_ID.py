@@ -18,7 +18,8 @@ class TERMINOLOGY_ID(OBJECT_ID):
      value = []
 
      #construtor
-     def __init__(self, name, version_id):
+     #TODO: Matheus valores dummies, para compilar, olhar se é cabível
+     def __init__(self, name=typeStr, version_id=typeStr):
          self.name = name
          self.version_id = version_id
 

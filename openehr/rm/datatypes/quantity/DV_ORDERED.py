@@ -24,7 +24,7 @@ class DV_ORDERED(DATA_VALUE):
 
   # #opcional. indicador normal de status do valorcom respeito ao range normal
   # # ver OpenEHR terminology group "normal status"
-   normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr())
+   normal_status = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(), code_string = typeStr)
 
 
 

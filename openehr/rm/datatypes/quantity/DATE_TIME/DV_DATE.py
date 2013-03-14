@@ -13,7 +13,11 @@ class DV_DATE(Dv_TEMPORAL):
     #ISO 8601 data string
     value = datetime
 
-    pontoDeOrigem = date.fromordinal(date(0000,01,01))
+    #TODO: Matheus mudei ano inicial de 0000 para 0001, pois este é o
+    #ano inicial suportado pela biblioteca
+    #TODO: date.fromordinal recebe um inteiro como parametro e não um date
+    #time, ordinal deve ser >= 1
+    pontoDeOrigem = date.fromordinal(1)
 
     #construtor
     def __init__(self,year = typeInt, month = typeInt, day = typeInt ):
