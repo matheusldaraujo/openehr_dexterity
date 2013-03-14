@@ -1,9 +1,26 @@
 __author__ = 'chrispess'
 
+from datetime import datetime
 from openehr.rm.datatypes.quantity.DV_ABSOLUTE_QUANTITY import DV_ABSOLUTE_QUANTITY
 
-#variante temporalda classe DV_ABSOLUTE_QUANTITY
+#representa um período com respeito a um ponto no tempo não especificado
+#não deve ser utilizado para representar pontos no tempo ou intervalos de tempo
 class DV_DURATION(DV_ABSOLUTE_QUANTITY):
-	#TODO Matheus: put "pass" to compile
-	pass
 
+    #optou-se por adotar o 'ISO precise format', que não utiliza meses ou anos
+    value = datetime
+
+    #construtor
+    def __init__(self,dia, hora, minuto , segundo):
+        #define o objeto datetime, value
+        #o valor '1' para mês e ano não deve ser levado em conta no cálculo
+        # da duração, valores dumyes colocados devido à exigência do método
+        # construtor 'datetime'
+
+        self.value = datetime(1,1, dia, hora, minuto,segundo)
+
+
+        #retorna a string referente à duração
+    def getString(self):
+        return str(self.value.day),':',str(self.value.hour),\
+               ':',str(self.value.min),':',str(self.value.second)
