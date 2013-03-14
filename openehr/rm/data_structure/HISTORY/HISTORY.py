@@ -15,7 +15,7 @@ class HISTORY(DATA_STRUCTURE):
  #os eventos dessa serie
  events = []
 
- #periodo entre amostras neste segmento (se for periódico)
+ #periodo entre amostras neste segmento (SE for periódico)
  period = DV_DURATION
 
  #duração da história inteira
@@ -29,4 +29,11 @@ class HISTORY(DATA_STRUCTURE):
  #construtor
  def __init__(self, origin = DV_DATE_TIME (typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
      self.origin = origin
+
+
+ #indica quando a history é periódica
+ def is_periodic(self):
+     if self.period == None:
+         return True
+
 
