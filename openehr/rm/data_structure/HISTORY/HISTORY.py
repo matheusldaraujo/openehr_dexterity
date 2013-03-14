@@ -1,6 +1,7 @@
 __author__ = 'chrispess'
 
 from openehr.rm.data_structure.DATA_STRUCTURE import DATA_STRUCTURE
+from openehr.rm.data_structure.ITEM_STRUCTURE.ITEM_STRUCTURE import ITEM_STRUCTURE
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DATE_TIME import DV_DATE_TIME
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DURATION import DV_DURATION
 from openehr.BASIC_TYPES import typeInt
@@ -15,6 +16,10 @@ class HISTORY(DATA_STRUCTURE):
  events = []
 
  period = DV_DURATION
+
+ duration = DV_DURATION
+
+ summary = ITEM_STRUCTURE
 
  #construtor
  def __init__(self, origin = DV_DATE_TIME (typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
