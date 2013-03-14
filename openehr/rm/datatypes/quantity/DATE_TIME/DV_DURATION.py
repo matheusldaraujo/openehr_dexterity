@@ -24,3 +24,9 @@ class DV_DURATION(DV_ABSOLUTE_QUANTITY):
     def getString(self):
         return str(self.value.day),':',str(self.value.hour),\
                ':',str(self.value.min),':',str(self.value.second)
+
+
+    #retorna value
+    def getDuration(self):
+        return self.value
+
