@@ -8,3 +8,8 @@ from openehr.BASIC_TYPES import typeInt
 class HISTORY(DATA_STRUCTURE):
 
  origin = DV_DATE_TIME(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
+
+ #construtor
+ def __init__(self, origin = DV_DATE_TIME (typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
+     self.origin = origin
+
