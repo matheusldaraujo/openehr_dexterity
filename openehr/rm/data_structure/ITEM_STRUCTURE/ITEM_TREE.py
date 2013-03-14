@@ -5,7 +5,7 @@ from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.ITEM import ITEM
 
 #estrutura de dados do tipo tree.
 # utilizada para representar
-class ITEM_TREE(ITEM):
+class ITEM_TREE(DATA_STRUCTURE):
 
     items = []
 
