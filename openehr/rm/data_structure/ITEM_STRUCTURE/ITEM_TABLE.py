@@ -3,7 +3,7 @@ __author__ = 'chrispess'
 from openehr.rm.data_structure.ITEM_STRUCTURE.REPRESENTATION.CLUSTER import CLUSTER
 
 #data structure do tipo table.
-#No caso do OpenEHR, uma lista de Clusters
+#No caso do OpenEHR, cria uma lista de Clusters
 
 class ITEM_TABLE(CLUSTER):
 
