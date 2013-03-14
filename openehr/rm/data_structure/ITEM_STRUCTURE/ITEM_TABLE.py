@@ -29,6 +29,8 @@ class ITEM_TABLE(DATA_STRUCTURE):
   def columnCount(self):
    self.table[0].getSize()
 
+  #retorna um
+
   #retorna uma lista com o nome das linhas
   #def rowNames(self):
 
