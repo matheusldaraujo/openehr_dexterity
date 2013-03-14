@@ -21,13 +21,13 @@ class ITEM_TABLE(DATA_STRUCTURE):
   def appendRows(self, row = CLUSTER):
    self.table.append(row)
 
-
-
   #retorna o número de linhas
   def rowCount(self):
+      return self.table.len()
 
   #retorna o número de  colunas
   def columnCount(self):
+      self.table.[0].getSize()
 
   #retorna uma lista com o nome das linhas
   def rowNames(self):
