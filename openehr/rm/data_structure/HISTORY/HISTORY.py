@@ -37,3 +37,16 @@ class HISTORY(DATA_STRUCTURE):
          return True
 
 
+#seta duração
+def setDuration(self, duration = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
+      self.duration = duration
+
+
+  #seta período
+def setPeriod(self,period = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
+      self.period = period
+
+
+#seta summary
+def setSummary(self,summary = ITEM_STRUCTURE ):
+    self.summary = summary
