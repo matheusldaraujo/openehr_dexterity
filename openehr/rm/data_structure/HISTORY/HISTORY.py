@@ -1,5 +1,5 @@
 __author__ = 'chrispess'
-
+from openehr.rm.data_structure.HISTORY.EVENT import EVENT
 from openehr.rm.data_structure.DATA_STRUCTURE import DATA_STRUCTURE
 from openehr.rm.data_structure.ITEM_STRUCTURE.ITEM_STRUCTURE import ITEM_STRUCTURE
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DATE_TIME import DV_DATE_TIME
@@ -50,3 +50,10 @@ def setPeriod(self,period = DV_DURATION(dia = typeInt, hora = typeInt, minuto = 
 #seta summary
 def setSummary(self,summary = ITEM_STRUCTURE ):
     self.summary = summary
+
+
+#adiciona eventos na lista
+def appendEvents(self, event = EVENT):
+    self.events.append(event)
+
+
