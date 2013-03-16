@@ -25,4 +25,6 @@ class EVENT(object):
  def setDuration(self,duration = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
      self.duration = duration
 
-
+ #retorna duration (offset)
+ def offset(self):
+     return self.duration
