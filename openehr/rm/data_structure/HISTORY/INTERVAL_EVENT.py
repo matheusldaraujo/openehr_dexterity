@@ -1,9 +1,11 @@
 __author__ = 'chrispess'
 
 from openehr.BASIC_TYPES import typeInt
+from openehr.BASIC_TYPES import typeStr
 from openehr.rm.data_structure.HISTORY.EVENT import EVENT
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DURATION import DV_DURATION
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
+from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DATE_TIME import DV_DATE_TIME
 #classeque define um único intervalo numa série
 class INTERVAL_EVENT(EVENT):
@@ -13,7 +15,7 @@ class INTERVAL_EVENT(EVENT):
 
     #função matemática referente à data desse event.
     # Ex: "media", "maximum", etc.
-    math_function = DV_CODED_TEXT
+    math_function = DV_CODED_TEXT(CODE_PHRASE(teminology_id=TERMINOLOGY_ID(typeStr,typeStr), code_string=typeStr))
 
     #opcional. contador dos exemplos originais
     # aos quais o evento corresponde
