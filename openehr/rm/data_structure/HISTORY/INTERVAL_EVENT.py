@@ -2,6 +2,7 @@ __author__ = 'chrispess'
 
 from openehr.BASIC_TYPES import typeInt
 from openehr.BASIC_TYPES import typeStr
+from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.rm.data_structure.HISTORY.EVENT import EVENT
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DURATION import DV_DURATION
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
