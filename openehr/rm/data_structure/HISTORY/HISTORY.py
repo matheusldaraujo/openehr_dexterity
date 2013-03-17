@@ -27,8 +27,27 @@ class HISTORY(DATA_STRUCTURE):
  summary = ITEM_STRUCTURE
 
  #construtor
- def __init__(self, origin = DV_DATE_TIME (typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
-     self.origin = origin
+ def __init__(self,*args):
+      if(len(args)==1):
+          #origem
+          self.origin = args[0]
+      elif(len(args)==2):
+          #origem
+          self.origin = args[0]
+          #eventos
+          self.events = args[1]
+      else:
+      #origem
+          self.origin = args[0]
+          #eventos
+          self.events = args[1]
+          #periodo
+          self.period = args[2]
+          #duração
+          self.duration = args[3]
+          #sumário
+          self.summary = args[4]
+
 
 
  #indica quando a history é periódica
