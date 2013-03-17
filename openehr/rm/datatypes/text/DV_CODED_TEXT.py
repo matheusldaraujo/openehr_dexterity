@@ -14,33 +14,26 @@ class DV_CODED_TEXT(DV_TEXT):
 
  defining_code = CODE_PHRASE() #a rubrica associada ao  'value'
 
-
  #construtor
- #TODO: Matheus, overload de Funcoes
- #TODO: Matheus, Dummie default values, olhar se é cabível
- def __init__(self,definingCode="", value="", mappings="", formatting="", hyperlink="", language="", encoding=""):
+ def __init__(self,*args):
 
-    self.defining_code=definingCode  #este self valora o atributo defining_code definido acima
+     if(len(args)==1):
+      self.defining_code=args[0]  #este self valora o atributo defining_code definido acima
 
-
-    super(DV_CODED_TEXT, self).__init__()
-    self.value = value  #este self chama o atributo 'value' da superclasse DV_TEXT
-    #demais atributos da super classe DV_TEXT
-    self.mappings = mappings
-    self.formatting = formatting
-    self.hyperlink = hyperlink
-    self.language = language
-    self.encoding = encoding
-    self.language = language
-
- #construtor com apenasvalue
- #TODO: Matheus, Dummie default values, olhar se é cabível
- # def __init__(self, value = ""):
- #     super(DV_CODED_TEXT, self).__init__()
- #     self.value = value
+     elif(len(args)>=1):
+      self.defining_code=args[0]
+      super(DV_CODED_TEXT, self).__init__()
+      self.value = args[1]  #este self chama o atributo 'value' da superclasse DV_TEXT
+      #demais atributos da super classe DV_TEXT
+      self.mappings = args[2]
+      self.formatting = args[3]
+      self.hyperlink = args[4]
+      self.language = args[5]
+      self.encoding = args[6]
+      self.language = args[7]
 
 
- #retorna defining_code
+  #retorna defining_code
  def getDefinig_code(self):
      return self.defining_code
 
