@@ -21,6 +21,17 @@ class EVENT(object):
  #duração do evento
  duration = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
 
+ #construtor
+ def __init__(self, *args):
+     if(len(args)==2):
+         self.time = args[0]
+         self.data = args[1]
+     elif(len(args)==3):
+         self.time = args[0]
+         self.data = args[1]
+         self.state = args[2]
+
+
  #seta duration (offset)
  def setDuration(self,duration = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
      self.duration = duration
