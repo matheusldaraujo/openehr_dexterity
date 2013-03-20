@@ -12,8 +12,7 @@ class ARCHETYPED(object):
 
  rm_version = typeStr
 
-  #def __init__(self, archetype_id = ARCHETYPE_ID(rm_originator = typeStr, rm_name = typeStr, rm_entity = typeStr, domain_concept = typeStr, specialization = typeStr, version_id = typeStr), rm_version = typeStr ):
-
+ #construtor
  def __init__(self, *args):
      #constrói com archetype_id e rm_version
      if(len(args)==2):
@@ -24,3 +23,5 @@ class ARCHETYPED(object):
          self.archetype_id = args[0]
          self.rm_version = args[1]
          self.template_id = args[2]
+
+
