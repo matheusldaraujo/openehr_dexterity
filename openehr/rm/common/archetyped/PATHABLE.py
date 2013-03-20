@@ -2,4 +2,11 @@ __author__ = 'chrispess'
 
 
 class PATHABLE():
-    pass
+
+
+  class PATHABLE():
+   pass
+
+PATHABLE.parent = PATHABLE()
+
+  
