@@ -6,6 +6,8 @@ __author__ = 'chrispess'
 from openehr.rm.datatypes.basic.DATA_VALUE import DATA_VALUE
 from openehr.rm.datatypes.uri.DV_URI import DV_URI
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
+from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
+
 from openehr.BASIC_TYPES import typeStr
 
 #classe para representar qualquer
@@ -30,28 +32,25 @@ class DV_TEXT(DATA_VALUE):
 
   #indicador opcional da linguagem em que 'value' é escreto
   #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
-  language = CODE_PHRASE("terminologias","string")
+  language = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(typeStr,typeStr), code_string=typeStr)
 
   #nome do eschema de caracteres em que 'value' é encodado
   #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
-  encoding = CODE_PHRASE("terminologias","string")
-
-  #construtor
-  #TODO: Matheus, Python não suporta overload de funcoes
-  def __init__(self, value, mappings, formatting, hyperlink, language, encoding):
-      self.value = value
-      self.mappings = mappings
-      self.formatting = formatting
-      self.hyperlink = hyperlink
-      self.language = language
-      self.encoding = encoding
+  encoding = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(typeStr,typeStr), code_string=typeStr)
 
 
-  #construtor apenas com value (mandatório)
-  #TODO: Dummy default value, olhar se é cabivel
-  def __init__(self, value=""):
-      self.value = value
 
+#construtor
+  def __init__(self, *args):
+      if(len(args)==1):
+          self.value = args[0]
+      elif(len(args)>1):
+       self.value = args[0]
+       self.mappings = args[1]
+       self.formatting = args[2]
+       self.hyperlink = args[3]
+       self.language = args[4]
+       self.encoding = args[5]
 
 
   #retorna string associada ao 'value'

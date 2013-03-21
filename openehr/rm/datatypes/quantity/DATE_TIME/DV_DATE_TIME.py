@@ -4,6 +4,7 @@ __author__ = 'chrispess'
 from datetime import datetime
 from datetime import date
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_TEMPORAL import Dv_TEMPORAL
+from openehr.BASIC_TYPES import typeInt
 
 #usado pararepresentar a duração em horas, minutos ou segundos. Não deveser
 # utilizado para representar pontos ou intervalos de tempo
@@ -14,7 +15,7 @@ class DV_DATE_TIME(Dv_TEMPORAL):
     value = datetime
 
     #construtor
-    def __init__(self,dia, hora, minuto , segundo):
+    def __init__(self,dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt):
         #define o objeto datetime, value
         #o valor '1' para mês e ano não deve ser levado em conta no cálculo
         # da duração, valores dumyes colocados devido à exigência do método
