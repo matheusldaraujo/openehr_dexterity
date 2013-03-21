@@ -33,7 +33,9 @@ class PARTICIPATION(object):
            self.function = args[1]
            self.mode = args[2]
 
-        elif(len(args)==4)
+        elif(len(args)==4):
          self.performer = args[0]
          self.function = args[1]
          self.mode = args[2]
+         self.time = args[3]
+
