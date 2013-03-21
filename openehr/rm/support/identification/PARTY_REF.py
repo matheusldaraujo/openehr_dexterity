@@ -9,18 +9,12 @@ from openehr.BASIC_TYPES import typeStr
 
 class PARTY_REF(OBJECT_REF):
 
-
-	#TODO Matheus: Passando valor dumie
-  id = OBJECT_ID(5)  #id unico de um objeto. != null
-
-  #nome da classe do objeto aque o identificador se refere. !=null
-  type = typeStr
+ pass
 
 
-  #construtor
-  def __init__(self, id, type):
-    self.id = id
-    self.type = type
+
+
+
 
 
 
