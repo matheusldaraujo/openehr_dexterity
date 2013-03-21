@@ -2,6 +2,8 @@
 
 __author__ = 'chrispess'
 
+from openehr.BASIC_TYPES import typeStr
+from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.rm.datatypes.text.DV_TEXT import DV_TEXT
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 
@@ -12,7 +14,7 @@ from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 class DV_CODED_TEXT(DV_TEXT):
 
 
- defining_code = CODE_PHRASE() #a rubrica associada ao  'value'
+ defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr) #a rubrica associada ao  'value'
 
  #construtor
  def __init__(self,*args):
