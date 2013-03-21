@@ -43,7 +43,7 @@ class DV_TEXT(DATA_VALUE):
 #construtor
   def __init__(self, *args):
       if(len(args)==1):
-          self.value = args[0]
+       self.value = args[0]
       elif(len(args)>1):
        self.value = args[0]
        self.mappings = args[1]

@@ -15,7 +15,7 @@ class CODE_PHRASE(DATA_VALUE):
     #identificador da terminologia de onde o code_string foi extraido
     #TODO: Matheus: Coloquei parametros dummyes em TERMINOLOGY_ID para passar na execucao
 
-    terminologyID = TERMINOLOGY_ID("nome","versão")
+    terminologyID = TERMINOLOGY_ID(name=typeStr, version_id=typeStr)
 
 
     #chave utilizada pelo serviço de terminologia para identificar um conceito
@@ -24,7 +24,7 @@ class CODE_PHRASE(DATA_VALUE):
 
     #construtor
     #TODO: Matheus, Dummie default values, olhar se é cabível
-    def __init__(self, teminology_id=TERMINOLOGY_ID(typeStr,typeStr), code_string=typeStr):
+    def __init__(self, teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr):
         self.terminologyID = teminology_id
         self.codeString = code_string
 
@@ -43,7 +43,7 @@ class CODE_PHRASE(DATA_VALUE):
 
 
     #seta terminologyID
-    def setTerminologyID(self, terminology_id):
+    def setTerminologyID(self, terminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr)):
         self.terminologyID = terminology_id
 
 
