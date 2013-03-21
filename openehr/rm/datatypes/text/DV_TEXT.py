@@ -28,15 +28,15 @@ class DV_TEXT(DATA_VALUE):
 
   #link opcional
   #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
-  hyperlink = DV_URI(1)
+  hyperlink = DV_URI(value = typeStr)
 
   #indicador opcional da linguagem em que 'value' é escreto
   #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
-  language = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(typeStr,typeStr), code_string=typeStr)
+  language = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
 
   #nome do eschema de caracteres em que 'value' é encodado
   #TODO Matheus: Dummie value attribute, setar Default ou adicionar aqui
-  encoding = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(typeStr,typeStr), code_string=typeStr)
+  encoding = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
 
 
 
