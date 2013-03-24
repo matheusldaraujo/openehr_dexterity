@@ -26,7 +26,7 @@ class DV_CODED_TEXT(DV_TEXT):
       self.defining_code=args[0]
       super(DV_CODED_TEXT, self).__init__()
       self.value = args[1]  #este self chama o atributo 'value' da superclasse DV_TEXT
-      #demais atributos da super classe DV_TEXT
+                            #demais atributos da super classe DV_TEXT
       self.mappings = args[2]
       self.formatting = args[3]
       self.hyperlink = args[4]
