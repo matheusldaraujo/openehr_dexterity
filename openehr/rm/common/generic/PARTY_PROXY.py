@@ -11,3 +11,12 @@ class PARTY_PROXY():
     #construtor
     def __init__(self, external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr)):
         self.external_ref = external_ref
+
+    #seta external_ref
+    def setExternalRef(self,external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr)):
+        self.external_ref = external_ref
+
+    #retorna external_ref
+    def getExternalRef(self):
+        return self.external_ref
+
