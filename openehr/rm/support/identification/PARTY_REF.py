@@ -9,7 +9,14 @@ from openehr.BASIC_TYPES import typeStr
 
 class PARTY_REF(OBJECT_REF):
 
- pass
+ #id referenciando participante de um serviço identificado
+ id = OBJECT_ID
+
+ #tipo
+ type = typeStr
+
+ #construtor
+ #def __init__(self, ):
 
 
 

@@ -6,3 +6,4 @@ class PARTY_PROXY():
 
     #referência opcional a maioresdetalhes de identificção ou demográficos
     external_ref = PARTY_REF
+
