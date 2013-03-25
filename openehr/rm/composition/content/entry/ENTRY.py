@@ -6,6 +6,7 @@ from openehr.rm.common.generic.PARTICIPATION import PARTICIPATION
 from openehr.rm.support.identification.OBJECT_REF import OBJECT_REF
 from openehr.BASIC_TYPES import typeBool
 from openehr.BASIC_TYPES import typeStr
+from openehr.rm.common.generic.PARTY_PROXY import PARTY_PROXY
 from openehr.rm.composition.content.CONTENT_ITEM import CONTENT_ITEM
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 
@@ -18,4 +19,8 @@ class ENTRY(CONTENT_ITEM):
 
     #conjunto de caracteres em que a ENTRY é codificada
     encoding = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
+
+    #Id da pessoa que é sujeito da ENTRY.
+    # ex: doador de órgãos, feto, membro da família, etc
+    subject = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr))
 

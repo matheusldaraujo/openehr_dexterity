@@ -6,6 +6,8 @@ from openehr.rm.common.generic.PARTY_PROXY import PARTY_PROXY
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
+from openehr.rm.support.identification.OBJECT_REF import OBJECT_REF
+from openehr.rm.support.identification.PARTY_REF import PARTY_REF
 from openehr.BASIC_TYPES import typeStr
 
 
@@ -22,11 +24,11 @@ class COMPOSITION(object):
  #é o identificador que aparece na screen. Pode ser, ou não,
  # a pessoa que entrou com os dados.Se foro próprio paciente,
  # a instância "self" é usada
- composer = PARTY_PROXY
+ composer = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr))
 
  #indica a categoria à qual a composition pertence. ex:"persistent",
  # "event", "process", etc
- category = DV_CODED_TEXT
+ category = DV_CODED_TEXT(CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
  #linguagem em que a composition é escrita.
  # codificada por openEHR code set "languages"
