@@ -5,6 +5,8 @@ from openehr.rm.composition.EVENT_CONTEXT import EVENT_CONTEXT
 from openehr.rm.common.generic.PARTY_PROXY import PARTY_PROXY
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
+from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
+from openehr.BASIC_TYPES import typeStr
 
 
 class COMPOSITION(object):
@@ -28,11 +30,11 @@ class COMPOSITION(object):
 
  #linguagem em que a composition é escrita.
  # codificada por openEHR code set "languages"
- language = CODE_PHRASE
+ language = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
 
  #nome do território em que a composition foi escrita.
  # codificado por openEHR "countries"
- territory = CODE_PHRASE
+ territory = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
 
 
  #construtor
