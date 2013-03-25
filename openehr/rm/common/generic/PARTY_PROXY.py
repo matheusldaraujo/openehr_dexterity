@@ -22,3 +22,7 @@ class PARTY_PROXY():
     def getExternalRef(self):
         return self.external_ref
 
+    #retorna o tipo da referência externa ("type")
+    def getType(self):
+        return self.external_ref.
+

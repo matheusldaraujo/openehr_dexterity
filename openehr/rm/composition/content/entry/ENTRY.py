@@ -37,6 +37,7 @@ class ENTRY(CONTENT_ITEM):
     #identificador de workflow externo
     workflow_id = OBJECT_REF(id = OBJECT_ID(id = typeStr), namespace = typeStr, type = typeStr)
 
+    #construtor
     def __init__(self, *args):
         if(len(args)==3):
             self.language = args[0]
@@ -51,3 +52,7 @@ class ENTRY(CONTENT_ITEM):
             self.workflow_id = args[5]
 
 
+    #retorna true se esta entry é a respeito do sujeito da EHR.
+    # Em caso positivo, o atributo "subject" é do tipo PARTY_SELF
+    def subject_is_self(self):
+        if(self.subject)
