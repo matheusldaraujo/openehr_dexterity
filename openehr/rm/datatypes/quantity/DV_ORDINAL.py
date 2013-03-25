@@ -32,8 +32,8 @@ class DV_ORDINAL(DV_ORDERED):
 
  #retorna true se os símbolos provêm do mesmo vocabulário
  def isStrictlyComparableTo(self,DV_ORDINAL):
-     if((self.symbol.getDefinig_code().getTerminologyID().name() == DV_ORDINAL.symbol.getDefinig_code().getTerminologyID().name()) and
-        (self.symbol.getDefinig_code().getTerminologyID().version_id() == DV_ORDINAL.symbol.getDefinig_code().getTerminologyID().version_id())):
+     if((self.symbol.getDefining_code().getTerminologyID().name() == DV_ORDINAL.symbol.getDefinig_code().getTerminologyID().name()) and
+        (self.symbol.getDefining_code_code().getTerminologyID().version_id() == DV_ORDINAL.symbol.getDefining_code().getTerminologyID().version_id())):
       return True
      else:return False
 
