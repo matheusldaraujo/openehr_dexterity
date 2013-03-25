@@ -15,3 +15,7 @@ class ENTRY(CONTENT_ITEM):
     #linguagem em que a ENTRY é escrita. codificada pelo
     # openEHR code Set "languages"
     language = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
+
+    #conjunto de caracteres em que a ENTRY é codificada
+    encoding = CODE_PHRASE(teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)
+
