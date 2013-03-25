@@ -13,7 +13,6 @@ from openehr.BASIC_TYPES import typeStr
 
 class EVENT_CONTEXT(object):
 
-
     #opcional. Descrição original:"The health care facility under
     #whose care the event took place."
     health_care_facility = PARTY_IDENTIFIED(identifiers = DV_IDENTIFIER[])
