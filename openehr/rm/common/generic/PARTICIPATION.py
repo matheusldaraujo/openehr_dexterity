@@ -21,7 +21,6 @@ class PARTICIPATION(object):
     # ex: presencial, por telefone, email, etc
     mode = DV_CODED_TEXT(defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
-
     # o intervalo de tempo durante o qual a participação ocorreu
     # optou-se por utilizar a classe DV_DURATION para esta representação
     time = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
