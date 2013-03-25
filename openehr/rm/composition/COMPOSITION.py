@@ -5,9 +5,9 @@ from openehr.rm.composition.content.
 class COMPOSITION(object):
 
 
- #o conteúdo da composition
+ # [0..1]. o conteúdo da composition
  content = []
 
- #contexto da sessão clínica da composition
+ #[0..1]. contexto da sessão clínica da composition
  context =
 

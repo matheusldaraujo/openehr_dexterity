@@ -18,3 +18,21 @@ class PARTY_IDENTIFIED(object):
        elif(len(args)==2):
            self.name = args[0]
            self.identifiers = args[1]
+
+
+   #seta name
+   def setName(self, name = typeStr):
+       self.name = name
+
+   #seta identifiers
+   def setIdentifiers(self,identifiers = DV_IDENTIFIER[]):
+       self.identifiers = identifiers
+
+   #retorna name
+   def getName(self):
+       return self.name
+
+   #retorna identifiers
+   def getIdentifiers(self):
+       return self.identifiers
+
