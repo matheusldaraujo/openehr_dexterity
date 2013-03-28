@@ -13,4 +13,14 @@ class EVALUATION(ITEM_STRUCTURE):
      self.data = data
 
 
+ #retorna data
+ def getData(self):
+     return self.data
+
+ #seta data
+ def setData(self, data = ITEM_STRUCTURE):
+     self.data = data
+
+
+
 
