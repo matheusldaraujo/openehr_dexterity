@@ -18,11 +18,9 @@ class PARTY_PROXY():
     def setExternalRef(self,external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr)):
         self.external_ref = external_ref
 
-    #retorna external_ref
-    def getExternalRef(self):
-        return self.external_ref
 
     #retorna o tipo da referência externa ("type")
-    def getType(self):
-        return self.external_ref.
+    def getExternalRef(self):
+        return self.external_ref.getType()
+
 
