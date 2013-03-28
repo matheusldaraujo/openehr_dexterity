@@ -53,6 +53,7 @@ class ENTRY(CONTENT_ITEM):
 
 
     #retorna true se esta entry é a respeito do sujeito da EHR.
-    # Em caso positivo, o atributo "subject" é do tipo PARTY_SELF
+    # Em caso positivo, o atributo "subject" é do tipo "PARTY_SELF"
     def subject_is_self(self):
-        if(self.subject)
+        if(self.subject.getExternalRef().getType()=="PARTY_SELF"):
+            return True
