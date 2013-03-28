@@ -19,6 +19,10 @@ class DV_PARSABLE(DV_ENCAPSULATED):
     #nome do formalismo. ex: GLIF 1.0, proforma
     formalism = typeStr
 
+    #construtor
+    def __init__(self, size = typeInt, value = typeStr, formalism = typeStr):
+
+
     #retorna o tamanho da string value em bytes
     def size(self):
         return self.value.__sizeof__()
