@@ -57,3 +57,5 @@ class ENTRY(CONTENT_ITEM):
     def subject_is_self(self):
         if(self.subject.getExternalRef().getType()=="PARTY_SELF"):
             return True
+
+
