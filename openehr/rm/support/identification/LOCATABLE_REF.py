@@ -4,20 +4,26 @@ __author__ = 'chrispess'
 
 from openehr.rm.support.identification.OBJECT_REF import OBJECT_REF
 from openehr.rm.support.identification.OBJECT_VERSION_ID import OBJECT_VERSION_ID
+from openehr.rm.support.identification.UID import UID
+from openehr.rm.support.identification.VERSION_TREE_ID import VERSION_TREE_ID
 from openehr.BASIC_TYPES import typeStr
 
 class LOCATABLE_REF(OBJECT_REF):
 
-
-    id = OBJECT_VERSION_ID #identificador da versão
+    #identificador da versão
+    id = OBJECT_VERSION_ID(objectID = UID(value = typeStr), creatingSystemID = UID(value = typeStr), versionTreeID = VERSION_TREE_ID(value = typeStr))
 
     path = typeStr
 
-    as_uri =[] # uri criada pela concatenação de "ehr://" + id.value + "/" + path
+    # uri criada pela concatenação de "ehr://" + id.value + "/" + path
+    as_uri =[]
+
 
     type = typeStr
 
+
     namespace = typeStr
+
 
     #construtor full
     def __init__(self, id, namespace, type, path):

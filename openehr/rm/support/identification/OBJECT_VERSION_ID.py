@@ -7,24 +7,28 @@ from openehr.rm.support.identification.VERSION_TREE_ID import VERSION_TREE_ID
 
 # classe para gerar um identificador unico para uma versão deum objeto versionado
 
-# a forma da string de um OBJECT_VERSION_ID associada ao atributo value consiste
-# em três segmentos separados por duplo dois pontos (::)
-# value = objectID + '::'+ creatingSystemID + '::' + versionTreeID
-# Exemplo: F7C5C7B7-75DB-4b39-9A1E-C0BA9BFDBDEC::87284370-2D4B-4e3d-A3F3-F303D2F4F34B::2
+
 
 from openehr.BASIC_TYPES import typeStr
 
 class OBJECT_VERSION_ID(UID_BASED_ID):
 
-    #TODO Matheus: Passando valor dumie
-    objectID =UID(5)
-    #TODO Matheus: Passando valor dumie
-    creatingSystemID = UID(5)
-    #TODO Matheus: Passando valor dumie
-    versionTreeID = VERSION_TREE_ID(5,5,5,5)
+    #identificador único para objetos
+    objectID = UID(value = typeStr)
 
-    value = typeStr
+    #identificador do sistema que criou
+    creatingSystemID = UID(value = typeStr)
 
+    #identificador desta versão com respeito a outra
+    # versão na mesma  árvore de versões. números separados
+    # por pontos: "1", "2.1.4"
+    versionTreeID = VERSION_TREE_ID(value =typeStr)
+
+    # a forma da string de um OBJECT_VERSION_ID associada ao atributo value consiste
+    # em três segmentos separados por duplo dois pontos (::)
+    # value = objectID + '::'+ creatingSystemID + '::' + versionTreeID
+    # Exemplo: F7C5C7B7-75DB-4b39-9A1E-C0BA9BFDBDEC::87284370-2D4B-4e3d-A3F3-F303D2F4F34B::2
+    value = ""
 
     #construtor
 

@@ -5,26 +5,38 @@ class VERSION_TREE_ID:
 
 # formato lexico
 # value: trunkVersion ['.' branchNumber '.' branchVersion]
+# trunk_version: {digito}+
+# branch_number: {digito}+
+# branch_version: {digito}+
+# digit:          [0 - 9]
 
-    value = str #string com a formado identificador
-
-
-    trunkVersion = typeStr  #inicia com 1
-
-
-    branchNumber = typeStr  #inicia com 1
-
-
-    branchVersion = typeStr  #inicia com 1
+    #string com a formado identificador
+    value = typeStr
 
 
 
     #construtor
-    def __init__(self, value, trunkVersion, branchNumber, branchVersion):
+    def __init__(self, value = typeStr):
         self.value =  value
-        self.trunkVersion = trunkVersion
-        self.branchNumber = branchNumber
-        self.branchVersion = branchVersion
+
+
+
+    #retorna trunkVersion
+    def trunk_version(self):
+        return self.trunkVersion
+
+
+
+    #retorna branchNumber
+    def branch_number(self):
+        return self.branchNumber
+
+
+
+    # retorna branchVersion
+    def branch_version(self):
+        return self.branchVersion
+
 
 
     #retorna true se o identificador representa um branch
@@ -40,18 +52,7 @@ class VERSION_TREE_ID:
             return True
         else:return False
 
-    # retorna branchVersion
-    def branch_version(self):
-        return self.branchVersion
 
-
-    #retorna branchNumber
-    def branch_number(self):
-        return self.branchNumber
-
-    #retorna trunkVersion
-    def trunk_version(self):
-        return self.trunkVersion
 
     #retorna value
     def getValue(self):

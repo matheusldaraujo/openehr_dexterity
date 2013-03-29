@@ -23,7 +23,7 @@ class DV_PARSABLE(DV_ENCAPSULATED):
     def __init__(self, size = typeInt, value = typeStr, formalism = typeStr):
 
 
-    #retorna o tamanho da string value em bytes
-    def size(self):
+     #retorna o tamanho da string value em bytes
+     def size(self):
         return self.value.__sizeof__()
 
