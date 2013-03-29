@@ -7,10 +7,20 @@ class OBSERVATION(CARE_ENTRY):
 
  #os dados da  observação, na forma de um
  # histórico de valores de complexidade variável
- data = HISTORY
+ data = HISTORY()
 
  #opcional. Salva o estado do sujeito
  #da observação duranto processo da observação
  #na forma de um histórico separado de valores
  #que podem ser de qualquer complexidade
- state = HISTORY
+ state = HISTORY()
+
+ #construtor
+ def __init__(self, *args):
+     if(len(args)==1):
+      self.data = args[0]
+     elif(len(args)==2):
+      self.data = args[0]
+      self.state = args[1]
+
+
