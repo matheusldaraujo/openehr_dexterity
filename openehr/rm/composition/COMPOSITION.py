@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.composition.content.CONTENT_ITEM import CONTENT_ITEM
@@ -15,7 +16,8 @@ class COMPOSITION(object):
 
 
  # [0..1]. o conteúdo da composition
- content = CONTENT_ITEM[]
+ # TODO Matheus: Troca de [] por ().
+ content = CONTENT_ITEM()
 
  #[0..1]. contexto da sessão clínica da composition
  context = EVENT_CONTEXT
@@ -24,7 +26,7 @@ class COMPOSITION(object):
  #é o identificador que aparece na screen. Pode ser, ou não,
  # a pessoa que entrou com os dados.Se foro próprio paciente,
  # a instância "self" é usada
- composer = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr))
+ composer = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
 
  #indica a categoria à qual a composition pertence. ex:"persistent",
  # "event", "process", etc

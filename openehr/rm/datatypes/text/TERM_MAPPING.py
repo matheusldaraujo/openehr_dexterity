@@ -23,7 +23,10 @@ class TERM_MAPPING():
   match = typeChar
 
   #proposito do mapeamento. ex: "interoperabilidade", "automação de data mining"...
-  purpose =  DV_CODED_TEXT("definingCode", "value", "mappings", "formatting", "hyperlink", "language", "encoding")
+  #TODO Matheus: Ao intanciar DV_CODED_TEXT com mais de 1 argumento, todos os 8 serão necessarios
+  #caso não sejam, seria interessante colocar uma string default na criação da classe
+  #neste caso falto o ultimo argumento, coloquei um dummie
+  purpose =  DV_CODED_TEXT("definingCode", "value", "mappings", "formatting", "hyperlink", "language", "encoding","")
 
 
   #construtor

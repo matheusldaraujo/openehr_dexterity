@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.composition.content.entry.CARE_ENTRY import CARE_ENTRY
@@ -14,7 +15,7 @@ class INSTRUCTION(CARE_ENTRY):
     narrative = DV_TEXT
 
     #[0..1] Lista de todas as atividades numa instrução
-    activities = ACTIVITY[]
+    activities = ACTIVITY()
 
     #[0..1] date/time de quando a instrução pode serassumidacomo terminada
     expiry_time = DV_DATE_TIME

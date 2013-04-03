@@ -8,7 +8,8 @@ from openehr.BASIC_TYPES import typeStr
 class OBJECT_REF():
 
  #id unico de um objeto. != null
- id = OBJECT_ID(id =typeStr)
+ #TODO: MATHEUS, alterei o parâm
+ id = OBJECT_ID(value = typeStr)
 
  #namespace a que o identificador pertence no contexto do sistema. != null
  #ex: "terminology", "demographic"

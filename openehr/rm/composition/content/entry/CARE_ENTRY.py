@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.support.identification.OBJECT_ID  import OBJECT_ID
@@ -16,10 +17,12 @@ class CARE_ENTRY(ENTRY):
      protocol = ITEM_STRUCTURE
 
      #opcional. identificador externo da norma utilizada, se relevante.
-     guideline_id = OBJECT_REF(id = OBJECT_ID(id =typeStr), namespace = typeStr, type = typeStr)
+     ##TODO Matheus: OBJECT id não recebe este parametro passado.
+     guideline_id = OBJECT_REF(id = OBJECT_ID(value =typeStr), namespace = typeStr, type = typeStr)
 
      #construtor
-     def __init__(self, protocol = ITEM_STRUCTURE, guideline_id = OBJECT_REF(id = OBJECT_ID(id =typeStr), namespace = typeStr, type = typeStr)):
+     ###TODO Matheus: OBJECT id não recebe este parametro passado.
+     def __init__(self, protocol = ITEM_STRUCTURE, guideline_id = OBJECT_REF(id = OBJECT_ID(value =typeStr), namespace = typeStr, type = typeStr)):
          self.protocol = protocol
          self.guideline_id = guideline_id
 

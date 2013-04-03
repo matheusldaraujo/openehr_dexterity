@@ -37,22 +37,23 @@ class OBJECT_VERSION_ID(UID_BASED_ID):
         self.creatingSystemID = creatingSystemID
         self.versionTreeID = versionTreeID
 
-
-        self.value.append(self,objectID.toString()) #verificar se chamada de método
-        self.value.append(self,"::")                #está correta
-        self.value.append(self,creatingSystemID.toString())
-        self.value.append(self,"::")
-        self.value.append(self,versionTreeID.toString())
+#TODO Matheus: troquei toString() para o cast str() e
+#dado que str não tem append fiz uma concatenação normal
+        self.value = self.value + str(self.objectID) #verificar se chamada de método
+        self.value = self.value + "::" #está correta
+        self.value = self.value + str(self.creatingSystemID)
+        self.value = self.value + "::"
+        self.value = self.value + str(self.versionTreeID)
 
 
     def __init__(self, objectID = str(), creatingSystemID = str(), versionTreeID = str()):
-
-        self.value.append(self,objectID) #verificar se chamada de método
-        self.value.append(self,"::")                #está correta
-        self.value.append(self,creatingSystemID)
-        self.value.append(self,"::")
-        self.value.append(self,versionTreeID)
-
+#TODO Matheus: troquei toString() para o cast str() e
+#dado que str não tem append fiz uma concatenação normal
+        self.value = self.value + str(self.objectID) #verificar se chamada de método
+        self.value = self.value + "::"                #está correta
+        self.value = self.value + str(self.creatingSystemID)
+        self.value = self.value + "::"
+        self.value = self.value + str(self.versionTreeID)
 
     #retorna objectID
     def ObjectID(self):

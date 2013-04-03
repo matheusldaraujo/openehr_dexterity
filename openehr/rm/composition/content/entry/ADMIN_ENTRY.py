@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
-from openehr.rm.composition.content.entry import ENTRY
+#TODO Matheus: Pequeno erro de importação
+from openehr.rm.composition.content.entry.ENTRY import ENTRY
 from openehr.rm.data_structure.ITEM_STRUCTURE.ITEM_STRUCTURE import ITEM_STRUCTURE
 from openehr.rm.support.identification.OBJECT_REF import OBJECT_REF
 

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
@@ -25,17 +26,18 @@ class ENTRY(CONTENT_ITEM):
 
     #Id da pessoa que é sujeito da ENTRY.
     # ex: doador de órgãos, feto, membro da família, etc
-    subject = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr))
+    subject = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
 
     #identificação opcional do provedor dasinformações da ENTRY.
     # ex: o paciente, parente ou guardião, o clínico, dispositivo ou software
-    provider = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr),namespace = typeStr, type = typeStr))
+    provider = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
 
     #outros participantes
-    other_participations = PARTICIPATION[]
+    other_participations = PARTICIPATION()
 
     #identificador de workflow externo
-    workflow_id = OBJECT_REF(id = OBJECT_ID(id = typeStr), namespace = typeStr, type = typeStr)
+    #TODO Matheus: OBJECT id não recebe este parametro passado.
+    workflow_id = OBJECT_REF(id = OBJECT_ID(value = typeStr), namespace = typeStr, type = typeStr)
 
     #construtor
     def __init__(self, *args):

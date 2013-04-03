@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.BASIC_TYPES import typeInt
 from openehr.BASIC_TYPES import typeStr
+from openehr.BASIC_TYPES import INITIAL_DAY
 from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.rm.data_structure.HISTORY.EVENT import EVENT
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DURATION import DV_DURATION
@@ -12,7 +14,8 @@ from openehr.rm.datatypes.quantity.DATE_TIME.DV_DATE_TIME import DV_DATE_TIME
 class INTERVAL_EVENT(EVENT):
 
     #largura do intervalo
-    width = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
+    ##TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+    width = DV_DURATION(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt)
 
     #função matemática referente à data desse event.
     # Ex: "media", "maximum", etc.
@@ -24,14 +27,17 @@ class INTERVAL_EVENT(EVENT):
 
 
     #início do intervalo
-    startTime = DV_DATE_TIME(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
+    ##TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+    startTime = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt)
 
     #ponto inicial do intervalo desse evento
-    def interval_start_time(self, startTime = DV_DATE_TIME(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)):
+    ##TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+    def interval_start_time(self, startTime = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt)):
         self.startTime = startTime
 
 
     #seta width
-    def setWidth(self,startTime = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
+    ###TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+    def setWidth(self,startTime = DV_DURATION(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
         self.startTime = startTime
 

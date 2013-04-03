@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
@@ -7,10 +8,12 @@ from openehr.BASIC_TYPES import typeInt
 class SECTION (CONTENT_ITEM):
 
     #lista ordenada de itens que pode conter, outras sections ou ENTRYs
-    items = CONTENT_ITEM[]
+    ##TODO Matheus: troca [] por ()
+    items = CONTENT_ITEM()
 
     #construtor
-    def __init__(self,items = CONTENT_ITEM[]):
+    ###TODO Matheus: troca [] por ()
+    def __init__(self,items = CONTENT_ITEM()):
         self.items = items
 
     #adiciona algum item na lista

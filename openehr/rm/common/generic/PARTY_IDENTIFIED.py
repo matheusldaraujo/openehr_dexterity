@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 from openehr.BASIC_TYPES import typeStr
@@ -8,7 +9,10 @@ class PARTY_IDENTIFIED(object):
    name = typeStr
 
    #um ou mais identificadores
-   identifiers = DV_IDENTIFIER[]
+   #TODO MATHEUS: Troca de [] para instanciadores ().
+   #São necessario os argumentos, caso contrario, colocar argumentos default
+   #na classe
+   identifiers = DV_IDENTIFIER(issuer ="", assigner="", id="", type="")
 
    #construtor
    def __init__(self, *args):
@@ -25,7 +29,10 @@ class PARTY_IDENTIFIED(object):
        self.name = name
 
    #seta identifiers
-   def setIdentifiers(self,identifiers = DV_IDENTIFIER[]):
+   #TODO MATHEUS: Troca de [] para instanciadores ().
+   ##São necessario os argumentos, caso contrario, colocar argumentos default
+   #na classe
+   def setIdentifiers(self,identifiers = DV_IDENTIFIER(issuer ="", assigner="", id="", type="")):
        self.identifiers = identifiers
 
    #retorna name

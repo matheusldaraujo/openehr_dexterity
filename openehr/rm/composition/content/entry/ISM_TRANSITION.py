@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 
 
@@ -13,17 +14,17 @@ from openehr.BASIC_TYPES import typeStr
 class ISM_TRANSITION(PATHABLE):
 
     #[1..1]O estado ISM (Instruction State Machine) corrente
-    current_state = DV_CODED_TEXT(defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
+    current_state = DV_CODED_TEXT(CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
     #[0..1] A transião ISM que ocorreu para
     #chegar ao estado corrente.
     #Codificado pelo openEHR terminoly group "instruction transitions"
-    transitions = DV_CODED_TEXT(defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
+    transitions = DV_CODED_TEXT(CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
     #[0..1] o passo no processo de cuidade que ocorreu como parte da geração da ação
     # ex: "dispense", "start_administration". Este atributo representa
     # o label clínico para a atividade
-    careflow_step = DV_CODED_TEXT(defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
+    careflow_step = DV_CODED_TEXT(CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
 
     #construtor

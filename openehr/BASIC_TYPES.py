@@ -3,3 +3,4 @@ typeStr = typeChar = str()
 typeInt = int()
 typeFloat = float()
 typeBool = bool()
+INITIAL_DAY = 1

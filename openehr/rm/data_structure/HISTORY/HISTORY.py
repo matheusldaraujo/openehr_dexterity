@@ -1,16 +1,18 @@
+# -*- coding: utf-8 -*-
 __author__ = 'chrispess'
 from openehr.rm.data_structure.HISTORY.EVENT import EVENT
 from openehr.rm.data_structure.DATA_STRUCTURE import DATA_STRUCTURE
 from openehr.rm.data_structure.ITEM_STRUCTURE.ITEM_STRUCTURE import ITEM_STRUCTURE
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DATE_TIME import DV_DATE_TIME
 from openehr.rm.datatypes.quantity.DATE_TIME.DV_DURATION import DV_DURATION
-from openehr.BASIC_TYPES import typeInt
+from openehr.BASIC_TYPES import typeInt, INITIAL_DAY
 
 #objeto raiz de uma  história linear
 class HISTORY(DATA_STRUCTURE):
 
  #tempo da origem desse evento do tipo history
- origin = DV_DATE_TIME(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt)
+ #TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+ origin = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt)
 
  #os eventos dessa serie. lista de eventos
  events = []
@@ -57,12 +59,14 @@ class HISTORY(DATA_STRUCTURE):
 
 
 #seta duração
-def setDuration(self, duration = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
+##TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+def setDuration(self, duration = DV_DURATION(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
       self.duration = duration
 
 
   #seta período
-def setPeriod(self,period = DV_DURATION(dia = typeInt, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
+  ##TODO Matheus: dia nao pode ser 0 (typeInt), mudei para 1 (INITIAL_DAY) definindo-o em BASIC_TYPES.py
+def setPeriod(self,period = DV_DURATION(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt) ):
       self.period = period
 
 
