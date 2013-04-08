@@ -16,7 +16,6 @@ class EVENT_CONTEXT(object):
 
     #opcional. Descrição original:"The health care facility under
     #whose care the event took place."
-    #TODO Matheus: Troca de [] por ().
     #Não instanciei DV_IDENTIFIER, pois ja ocorre em PARTY_IDENTIDIED, além da classe
     #não receber identidiers como parametro.
     health_care_facility = PARTY_IDENTIFIED()
@@ -28,7 +27,7 @@ class EVENT_CONTEXT(object):
     end_time = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt)
 
     #opcional. outros envolvidos no evento de cuidado
-    ##TODO Matheus: Troca de [] por ().
+
     participations = PARTICIPATION()
 
     #opcional. atual localização onde ocorreu a sessão

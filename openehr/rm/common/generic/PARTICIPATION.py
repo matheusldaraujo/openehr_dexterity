@@ -12,14 +12,14 @@ from openehr.rm.datatypes.quantity.DATE_TIME.DV_DURATION import DV_DURATION
 
 class PARTICIPATION(object):
 
-    # o id de participantes na atividade
+    #[1..1] o id de participantes na atividade
     performer = PARTY_PROXY()
 
-    #a função do participante. pode ser codificado
+    #[1..1] a função do participante. pode ser codificado
     #TODO Matheus: DV_TEXT nao receve "value" como parametro e sim uma tupla.
-    function = DV_TEXT(typeStr)
+    function = DV_TEXT(value = typeStr)
 
-    #o modo em que houve a interação.
+    #[1..1] o modo em que houve a interação.
     # ex: presencial, por telefone, email, etc
     mode = DV_CODED_TEXT(CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 

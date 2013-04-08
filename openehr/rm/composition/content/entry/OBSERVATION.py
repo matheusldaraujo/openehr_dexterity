@@ -3,22 +3,22 @@ __author__ = 'chrispess'
 
 from openehr.rm.data_structure.HISTORY.HISTORY import HISTORY
 from openehr.rm.composition.content.entry.CARE_ENTRY import CARE_ENTRY
+from openehr.rm.datatypes.quantity.DATE_TIME.DV_DATE_TIME import DV_DATE_TIME
+from openehr.BASIC_TYPES import typeInt
+from openehr.BASIC_TYPES import INITIAL_DAY
+
 
 class OBSERVATION(CARE_ENTRY):
 
- #os dados da  observação, na forma de um
+ #Mandatório. os dados da  observação, na forma de um
  # histórico de valores de complexidade variável
- #TODO Matheus comentei a linha abaixo pois history recebe diversos argumentos
- #Olhar se é plausível criar uma condição na classe ou argumentos default
- #data = HISTORY()
+ data = HISTORY(origin = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt))
 
  #opcional. Salva o estado do sujeito
  #da observação duranto processo da observação
  #na forma de um histórico separado de valores
  #que podem ser de qualquer complexidade
- #TODO Matheus comentei a linha abaixo pois history recebe diversos argumentos
- #Olhar se é plausível criar uma condição na classe ou argumentos default
- #state = HISTORY()
+ state = HISTORY(origin = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt))
 
  #construtor
  def __init__(self, *args):

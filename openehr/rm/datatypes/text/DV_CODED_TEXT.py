@@ -17,22 +17,22 @@ class DV_CODED_TEXT(DV_TEXT):
  defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr) #a rubrica associada ao  'value'
 
  #construtor
- def __init__(self,*args):
+ def __init__(self,defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr)):
 
-     if(len(args)==1):
-      self.defining_code=args[0]  #este self valora o atributo defining_code definido acima
+  #   if(len(args)==1):
+      self.defining_code = defining_code  #args[0]  #este self valora o atributo defining_code definido acima
 
-     elif(len(args)>=1):
-      self.defining_code=args[0]
-      super(DV_CODED_TEXT, self).__init__()
-      self.value = args[1]  #este self chama o atributo 'value' da superclasse DV_TEXT
+ #  elif(len(args)>=1):
+ #     self.defining_code=args[0]
+ #     super(DV_CODED_TEXT, self).__init__()
+ #     self.value = args[1]  #este self chama o atributo 'value' da superclasse DV_TEXT
                             #demais atributos da super classe DV_TEXT
-      self.mappings = args[2]
-      self.formatting = args[3]
-      self.hyperlink = args[4]
-      self.language = args[5]
-      self.encoding = args[6]
-      self.language = args[7]
+ #     self.mappings = args[2]
+ #     self.formatting = args[3]
+ #     self.hyperlink = args[4]
+ #     self.language = args[5]
+ #     self.encoding = args[6]
+ #     self.language = args[7]
 
 
   #retorna defining_code

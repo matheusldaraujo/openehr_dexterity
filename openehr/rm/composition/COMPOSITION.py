@@ -24,7 +24,7 @@ class COMPOSITION(object):
 
  #a pessoa primariamente responsável pelo conteúdo da composition
  #é o identificador que aparece na screen. Pode ser, ou não,
- # a pessoa que entrou com os dados.Se foro próprio paciente,
+ # a pessoa que entrou com os dados.Se for o próprio paciente,
  # a instância "self" é usada
  composer = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
 

@@ -36,7 +36,6 @@ class ENTRY(CONTENT_ITEM):
     other_participations = PARTICIPATION()
 
     #identificador de workflow externo
-    #TODO Matheus: OBJECT id não recebe este parametro passado.
     workflow_id = OBJECT_REF(id = OBJECT_ID(value = typeStr), namespace = typeStr, type = typeStr)
 
     #construtor

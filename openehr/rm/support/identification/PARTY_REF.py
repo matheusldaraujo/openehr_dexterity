@@ -18,16 +18,13 @@ class PARTY_REF(OBJECT_REF):
  type = typeStr
 
  #construtor
- ##TODO MATHEUS, parenteses fechando antes do que deveria.
- def __init__(self, id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)):
-     #chama o superconstrutor
-     #TODO: Matheus, estamos com um problema aqui, existe algum motivo especial para
-     #ter que chamar o contrutor da classe pai?
-     # super(PARTY_REF,self).__init__()
-     # self.id = id
-     # self.namespace = namespace
-     # self.type = type
-     pass
+ def __init__(self, *args):
+     if(len(args)==1):
+         self.id = args[0]
+     elif(len(args)==3):
+         self.id = args[0]
+         self.namespace = args[1]
+         self.type = args[2]
 
 
  #retorna type

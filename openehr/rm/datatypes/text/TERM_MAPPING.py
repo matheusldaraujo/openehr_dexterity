@@ -3,8 +3,9 @@ __author__ = 'chrispess'
 
 from openehr.rm.datatypes.text.CODE_PHRASE import CODE_PHRASE
 from openehr.rm.datatypes.text.DV_CODED_TEXT import DV_CODED_TEXT
+from openehr.rm.support.identification.TERMINOLOGY_ID import TERMINOLOGY_ID
 from openehr.BASIC_TYPES import typeChar
-
+from openehr.BASIC_TYPES import typeStr
 
 
 class TERM_MAPPING():
@@ -26,7 +27,7 @@ class TERM_MAPPING():
   #TODO Matheus: Ao intanciar DV_CODED_TEXT com mais de 1 argumento, todos os 8 serão necessarios
   #caso não sejam, seria interessante colocar uma string default na criação da classe
   #neste caso falto o ultimo argumento, coloquei um dummie
-  purpose =  DV_CODED_TEXT("definingCode", "value", "mappings", "formatting", "hyperlink", "language", "encoding","")
+  purpose =  DV_CODED_TEXT(defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
 
   #construtor

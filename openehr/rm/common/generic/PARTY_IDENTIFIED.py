@@ -9,10 +9,9 @@ class PARTY_IDENTIFIED(object):
    name = typeStr
 
    #um ou mais identificadores
-   #TODO MATHEUS: Troca de [] para instanciadores ().
    #São necessario os argumentos, caso contrario, colocar argumentos default
    #na classe
-   identifiers = DV_IDENTIFIER(issuer ="", assigner="", id="", type="")
+   identifiers = DV_IDENTIFIER(issuer = typeStr, assigner = typeStr, id = typeStr, type = typeStr)
 
    #construtor
    def __init__(self, *args):
