@@ -10,10 +10,10 @@ from openehr.BASIC_TYPES import typeStr
 
 class TERM_MAPPING():
 
-  # o termo alvo do mapeamento
+  # [1..1] o termo alvo do mapeamento
   target = CODE_PHRASE("teminology_id", "code_string")
 
-  #correspondência relativa do termo alvo com respeito ao item de texto mapeado.
+  #[1..1] correspondência relativa do termo alvo com respeito ao item de texto mapeado.
   # os resultados podem ter os seguintes significados:
   # '>': o mapeamento é mais amplo. ex: texto original = "arbovirus infection"
   # e o target = 'viral infection'
@@ -23,10 +23,7 @@ class TERM_MAPPING():
   #'?': desconhecido
   match = typeChar
 
-  #proposito do mapeamento. ex: "interoperabilidade", "automação de data mining"...
-  #TODO Matheus: Ao intanciar DV_CODED_TEXT com mais de 1 argumento, todos os 8 serão necessarios
-  #caso não sejam, seria interessante colocar uma string default na criação da classe
-  #neste caso falto o ultimo argumento, coloquei um dummie
+  #[1..1] proposito do mapeamento. ex: "interoperabilidade", "automação de data mining"...
   purpose =  DV_CODED_TEXT(defining_code = CODE_PHRASE( teminology_id = TERMINOLOGY_ID(name=typeStr, version_id=typeStr), code_string=typeStr))
 
 
