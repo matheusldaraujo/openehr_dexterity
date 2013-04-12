@@ -17,7 +17,8 @@ class PARTICIPATION(object):
 
     #[1..1] a função do participante. pode ser codificado
     #TODO Matheus: DV_TEXT nao receve "value" como parametro e sim uma tupla.
-    function = DV_TEXT(value = typeStr)
+    ###TODO MATHEUS-11-04-13: Retirei value =, a classe DV_TEXT não espera este parâmetro
+    function = DV_TEXT(typeStr)
 
     #[1..1] o modo em que houve a interação.
     # ex: presencial, por telefone, email, etc

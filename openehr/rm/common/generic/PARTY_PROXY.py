@@ -10,13 +10,14 @@ class PARTY_PROXY():
 
     #0..1. referência opcional a maiores detalhes de identificção ou demográficos
     ###TODO MATHEUS, parenteses fechando antes do que deveria.
-    external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr))
+    ###TODO MATHEUS-11-04-13: Retirei o id = do parâmetro, a classe PARTY_REF não espera este parâmetro
+    external_ref = PARTY_REF(OBJECT_REF(typeStr,namespace = typeStr, type = typeStr))
 
     #construtor
-    def __init__(self, external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr))):
+    def __init__(self, external_ref = PARTY_REF(OBJECT_REF(typeStr,namespace = typeStr, type = typeStr))):
         self.external_ref = external_ref
         #seta external_ref
-    def setExternalRef(self,external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr))):
+    def setExternalRef(self,external_ref = PARTY_REF(OBJECT_REF(typeStr,namespace = typeStr, type = typeStr))):
         self.external_ref = external_ref
 
 

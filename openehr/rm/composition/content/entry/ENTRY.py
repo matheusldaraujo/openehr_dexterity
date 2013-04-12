@@ -26,11 +26,13 @@ class ENTRY(CONTENT_ITEM):
 
     #Id da pessoa que é sujeito da ENTRY.
     # ex: doador de órgãos, feto, membro da família, etc
-    subject = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
+    ###TODO MATHEUS-11-04-13: Retirei o id = do parâmetro, a classe PARTY_REF não espera este parâmetro
+    subject = PARTY_PROXY(external_ref = PARTY_REF(OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
 
     #identificação opcional do provedor dasinformações da ENTRY.
     # ex: o paciente, parente ou guardião, o clínico, dispositivo ou software
-    provider = PARTY_PROXY(external_ref = PARTY_REF(id = OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
+    ###TODO MATHEUS-11-04-13: Retirei o id = do parâmetro, a classe PARTY_REF não espera este parâmetro
+    provider = PARTY_PROXY(external_ref = PARTY_REF(OBJECT_REF(typeStr,namespace = typeStr, type = typeStr)))
 
     #outros participantes
     other_participations = PARTICIPATION()

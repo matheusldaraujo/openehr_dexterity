@@ -12,13 +12,15 @@ class OBSERVATION(CARE_ENTRY):
 
  #Mandatório. os dados da  observação, na forma de um
  # histórico de valores de complexidade variável
- data = HISTORY(origin = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt))
+ ###TODO MATHEUS-11-04-13: Retirei o origin = do parâmetro, a classe HISTORY não espera este parâmetro
+ data = HISTORY(DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt))
 
  #opcional. Salva o estado do sujeito
  #da observação duranto processo da observação
  #na forma de um histórico separado de valores
  #que podem ser de qualquer complexidade
- state = HISTORY(origin = DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt))
+ ###TODO MATHEUS-11-04-13: Retirei o origin = do parâmetro, a classe HISTORY não espera este parâmetro
+ state = HISTORY(DV_DATE_TIME(dia = INITIAL_DAY, hora = typeInt, minuto = typeInt , segundo = typeInt))
 
  #construtor
  def __init__(self, *args):
